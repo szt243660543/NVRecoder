@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		044726F520DE2A3800972FD5 /* tips_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 044726F420DE2A3800972FD5 /* tips_0.png */; };
+		044726F720DE2DB400972FD5 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044726F620DE2DB400972FD5 /* CoreVideo.framework */; };
+		044726F920DE341700972FD5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044726F820DE341700972FD5 /* AVFoundation.framework */; };
+		044726FB20DE341D00972FD5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044726FA20DE341D00972FD5 /* AssetsLibrary.framework */; };
+		044726FD20DE344A00972FD5 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044726FC20DE344900972FD5 /* CoreFoundation.framework */; };
+		044726FF20DE348000972FD5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044726FE20DE348000972FD5 /* CoreMedia.framework */; };
+		0447270420DE4E1B00972FD5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0447270320DE4E1B00972FD5 /* QuartzCore.framework */; };
+		0482F6F620E4F2CA00DB4D19 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0482F6F520E4F2CA00DB4D19 /* ImageIO.framework */; };
+		0482F6F820E4F73F00DB4D19 /* videoinfo0.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0482F6F720E4F73F00DB4D19 /* videoinfo0.mp4 */; };
+		0482F78C20E51CE100DB4D19 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F78B20E51CE100DB4D19 /* MainViewController.m */; };
+		0482F7C320E52F1800DB4D19 /* NVVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F78F20E52F1700DB4D19 /* NVVideo.m */; };
+		0482F7C420E52F1800DB4D19 /* NVRenderObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F79220E52F1700DB4D19 /* NVRenderObject.m */; };
+		0482F7C520E52F1800DB4D19 /* NVRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F79320E52F1700DB4D19 /* NVRecord.m */; };
+		0482F7C620E52F1800DB4D19 /* VIMVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F79720E52F1700DB4D19 /* VIMVideoPlayer.m */; };
+		0482F7C720E52F1800DB4D19 /* VIMVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F79820E52F1700DB4D19 /* VIMVideoPlayerView.m */; };
+		0482F7C820E52F1800DB4D19 /* SZTTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F79A20E52F1700DB4D19 /* SZTTexture.m */; };
+		0482F7C920E52F1800DB4D19 /* NVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F79D20E52F1700DB4D19 /* NVViewController.m */; };
+		0482F7CA20E52F1800DB4D19 /* NVProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F79E20E52F1700DB4D19 /* NVProgram.m */; };
+		0482F7CB20E52F1800DB4D19 /* SZTVideoTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F7A120E52F1700DB4D19 /* SZTVideoTexture.m */; };
+		0482F7CC20E52F1800DB4D19 /* GLUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F7A320E52F1700DB4D19 /* GLUtils.m */; };
+		0482F7CD20E52F1800DB4D19 /* SZTVideoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F7A420E52F1700DB4D19 /* SZTVideoData.m */; };
+		0482F7CE20E52F1800DB4D19 /* NVPlane.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F7A820E52F1700DB4D19 /* NVPlane.m */; };
+		0482F7CF20E52F1800DB4D19 /* NVFbo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F7AA20E52F1700DB4D19 /* NVFbo.m */; };
+		0482F7D020E52F1800DB4D19 /* NVDrawShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F7AB20E52F1700DB4D19 /* NVDrawShape.m */; };
+		0482F7D120E52F1800DB4D19 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 0482F7B120E52F1700DB4D19 /* Shader.fsh */; };
+		0482F7D220E52F1800DB4D19 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 0482F7BA20E52F1700DB4D19 /* Shader.vsh */; };
+		3DDEFCA2159B640C00B4EC41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDEFCA1159B640C00B4EC41 /* UIKit.framework */; };
+		3DDEFCA4159B640C00B4EC41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDEFCA3159B640C00B4EC41 /* Foundation.framework */; };
+		3DDEFCA6159B640C00B4EC41 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDEFCA5159B640C00B4EC41 /* CoreGraphics.framework */; };
+		3DDEFCA8159B640C00B4EC41 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDEFCA7159B640C00B4EC41 /* GLKit.framework */; };
+		3DDEFCAA159B640C00B4EC41 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDEFCA9159B640C00B4EC41 /* OpenGLES.framework */; };
+		3DDEFCB0159B640C00B4EC41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DDEFCAE159B640C00B4EC41 /* InfoPlist.strings */; };
+		3DDEFCB2159B640C00B4EC41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDEFCB1159B640C00B4EC41 /* main.m */; };
+		3DDEFCB6159B640C00B4EC41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDEFCB5159B640C00B4EC41 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		044726F420DE2A3800972FD5 /* tips_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tips_0.png; sourceTree = "<group>"; };
+		044726F620DE2DB400972FD5 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		044726F820DE341700972FD5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		044726FA20DE341D00972FD5 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		044726FC20DE344900972FD5 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		044726FE20DE348000972FD5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0447270320DE4E1B00972FD5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0482F6F520E4F2CA00DB4D19 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		0482F6F720E4F73F00DB4D19 /* videoinfo0.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoinfo0.mp4; sourceTree = "<group>"; };
+		0482F78A20E51CE100DB4D19 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0482F78B20E51CE100DB4D19 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		0482F78F20E52F1700DB4D19 /* NVVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVVideo.m; sourceTree = "<group>"; };
+		0482F79020E52F1700DB4D19 /* NVRenderObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVRenderObject.h; sourceTree = "<group>"; };
+		0482F79120E52F1700DB4D19 /* NVVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVVideo.h; sourceTree = "<group>"; };
+		0482F79220E52F1700DB4D19 /* NVRenderObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVRenderObject.m; sourceTree = "<group>"; };
+		0482F79320E52F1700DB4D19 /* NVRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVRecord.m; sourceTree = "<group>"; };
+		0482F79520E52F1700DB4D19 /* VIMVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIMVideoPlayer.h; sourceTree = "<group>"; };
+		0482F79620E52F1700DB4D19 /* VIMVideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIMVideoPlayerView.h; sourceTree = "<group>"; };
+		0482F79720E52F1700DB4D19 /* VIMVideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIMVideoPlayer.m; sourceTree = "<group>"; };
+		0482F79820E52F1700DB4D19 /* VIMVideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIMVideoPlayerView.m; sourceTree = "<group>"; };
+		0482F79A20E52F1700DB4D19 /* SZTTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZTTexture.m; sourceTree = "<group>"; };
+		0482F79B20E52F1700DB4D19 /* SZTVideoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZTVideoData.h; sourceTree = "<group>"; };
+		0482F79C20E52F1700DB4D19 /* GLUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLUtils.h; sourceTree = "<group>"; };
+		0482F79D20E52F1700DB4D19 /* NVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVViewController.m; sourceTree = "<group>"; };
+		0482F79E20E52F1700DB4D19 /* NVProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVProgram.m; sourceTree = "<group>"; };
+		0482F79F20E52F1700DB4D19 /* NVDrawShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVDrawShape.h; sourceTree = "<group>"; };
+		0482F7A020E52F1700DB4D19 /* NVFbo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVFbo.h; sourceTree = "<group>"; };
+		0482F7A120E52F1700DB4D19 /* SZTVideoTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZTVideoTexture.m; sourceTree = "<group>"; };
+		0482F7A220E52F1700DB4D19 /* NVPlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVPlane.h; sourceTree = "<group>"; };
+		0482F7A320E52F1700DB4D19 /* GLUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLUtils.m; sourceTree = "<group>"; };
+		0482F7A420E52F1700DB4D19 /* SZTVideoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZTVideoData.m; sourceTree = "<group>"; };
+		0482F7A520E52F1700DB4D19 /* SZTTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZTTexture.h; sourceTree = "<group>"; };
+		0482F7A620E52F1700DB4D19 /* NVProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVProgram.h; sourceTree = "<group>"; };
+		0482F7A720E52F1700DB4D19 /* NVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVViewController.h; sourceTree = "<group>"; };
+		0482F7A820E52F1700DB4D19 /* NVPlane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVPlane.m; sourceTree = "<group>"; };
+		0482F7A920E52F1700DB4D19 /* SZTVideoTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZTVideoTexture.h; sourceTree = "<group>"; };
+		0482F7AA20E52F1700DB4D19 /* NVFbo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVFbo.m; sourceTree = "<group>"; };
+		0482F7AB20E52F1700DB4D19 /* NVDrawShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVDrawShape.m; sourceTree = "<group>"; };
+		0482F7AC20E52F1700DB4D19 /* NVRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVRecord.h; sourceTree = "<group>"; };
+		0482F7AE20E52F1700DB4D19 /* Shader_Crosshatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader_Crosshatch.h; sourceTree = "<group>"; };
+		0482F7AF20E52F1700DB4D19 /* Shader_Pixelate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader_Pixelate.h; sourceTree = "<group>"; };
+		0482F7B020E52F1700DB4D19 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		0482F7B120E52F1700DB4D19 /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
+		0482F7B220E52F1700DB4D19 /* Shader_Hue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader_Hue.h; sourceTree = "<group>"; };
+		0482F7B320E52F1700DB4D19 /* Shader_YUV420.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader_YUV420.h; sourceTree = "<group>"; };
+		0482F7B420E52F1700DB4D19 /* Shader_Blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader_Blur.h; sourceTree = "<group>"; };
+		0482F7B520E52F1700DB4D19 /* Shader_PolkaDotFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader_PolkaDotFilter.h; sourceTree = "<group>"; };
+		0482F7B620E52F1700DB4D19 /* Shader_Discretize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader_Discretize.h; sourceTree = "<group>"; };
+		0482F7B720E52F1700DB4D19 /* Shader_Luminance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader_Luminance.h; sourceTree = "<group>"; };
+		0482F7B820E52F1700DB4D19 /* Shader_Normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader_Normal.h; sourceTree = "<group>"; };
+		0482F7B920E52F1700DB4D19 /* Shader_YUV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader_YUV.h; sourceTree = "<group>"; };
+		0482F7BA20E52F1700DB4D19 /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
+		0482F7BB20E52F1700DB4D19 /* Shader_Progress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader_Progress.h; sourceTree = "<group>"; };
+		0482F7BC20E52F1700DB4D19 /* Shader_FadeInOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader_FadeInOut.h; sourceTree = "<group>"; };
+		0482F7BD20E52F1700DB4D19 /* Shader_Fbo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader_Fbo.h; sourceTree = "<group>"; };
+		0482F7BE20E52F1700DB4D19 /* Shader_Exposure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader_Exposure.h; sourceTree = "<group>"; };
+		0482F7BF20E52F1700DB4D19 /* Shader_Bilateral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader_Bilateral.h; sourceTree = "<group>"; };
+		0482F7C020E52F1700DB4D19 /* Shader_GlassSphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader_GlassSphere.h; sourceTree = "<group>"; };
+		0482F7C120E52F1700DB4D19 /* Shader_Emitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader_Emitter.h; sourceTree = "<group>"; };
+		0482F7C220E52F1700DB4D19 /* Shader_Gamma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader_Gamma.h; sourceTree = "<group>"; };
+		3DDEFC9D159B640C00B4EC41 /* NVRecodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NVRecodeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DDEFCA1159B640C00B4EC41 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3DDEFCA3159B640C00B4EC41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3DDEFCA5159B640C00B4EC41 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3DDEFCA7159B640C00B4EC41 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		3DDEFCA9159B640C00B4EC41 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		3DDEFCAD159B640C00B4EC41 /* NVRecodeDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NVRecodeDemo-Info.plist"; sourceTree = "<group>"; };
+		3DDEFCAF159B640C00B4EC41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DDEFCB1159B640C00B4EC41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DDEFCB3159B640C00B4EC41 /* NVRecodeDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NVRecodeDemo-Prefix.pch"; sourceTree = "<group>"; };
+		3DDEFCB4159B640C00B4EC41 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3DDEFCB5159B640C00B4EC41 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DDEFC9A159B640C00B4EC41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0482F6F620E4F2CA00DB4D19 /* ImageIO.framework in Frameworks */,
+				0447270420DE4E1B00972FD5 /* QuartzCore.framework in Frameworks */,
+				044726FF20DE348000972FD5 /* CoreMedia.framework in Frameworks */,
+				044726FD20DE344A00972FD5 /* CoreFoundation.framework in Frameworks */,
+				044726FB20DE341D00972FD5 /* AssetsLibrary.framework in Frameworks */,
+				044726F920DE341700972FD5 /* AVFoundation.framework in Frameworks */,
+				044726F720DE2DB400972FD5 /* CoreVideo.framework in Frameworks */,
+				3DDEFCA2159B640C00B4EC41 /* UIKit.framework in Frameworks */,
+				3DDEFCA4159B640C00B4EC41 /* Foundation.framework in Frameworks */,
+				3DDEFCA6159B640C00B4EC41 /* CoreGraphics.framework in Frameworks */,
+				3DDEFCA8159B640C00B4EC41 /* GLKit.framework in Frameworks */,
+				3DDEFCAA159B640C00B4EC41 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0482F78D20E52F1700DB4D19 /* NVRender */ = {
+			isa = PBXGroup;
+			children = (
+				0482F78E20E52F1700DB4D19 /* UI */,
+				0482F79320E52F1700DB4D19 /* NVRecord.m */,
+				0482F79420E52F1700DB4D19 /* VIMVideoPlayer */,
+				0482F79920E52F1700DB4D19 /* Render */,
+				0482F7AC20E52F1700DB4D19 /* NVRecord.h */,
+				0482F7AD20E52F1700DB4D19 /* Shaders */,
+			);
+			path = NVRender;
+			sourceTree = "<group>";
+		};
+		0482F78E20E52F1700DB4D19 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0482F78F20E52F1700DB4D19 /* NVVideo.m */,
+				0482F79020E52F1700DB4D19 /* NVRenderObject.h */,
+				0482F79120E52F1700DB4D19 /* NVVideo.h */,
+				0482F79220E52F1700DB4D19 /* NVRenderObject.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0482F79420E52F1700DB4D19 /* VIMVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				0482F79520E52F1700DB4D19 /* VIMVideoPlayer.h */,
+				0482F79620E52F1700DB4D19 /* VIMVideoPlayerView.h */,
+				0482F79720E52F1700DB4D19 /* VIMVideoPlayer.m */,
+				0482F79820E52F1700DB4D19 /* VIMVideoPlayerView.m */,
+			);
+			path = VIMVideoPlayer;
+			sourceTree = "<group>";
+		};
+		0482F79920E52F1700DB4D19 /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				0482F79A20E52F1700DB4D19 /* SZTTexture.m */,
+				0482F79B20E52F1700DB4D19 /* SZTVideoData.h */,
+				0482F79C20E52F1700DB4D19 /* GLUtils.h */,
+				0482F79D20E52F1700DB4D19 /* NVViewController.m */,
+				0482F79E20E52F1700DB4D19 /* NVProgram.m */,
+				0482F79F20E52F1700DB4D19 /* NVDrawShape.h */,
+				0482F7A020E52F1700DB4D19 /* NVFbo.h */,
+				0482F7A120E52F1700DB4D19 /* SZTVideoTexture.m */,
+				0482F7A220E52F1700DB4D19 /* NVPlane.h */,
+				0482F7A320E52F1700DB4D19 /* GLUtils.m */,
+				0482F7A420E52F1700DB4D19 /* SZTVideoData.m */,
+				0482F7A520E52F1700DB4D19 /* SZTTexture.h */,
+				0482F7A620E52F1700DB4D19 /* NVProgram.h */,
+				0482F7A720E52F1700DB4D19 /* NVViewController.h */,
+				0482F7A820E52F1700DB4D19 /* NVPlane.m */,
+				0482F7A920E52F1700DB4D19 /* SZTVideoTexture.h */,
+				0482F7AA20E52F1700DB4D19 /* NVFbo.m */,
+				0482F7AB20E52F1700DB4D19 /* NVDrawShape.m */,
+			);
+			path = Render;
+			sourceTree = "<group>";
+		};
+		0482F7AD20E52F1700DB4D19 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				0482F7AE20E52F1700DB4D19 /* Shader_Crosshatch.h */,
+				0482F7AF20E52F1700DB4D19 /* Shader_Pixelate.h */,
+				0482F7B020E52F1700DB4D19 /* Shader.h */,
+				0482F7B120E52F1700DB4D19 /* Shader.fsh */,
+				0482F7B220E52F1700DB4D19 /* Shader_Hue.h */,
+				0482F7B320E52F1700DB4D19 /* Shader_YUV420.h */,
+				0482F7B420E52F1700DB4D19 /* Shader_Blur.h */,
+				0482F7B520E52F1700DB4D19 /* Shader_PolkaDotFilter.h */,
+				0482F7B620E52F1700DB4D19 /* Shader_Discretize.h */,
+				0482F7B720E52F1700DB4D19 /* Shader_Luminance.h */,
+				0482F7B820E52F1700DB4D19 /* Shader_Normal.h */,
+				0482F7B920E52F1700DB4D19 /* Shader_YUV.h */,
+				0482F7BA20E52F1700DB4D19 /* Shader.vsh */,
+				0482F7BB20E52F1700DB4D19 /* Shader_Progress.h */,
+				0482F7BC20E52F1700DB4D19 /* Shader_FadeInOut.h */,
+				0482F7BD20E52F1700DB4D19 /* Shader_Fbo.h */,
+				0482F7BE20E52F1700DB4D19 /* Shader_Exposure.h */,
+				0482F7BF20E52F1700DB4D19 /* Shader_Bilateral.h */,
+				0482F7C020E52F1700DB4D19 /* Shader_GlassSphere.h */,
+				0482F7C120E52F1700DB4D19 /* Shader_Emitter.h */,
+				0482F7C220E52F1700DB4D19 /* Shader_Gamma.h */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		3DDEFC92159B640C00B4EC41 = {
+			isa = PBXGroup;
+			children = (
+				3DDEFCAB159B640C00B4EC41 /* NVRecodeDemo */,
+				3DDEFCA0159B640C00B4EC41 /* Frameworks */,
+				3DDEFC9E159B640C00B4EC41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DDEFC9E159B640C00B4EC41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DDEFC9D159B640C00B4EC41 /* NVRecodeDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DDEFCA0159B640C00B4EC41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0482F6F520E4F2CA00DB4D19 /* ImageIO.framework */,
+				0447270320DE4E1B00972FD5 /* QuartzCore.framework */,
+				044726FE20DE348000972FD5 /* CoreMedia.framework */,
+				044726FC20DE344900972FD5 /* CoreFoundation.framework */,
+				044726FA20DE341D00972FD5 /* AssetsLibrary.framework */,
+				044726F820DE341700972FD5 /* AVFoundation.framework */,
+				044726F620DE2DB400972FD5 /* CoreVideo.framework */,
+				3DDEFCA1159B640C00B4EC41 /* UIKit.framework */,
+				3DDEFCA3159B640C00B4EC41 /* Foundation.framework */,
+				3DDEFCA5159B640C00B4EC41 /* CoreGraphics.framework */,
+				3DDEFCA7159B640C00B4EC41 /* GLKit.framework */,
+				3DDEFCA9159B640C00B4EC41 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DDEFCAB159B640C00B4EC41 /* NVRecodeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0482F78D20E52F1700DB4D19 /* NVRender */,
+				3DDEFCB4159B640C00B4EC41 /* AppDelegate.h */,
+				3DDEFCB5159B640C00B4EC41 /* AppDelegate.m */,
+				0482F78A20E51CE100DB4D19 /* MainViewController.h */,
+				0482F78B20E51CE100DB4D19 /* MainViewController.m */,
+				3DDEFCAC159B640C00B4EC41 /* Supporting Files */,
+			);
+			path = NVRecodeDemo;
+			sourceTree = "<group>";
+		};
+		3DDEFCAC159B640C00B4EC41 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				044726F420DE2A3800972FD5 /* tips_0.png */,
+				0482F6F720E4F73F00DB4D19 /* videoinfo0.mp4 */,
+				3DDEFCAD159B640C00B4EC41 /* NVRecodeDemo-Info.plist */,
+				3DDEFCAE159B640C00B4EC41 /* InfoPlist.strings */,
+				3DDEFCB1159B640C00B4EC41 /* main.m */,
+				3DDEFCB3159B640C00B4EC41 /* NVRecodeDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DDEFC9C159B640C00B4EC41 /* NVRecodeDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DDEFCC3159B640C00B4EC41 /* Build configuration list for PBXNativeTarget "NVRecodeDemo" */;
+			buildPhases = (
+				3DDEFC99159B640C00B4EC41 /* Sources */,
+				3DDEFC9A159B640C00B4EC41 /* Frameworks */,
+				3DDEFC9B159B640C00B4EC41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NVRecodeDemo;
+			productName = simpleFBO;
+			productReference = 3DDEFC9D159B640C00B4EC41 /* NVRecodeDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DDEFC94159B640C00B4EC41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				TargetAttributes = {
+					3DDEFC9C159B640C00B4EC41 = {
+						DevelopmentTeam = 6J62AU9PV3;
+					};
+				};
+			};
+			buildConfigurationList = 3DDEFC97159B640C00B4EC41 /* Build configuration list for PBXProject "NVRecodeDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3DDEFC92159B640C00B4EC41;
+			productRefGroup = 3DDEFC9E159B640C00B4EC41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DDEFC9C159B640C00B4EC41 /* NVRecodeDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DDEFC9B159B640C00B4EC41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0482F7D120E52F1800DB4D19 /* Shader.fsh in Resources */,
+				0482F6F820E4F73F00DB4D19 /* videoinfo0.mp4 in Resources */,
+				3DDEFCB0159B640C00B4EC41 /* InfoPlist.strings in Resources */,
+				044726F520DE2A3800972FD5 /* tips_0.png in Resources */,
+				0482F7D220E52F1800DB4D19 /* Shader.vsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DDEFC99159B640C00B4EC41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0482F7C620E52F1800DB4D19 /* VIMVideoPlayer.m in Sources */,
+				0482F7CB20E52F1800DB4D19 /* SZTVideoTexture.m in Sources */,
+				0482F7CE20E52F1800DB4D19 /* NVPlane.m in Sources */,
+				3DDEFCB2159B640C00B4EC41 /* main.m in Sources */,
+				0482F7C720E52F1800DB4D19 /* VIMVideoPlayerView.m in Sources */,
+				0482F7C420E52F1800DB4D19 /* NVRenderObject.m in Sources */,
+				0482F78C20E51CE100DB4D19 /* MainViewController.m in Sources */,
+				0482F7D020E52F1800DB4D19 /* NVDrawShape.m in Sources */,
+				3DDEFCB6159B640C00B4EC41 /* AppDelegate.m in Sources */,
+				0482F7CD20E52F1800DB4D19 /* SZTVideoData.m in Sources */,
+				0482F7C520E52F1800DB4D19 /* NVRecord.m in Sources */,
+				0482F7C820E52F1800DB4D19 /* SZTTexture.m in Sources */,
+				0482F7C920E52F1800DB4D19 /* NVViewController.m in Sources */,
+				0482F7CA20E52F1800DB4D19 /* NVProgram.m in Sources */,
+				0482F7CF20E52F1800DB4D19 /* NVFbo.m in Sources */,
+				0482F7C320E52F1800DB4D19 /* NVVideo.m in Sources */,
+				0482F7CC20E52F1800DB4D19 /* GLUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3DDEFCAE159B640C00B4EC41 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DDEFCAF159B640C00B4EC41 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DDEFCC1159B640C00B4EC41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		3DDEFCC2159B640C00B4EC41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DDEFCC4159B640C00B4EC41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DEVELOPMENT_TEAM = 6J62AU9PV3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NVRecodeDemo/NVRecodeDemo-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "$(SRCROOT)/NVRecodeDemo/NVRecodeDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NVRecodeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3DDEFCC5159B640C00B4EC41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DEVELOPMENT_TEAM = 6J62AU9PV3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NVRecodeDemo/NVRecodeDemo-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "$(SRCROOT)/NVRecodeDemo/NVRecodeDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NVRecodeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DDEFC97159B640C00B4EC41 /* Build configuration list for PBXProject "NVRecodeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DDEFCC1159B640C00B4EC41 /* Debug */,
+				3DDEFCC2159B640C00B4EC41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DDEFCC3159B640C00B4EC41 /* Build configuration list for PBXNativeTarget "NVRecodeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DDEFCC4159B640C00B4EC41 /* Debug */,
+				3DDEFCC5159B640C00B4EC41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DDEFC94159B640C00B4EC41 /* Project object */;
+}
