@@ -130,6 +130,7 @@
 - (void)removeRenderTarget:(NVRenderObject *)object
 {
     _isLock = true;
+    [object destory];
     [self.objectArr removeObject:object];
     _isLock = false;
 }

@@ -37,7 +37,7 @@ NSString *const NormalFragmentShaderString = SHADER_STRING
     {
         vec4 texCol = texture2D(uSampler, vTexCoord);
     
-        gl_FragColor = vec4(texCol.rgb, 1.0);
+        gl_FragColor = texCol;
     }
 );
 

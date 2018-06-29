@@ -85,7 +85,6 @@
     return pixelBuffer;
 }
 
-
 - (GLuint )renderTextureBuffer:(CVPixelBufferRef)pixelBuffer Context:(EAGLContext *)context
 {
     if (!self.mDataAdatper.isijkPlayer) {

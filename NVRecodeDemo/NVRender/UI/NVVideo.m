@@ -144,7 +144,6 @@
 {
     [super destory];
     
-//    [self removeObject];
     if (_texture) [_texture destory];
     
     if (self.avPlayer) {

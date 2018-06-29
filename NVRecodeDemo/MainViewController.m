@@ -8,6 +8,7 @@
 #import "MainViewController.h"
 #import "NVVideo.h"
 #import "NVRecord.h"
+#import "NVCamera.h"
 
 @interface MainViewController ()<NVRecordDelegate>
 {
@@ -32,12 +33,12 @@
     NSString *itemPath1 = [[NSBundle mainBundle] pathForResource:@"AR1" ofType:@".mp4"];
     NSURL *url1 = [NSURL fileURLWithPath:itemPath1];
     
-    NSString *itemPath2 = [[NSBundle mainBundle] pathForResource:@"AR2" ofType:@".mp4"];
-    NSURL *url2 = [NSURL fileURLWithPath:itemPath2];
+//    NSString *itemPath2 = [[NSBundle mainBundle] pathForResource:@"AR2" ofType:@".mp4"];
+//    NSURL *url2 = [NSURL fileURLWithPath:itemPath2];
     
     NVVideo *video = [[NVVideo alloc] initAVPlayerVideoWithURL:url];
-    [video setVideoRect:CGRectMake(0, 0, 0.5, 0.25)];
-    [video changeFilter:SZTVR_PIXELATE];
+    [video setVideoRect:CGRectMake(0, 0, 1.0, 0.25)];
+    [video changeFilter:SZTVR_NORMAL];
     [self addRenderTarget:video];
 
     NVVideo *video1 = [[NVVideo alloc] initAVPlayerVideoWithURL:url];
@@ -45,20 +46,26 @@
     [video1 changeFilter:SZTVR_POLKADOT];
     [self addRenderTarget:video1];
     
-    NVVideo *video4 = [[NVVideo alloc] initAVPlayerVideoWithURL:url];
-    [video4 setVideoRect:CGRectMake(0.5, 0, 0.5, 0.25)];
-    [video4 changeFilter:SZTVR_LUMINANCE];
-    [self addRenderTarget:video4];
+//    NVVideo *video4 = [[NVVideo alloc] initAVPlayerVideoWithURL:url];
+//    [video4 setVideoRect:CGRectMake(0.5, 0, 0.5, 0.25)];
+//    [video4 changeFilter:SZTVR_LUMINANCE];
+//    [self addRenderTarget:video4];
     
     NVVideo *video2 = [[NVVideo alloc] initAVPlayerVideoWithURL:url1];
     [video2 setVideoRect:CGRectMake(0.0, 0.5, 0.5, 0.5)];
     [video2 changeFilter:SZTVR_NORMAL];
     [self addRenderTarget:video2];
     
-    NVVideo *video3 = [[NVVideo alloc] initAVPlayerVideoWithURL:url2];
-    [video3 setVideoRect:CGRectMake(0.5, 0.5, 0.5, 0.5)];
-    [video3 changeFilter:SZTVR_NORMAL];
-    [self addRenderTarget:video3];
+//    NVVideo *video3 = [[NVVideo alloc] initAVPlayerVideoWithURL:url2];
+//    [video3 setVideoRect:CGRectMake(0.5, 0.5, 0.5, 0.5)];
+//    [video3 changeFilter:SZTVR_NORMAL];
+//    [self addRenderTarget:video3];
+    
+    // add camera
+    NVCamera *camera = [[NVCamera alloc] initWithDevicePosition:CAMERA_BACK];
+    [camera setVideoRect:CGRectMake(0.5, 0.5, 0.5, 0.5)];
+    [camera changeFilter:SZTVR_NORMAL];
+    [self addRenderTarget:camera];
 }
 
 - (void)initUI
