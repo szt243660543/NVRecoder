@@ -82,7 +82,7 @@ See [MainViewController.m](https://github.com/szt243660543/NVRecodeDemo/blob/mas
 
 ## Reference
 * [360VR](https://github.com/szt243660543/360VR)
-* [Thanks to vimeo/VIMVideoPlayer](https://github.com/vimeo/VIMVideoPlayer)
+* [VIMVideoPlayer](https://github.com/vimeo/VIMVideoPlayer)
 
 ## Found an Issue?
 Please file it in the git issue tracker.
