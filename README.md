@@ -12,138 +12,38 @@ It is a lite library to render multiple videos and recoder a new video.
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Create a AVPlayerItem
-    AVPlayerItem *playerItem = [[AVPlayerItem alloc] initWithURL:self.mURL];
-    [self.player setPlayerItem:playerItem];
-    [self.player play];
-    
-    /////////////////////////////////////////////////////// MDVRLibrary
-    MDVRConfiguration* config = [MDVRLibrary createConfig];
-    
-    [config asVideo:playerItem];
-    [config setContainer:self view:self.view];
-    
-    // optional
-    [config displayMode:MDModeDisplayNormal];
-    [config interactiveMode:MDModeInteractiveMotion];
-    [config pinchEnabled:true];
-    [config setDirectorFactory:self];
-    
-    self.vrLibrary = [config build];
-    /////////////////////////////////////////////////////// MDVRLibrary
+    // create video url
+    NSString *itemPath = [[NSBundle mainBundle] pathForResource:@"videoinfo0" ofType:@".mp4"];
+    NSURL *url = [NSURL fileURLWithPath:itemPath];
+ 
+    // create video object
+    NVVideo *video = [[NVVideo alloc] initAVPlayerVideoWithURL:url];
+    // set video size to screen
+    [video setVideoRect:CGRectMake(0, 0, 1.0, 1.0)];
+    // set filter
+    [video changeFilter:SZTVR_PIXELATE];
+    // add to render scene
+    [self addRenderTarget:video];
 }
 ```
 
 ## Supported Configuration
 ```objc
-typedef NS_ENUM(NSInteger, MDModeInteractive) {
-    MDModeInteractiveTouch,
-    MDModeInteractiveMotion,
-    MDModeInteractiveMotionWithTouch,
+typedef NS_ENUM(NSInteger, SZTFilterMode) {
+    SZTVR_NORMAL,           // 普通
+    SZTVR_LUMINANCE,        // 像素色值亮度平均，图像黑白 (黑白效果)
+    SZTVR_PIXELATE,         // 马赛克
+    SZTVR_EXPOSURE,         // 曝光 (美白)
+    SZTVR_DISCRETIZE,       // 离散
+    SZTVR_BLUR,             // 模糊
+    SZTVR_BILATERAL,        // 双边模糊
+    SZTVR_HUE,              // 饱和度
+    SZTVR_POLKADOT,         // 像素圆点花样
+    SZTVR_GAMMA,            // 伽马线
+    SZTVR_GLASSSPHERE,      // 水晶球效果
+    SZTVR_CROSSHATCH,       // 法线交叉线
 };
 
-typedef NS_ENUM(NSInteger, MDModeDisplay) {
-    MDModeDisplayNormal,
-    MDModeDisplayGlass,
-};
-```
-
-## Enabled Pinch Gesture
-```objc
-/////////////////////////////////////////////////////// MDVRLibrary
-MDVRConfiguration* config = [MDVRLibrary createConfig];
-
-...
-[config pinchEnabled:true];
-
-self.vrLibrary = [config build];
-/////////////////////////////////////////////////////// MDVRLibrary
-```
-
-## Custom Director Factory
-```objc
-
-@interface CustomDirectorFactory : NSObject<MD360DirectorFactory>
-@end
-
-@implementation CustomDirectorFactory
-
-- (MD360Director*) createDirector:(int) index{
-    MD360Director* director = [[MD360Director alloc]init];
-    switch (index) {
-        case 1:
-            [director setEyeX:-2.0f];
-            [director setLookX:-2.0f];
-            break;
-        default:
-            break;
-    }
-    return director;
-}
-
-@end
-
-@implementation VideoPlayerViewController
-...
-- (void) initPlayer{
-   	...
-    /////////////////////////////////////////////////////// MDVRLibrary
-    MDVRConfiguration* config = [MDVRLibrary createConfig];
-   	...
-    [config [[CustomDirectorFactory alloc]init]]; // pass in the custom factory
-    ...
-    self.vrLibrary = [config build];
-    /////////////////////////////////////////////////////// MDVRLibrary
-}
-
-@end
-
-```
-
-## 360 Bitmap Support
-```objc
-@interface BitmapPlayerViewController ()<IMDImageProvider>
-
-@end
-
-@implementation BitmapPlayerViewController
-
-...
-
-- (void) initPlayer{
-    ...
-    /////////////////////////////////////////////////////// MDVRLibrary
-    MDVRConfiguration* config = [MDVRLibrary createConfig];
-    ...
-    [config asImage:self];
-    ...
-    self.vrLibrary = [config build];
-    /////////////////////////////////////////////////////// MDVRLibrary
-   
-}
-
-// implement the IMDImageProvider protocol here.
--(void) onProvideImage:(id<TextureCallback>)callback{
-    //
-    SDWebImageDownloader *downloader = [SDWebImageDownloader sharedDownloader];
-    [downloader downloadImageWithURL:self.mURL options:0
-                            progress:^(NSInteger receivedSize, NSInteger expectedSize) {
-                                NSLog(@"progress:%ld/%ld",receivedSize,expectedSize);
-                                // progression tracking code
-                            }
-                           completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished) {
-                               if ( image && finished) {
-                                   // do something with image
-                                   if ([callback respondsToSelector:@selector(texture:)]) {
-                                       [callback texture:image];
-                                   }
-                               }
-                           }];
-    
-    
-}
-
-@end
 ```
 See [BitmapPlayerViewController.m](https://github.com/ashqal/MD360Player4iOS/blob/master/MD360Player4iOS/BitmapPlayerViewController.m)
 
