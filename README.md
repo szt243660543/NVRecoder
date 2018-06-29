@@ -1,4 +1,4 @@
-# NVRecodeDemo
+# NVRecoder
 It is a lite library to render multiple videos and recoder a new video.
 
 ## Preview
