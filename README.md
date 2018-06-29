@@ -3,11 +3,11 @@ It is a lite library to render multiple videos and recoder a new video.
 
 ## Preview
 
-// videos play
+// videos play</br>
 ![ScreenShot](https://github.com/szt243660543/NVRecodeDemo/blob/master/recode.gif)
 </br>
 
-// camera and videos play together
+// camera and videos play together</br>
 ![ScreenShot](https://github.com/szt243660543/NVRecoder/blob/master/camera.gif)
 </br>
 
