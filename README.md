@@ -9,10 +9,10 @@ It is a lite library to render multiple videos and recoder a new video.
 
 ## USAGE
 
-   # first step
+   ### first step
    Make sure in you own controller which you need to use the function is integrated NVViewController.h
    
-   # second step
+   ### second step
 ```objc
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,6 +31,23 @@ It is a lite library to render multiple videos and recoder a new video.
     [self addRenderTarget:video];
 }
 ```
+  ### recoder video
+  ```objc
+  
+   - (void)initRecodeUtil
+   {
+       // create recode handle
+       self.recodeUtil = [[NVRecord alloc] initWithRecodeName:[NSString stringWithFormat:@"recode_demo"]];
+       self.recodeUtil.renderTarget = [self getSurfaceBuffer];
+       self.recodeUtil.delegate = self;
+   }
+   
+       // method
+       [self.recodeUtil startRecording];
+       
+       [self.recodeUtil endRecording];
+   
+  ```
 
 ## Supported Configuration
 ```objc
