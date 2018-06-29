@@ -86,3 +86,6 @@ See [MainViewController.m](https://github.com/szt243660543/NVRecodeDemo/blob/mas
 
 ## Found an Issue?
 Please file it in the git issue tracker.
+
+## Communication
+Email : suzongtao@nvisionxr.com
