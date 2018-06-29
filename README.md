@@ -3,7 +3,12 @@ It is a lite library to render multiple videos and recoder a new video.
 
 ## Preview
 
+// videos play
 ![ScreenShot](https://github.com/szt243660543/NVRecodeDemo/blob/master/recode.gif)
+</br>
+
+// camera and videos play together
+![ScreenShot](https://github.com/szt243660543/NVRecoder/blob/master/camera.gif)
 </br>
 
 ## USAGE
@@ -28,6 +33,13 @@ It is a lite library to render multiple videos and recoder a new video.
     [video changeFilter:SZTVR_PIXELATE];
     // add to render scene
     [self addRenderTarget:video];
+    
+    
+    // create camera object
+    NVCamera *camera = [[NVCamera alloc] initWithDevicePosition:CAMERA_BACK];
+    [camera setVideoRect:CGRectMake(0.5, 0.5, 0.5, 0.5)];
+    [camera changeFilter:SZTVR_NORMAL];
+    [self addRenderTarget:camera];
 }
 ```
   ### recoder video
