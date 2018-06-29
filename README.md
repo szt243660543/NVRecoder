@@ -3,10 +3,10 @@ It is a lite library to render multiple videos and recoder a new video.
 
 ## Preview
 
-![ScreenShot](https://github.com/szt243660543/NVRecodeDemo/blob/master/IMG_0520.png)
+![ScreenShot](https://github.com/szt243660543/NVRecodeDemo/blob/master/recode.gif)
 </br>
 
-![ScreenShot](https://github.com/szt243660543/NVRecodeDemo/blob/master/IMG_0519.png)
+![ScreenShot](https://github.com/szt243660543/NVRecodeDemo/blob/master/IMG_0520.png)
 </br>
 
 ## USAGE
