@@ -8,6 +8,11 @@ It is a lite library to render multiple videos and recoder a new video.
 [Raw 360 Panorama Video](http://d8d913s460fub.cloudfront.net/krpanocloud/video/airpano/video-1920x960a.mp4)
 
 ## USAGE
+
+   # first step
+   Make sure your controller is integrated NVViewController.h
+   
+   # scene step
 ```objc
 - (void)viewDidLoad {
     [super viewDidLoad];
