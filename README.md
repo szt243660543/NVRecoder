@@ -10,9 +10,9 @@ It is a lite library to render multiple videos and recoder a new video.
 ## USAGE
 
    # first step
-   Make sure your controller is integrated NVViewController.h
+   Make sure in you own controller which you need to use the function is integrated NVViewController.h
    
-   # scene step
+   # second step
 ```objc
 - (void)viewDidLoad {
     [super viewDidLoad];
