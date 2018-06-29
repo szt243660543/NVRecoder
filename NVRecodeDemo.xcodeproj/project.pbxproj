@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		044726F520DE2A3800972FD5 /* tips_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 044726F420DE2A3800972FD5 /* tips_0.png */; };
 		044726F720DE2DB400972FD5 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044726F620DE2DB400972FD5 /* CoreVideo.framework */; };
 		044726F920DE341700972FD5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044726F820DE341700972FD5 /* AVFoundation.framework */; };
 		044726FB20DE341D00972FD5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044726FA20DE341D00972FD5 /* AssetsLibrary.framework */; };
@@ -33,6 +32,8 @@
 		0482F7D020E52F1800DB4D19 /* NVDrawShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F7AB20E52F1700DB4D19 /* NVDrawShape.m */; };
 		0482F7D120E52F1800DB4D19 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 0482F7B120E52F1700DB4D19 /* Shader.fsh */; };
 		0482F7D220E52F1800DB4D19 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 0482F7BA20E52F1700DB4D19 /* Shader.vsh */; };
+		0482F7D620E5C6EF00DB4D19 /* AR1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0482F7D520E5C6EF00DB4D19 /* AR1.mp4 */; };
+		0482F7D820E5C8CD00DB4D19 /* AR2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0482F7D720E5C8CD00DB4D19 /* AR2.mp4 */; };
 		3DDEFCA2159B640C00B4EC41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDEFCA1159B640C00B4EC41 /* UIKit.framework */; };
 		3DDEFCA4159B640C00B4EC41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDEFCA3159B640C00B4EC41 /* Foundation.framework */; };
 		3DDEFCA6159B640C00B4EC41 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDEFCA5159B640C00B4EC41 /* CoreGraphics.framework */; };
@@ -44,7 +45,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		044726F420DE2A3800972FD5 /* tips_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tips_0.png; sourceTree = "<group>"; };
 		044726F620DE2DB400972FD5 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		044726F820DE341700972FD5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		044726FA20DE341D00972FD5 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
@@ -104,6 +104,8 @@
 		0482F7C020E52F1700DB4D19 /* Shader_GlassSphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader_GlassSphere.h; sourceTree = "<group>"; };
 		0482F7C120E52F1700DB4D19 /* Shader_Emitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader_Emitter.h; sourceTree = "<group>"; };
 		0482F7C220E52F1700DB4D19 /* Shader_Gamma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader_Gamma.h; sourceTree = "<group>"; };
+		0482F7D520E5C6EF00DB4D19 /* AR1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AR1.mp4; sourceTree = "<group>"; };
+		0482F7D720E5C8CD00DB4D19 /* AR2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AR2.mp4; sourceTree = "<group>"; };
 		3DDEFC9D159B640C00B4EC41 /* NVRecodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NVRecodeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DDEFCA1159B640C00B4EC41 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3DDEFCA3159B640C00B4EC41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -281,7 +283,8 @@
 		3DDEFCAC159B640C00B4EC41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				044726F420DE2A3800972FD5 /* tips_0.png */,
+				0482F7D720E5C8CD00DB4D19 /* AR2.mp4 */,
+				0482F7D520E5C6EF00DB4D19 /* AR1.mp4 */,
 				0482F6F720E4F73F00DB4D19 /* videoinfo0.mp4 */,
 				3DDEFCAD159B640C00B4EC41 /* NVRecodeDemo-Info.plist */,
 				3DDEFCAE159B640C00B4EC41 /* InfoPlist.strings */,
@@ -348,8 +351,9 @@
 			files = (
 				0482F7D120E52F1800DB4D19 /* Shader.fsh in Resources */,
 				0482F6F820E4F73F00DB4D19 /* videoinfo0.mp4 in Resources */,
+				0482F7D620E5C6EF00DB4D19 /* AR1.mp4 in Resources */,
+				0482F7D820E5C8CD00DB4D19 /* AR2.mp4 in Resources */,
 				3DDEFCB0159B640C00B4EC41 /* InfoPlist.strings in Resources */,
-				044726F520DE2A3800972FD5 /* tips_0.png in Resources */,
 				0482F7D220E52F1800DB4D19 /* Shader.vsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

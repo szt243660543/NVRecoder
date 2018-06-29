@@ -29,35 +29,36 @@
     NSString *itemPath = [[NSBundle mainBundle] pathForResource:@"videoinfo0" ofType:@".mp4"];
     NSURL *url = [NSURL fileURLWithPath:itemPath];
     
+    NSString *itemPath1 = [[NSBundle mainBundle] pathForResource:@"AR1" ofType:@".mp4"];
+    NSURL *url1 = [NSURL fileURLWithPath:itemPath1];
+    
+    NSString *itemPath2 = [[NSBundle mainBundle] pathForResource:@"AR2" ofType:@".mp4"];
+    NSURL *url2 = [NSURL fileURLWithPath:itemPath2];
+    
     NVVideo *video = [[NVVideo alloc] initAVPlayerVideoWithURL:url];
     [video setVideoRect:CGRectMake(0, 0, 0.5, 0.25)];
     [video changeFilter:SZTVR_PIXELATE];
     [self addRenderTarget:video];
 
-    NVVideo *video1 = [[NVVideo alloc] init];
+    NVVideo *video1 = [[NVVideo alloc] initAVPlayerVideoWithURL:url];
     [video1 setVideoRect:CGRectMake(0.0, 0.25, 1.0, 0.25)];
     [video1 changeFilter:SZTVR_POLKADOT];
     [self addRenderTarget:video1];
-    
-    NVVideo *video2 = [[NVVideo alloc] init];
-    [video2 setVideoRect:CGRectMake(0.0, 0.5, 0.3, 0.25)];
-    [video2 changeFilter:SZTVR_NORMAL];
-    [self addRenderTarget:video2];
-    
-    NVVideo *video3 = [[NVVideo alloc] init];
-    [video3 setVideoRect:CGRectMake(0.0, 0.75, 1.0, 0.25)];
-    [video3 changeFilter:SZTVR_BLUR];
-    [self addRenderTarget:video3];
     
     NVVideo *video4 = [[NVVideo alloc] initAVPlayerVideoWithURL:url];
     [video4 setVideoRect:CGRectMake(0.5, 0, 0.5, 0.25)];
     [video4 changeFilter:SZTVR_LUMINANCE];
     [self addRenderTarget:video4];
     
-    NVVideo *video5 = [[NVVideo alloc] initAVPlayerVideoWithURL:url];
-    [video5 setVideoRect:CGRectMake(0.3, 0.5, 0.7, 0.25)];
-    [video5 changeFilter:SZTVR_GLASSSPHERE];
-    [self addRenderTarget:video5];
+    NVVideo *video2 = [[NVVideo alloc] initAVPlayerVideoWithURL:url1];
+    [video2 setVideoRect:CGRectMake(0.0, 0.5, 0.5, 0.5)];
+    [video2 changeFilter:SZTVR_NORMAL];
+    [self addRenderTarget:video2];
+    
+    NVVideo *video3 = [[NVVideo alloc] initAVPlayerVideoWithURL:url2];
+    [video3 setVideoRect:CGRectMake(0.5, 0.5, 0.5, 0.5)];
+    [video3 changeFilter:SZTVR_NORMAL];
+    [self addRenderTarget:video3];
 }
 
 - (void)initUI
