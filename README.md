@@ -50,7 +50,7 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
 };
 
 ```
-See [BitmapPlayerViewController.m](https://github.com/ashqal/MD360Player4iOS/blob/master/MD360Player4iOS/BitmapPlayerViewController.m)
+See [MainViewController.m](https://github.com/ashqal/MD360Player4iOS/blob/master/MD360Player4iOS/BitmapPlayerViewController.m)
 
 ## Reference
 * [360VR](https://github.com/szt243660543/360VR)
