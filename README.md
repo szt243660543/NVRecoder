@@ -27,8 +27,8 @@ It is a lite library to render multiple videos and recoder a new video.
  
     // create video object
     NVVideo *video = [[NVVideo alloc] initAVPlayerVideoWithURL:url];
-    // set video size to screen
-    [video setVideoRect:CGRectMake(0, 0, 1.0, 1.0)];
+    video.frame = CGRectMake(0.0, 0.0, 375.0, 667.0);
+    video.contentMode = NVModeScaleAspectFill;
     // set filter
     [video changeFilter:SZTVR_PIXELATE];
     // add to render scene
@@ -37,7 +37,8 @@ It is a lite library to render multiple videos and recoder a new video.
     
     // create camera object
     NVCamera *camera = [[NVCamera alloc] initWithDevicePosition:CAMERA_BACK];
-    [camera setVideoRect:CGRectMake(0.5, 0.5, 0.5, 0.5)];
+    [camera setVideoRect:CGRectMake(0.0, 0.0, 375.0, 667.0)];
+    camera.contentMode = NVModeScaleAspectFill;
     [camera changeFilter:SZTVR_NORMAL];
     [self addRenderTarget:camera];
 }
@@ -75,6 +76,11 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
     SZTVR_GAMMA,            // 伽马线
     SZTVR_GLASSSPHERE,      // 水晶球效果
     SZTVR_CROSSHATCH,       // 法线交叉线
+};
+
+typedef NS_ENUM(NSInteger, NVContentMode) {
+    NVModeScaleToFill,       // 填充
+    NVModeScaleAspectFill,   // 从中间自适应填充
 };
 
 ```
