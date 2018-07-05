@@ -37,7 +37,7 @@ It is a lite library to render multiple videos and recoder a new video.
     
     // create camera object
     NVCamera *camera = [[NVCamera alloc] initWithDevicePosition:CAMERA_BACK];
-    [camera setVideoRect:CGRectMake(0.0, 0.0, 375.0, 667.0)];
+    camera.frame = CGRectMake(0.0, 0.0, 375.0, 667.0);
     camera.contentMode = NVModeScaleAspectFill;
     [camera changeFilter:SZTVR_NORMAL];
     [self addRenderTarget:camera];
