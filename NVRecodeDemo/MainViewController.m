@@ -33,37 +33,28 @@
     NSString *itemPath1 = [[NSBundle mainBundle] pathForResource:@"AR1" ofType:@".mp4"];
     NSURL *url1 = [NSURL fileURLWithPath:itemPath1];
     
-//    NSString *itemPath2 = [[NSBundle mainBundle] pathForResource:@"AR2" ofType:@".mp4"];
-//    NSURL *url2 = [NSURL fileURLWithPath:itemPath2];
-    
-    NVVideo *video = [[NVVideo alloc] initAVPlayerVideoWithURL:url];
-    [video setVideoRect:CGRectMake(0, 0, 1.0, 0.25)];
+    NVVideo *video = [[NVVideo alloc] initAVPlayerVideoWithURL:url1];
+    video.frame = CGRectMake(0.0, 0.0, 100, 200);
+    video.contentMode = NVModeScaleAspectFill;
     [video changeFilter:SZTVR_NORMAL];
     [self addRenderTarget:video];
 
     NVVideo *video1 = [[NVVideo alloc] initAVPlayerVideoWithURL:url];
-    [video1 setVideoRect:CGRectMake(0.0, 0.25, 1.0, 0.25)];
-    [video1 changeFilter:SZTVR_POLKADOT];
+    video1.frame = CGRectMake(100.0, 0.0, 275.0, 200.0);
+    video1.contentMode = NVModeScaleAspectFill;
+    [video1 changeFilter:SZTVR_NORMAL];
     [self addRenderTarget:video1];
     
-//    NVVideo *video4 = [[NVVideo alloc] initAVPlayerVideoWithURL:url];
-//    [video4 setVideoRect:CGRectMake(0.5, 0, 0.5, 0.25)];
-//    [video4 changeFilter:SZTVR_LUMINANCE];
-//    [self addRenderTarget:video4];
-    
-    NVVideo *video2 = [[NVVideo alloc] initAVPlayerVideoWithURL:url1];
-    [video2 setVideoRect:CGRectMake(0.0, 0.5, 0.5, 0.5)];
-    [video2 changeFilter:SZTVR_NORMAL];
+    NVVideo *video2 = [[NVVideo alloc] initAVPlayerVideoWithURL:url];
+    video2.frame = CGRectMake(0.0, 667.0 - 190.0, 375.0, 190.0);
+    video2.contentMode = NVModeScaleAspectFill;
+    [video2 changeFilter:SZTVR_LUMINANCE];
     [self addRenderTarget:video2];
-    
-//    NVVideo *video3 = [[NVVideo alloc] initAVPlayerVideoWithURL:url2];
-//    [video3 setVideoRect:CGRectMake(0.5, 0.5, 0.5, 0.5)];
-//    [video3 changeFilter:SZTVR_NORMAL];
-//    [self addRenderTarget:video3];
     
     // add camera
     NVCamera *camera = [[NVCamera alloc] initWithDevicePosition:CAMERA_BACK];
-    [camera setVideoRect:CGRectMake(0.5, 0.5, 0.5, 0.5)];
+    camera.contentMode = NVModeScaleAspectFill;
+    camera.frame = CGRectMake(0.0, 210.0, 375.0, 265.0);
     [camera changeFilter:SZTVR_NORMAL];
     [self addRenderTarget:camera];
 }

@@ -33,10 +33,11 @@
 		0482F7D120E52F1800DB4D19 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 0482F7B120E52F1700DB4D19 /* Shader.fsh */; };
 		0482F7D220E52F1800DB4D19 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 0482F7BA20E52F1700DB4D19 /* Shader.vsh */; };
 		0482F7D620E5C6EF00DB4D19 /* AR1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0482F7D520E5C6EF00DB4D19 /* AR1.mp4 */; };
-		0482F7D820E5C8CD00DB4D19 /* AR2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0482F7D720E5C8CD00DB4D19 /* AR2.mp4 */; };
 		0482F7DE20E5E7D900DB4D19 /* DeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F7DB20E5E7D900DB4D19 /* DeviceManager.m */; };
 		0482F7DF20E5E7D900DB4D19 /* LocalCameraUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F7DD20E5E7D900DB4D19 /* LocalCameraUtil.m */; };
 		0482F7E220E5E8FF00DB4D19 /* NVCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F7E120E5E8FF00DB4D19 /* NVCamera.m */; };
+		0482F7E620E6381D00DB4D19 /* NVObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F7E520E6381D00DB4D19 /* NVObject.m */; };
+		0482F7ED20E63B3000DB4D19 /* NVGLCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F7EC20E63B3000DB4D19 /* NVGLCamera.m */; };
 		3DDEFCA2159B640C00B4EC41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDEFCA1159B640C00B4EC41 /* UIKit.framework */; };
 		3DDEFCA4159B640C00B4EC41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDEFCA3159B640C00B4EC41 /* Foundation.framework */; };
 		3DDEFCA6159B640C00B4EC41 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDEFCA5159B640C00B4EC41 /* CoreGraphics.framework */; };
@@ -108,13 +109,18 @@
 		0482F7C120E52F1700DB4D19 /* Shader_Emitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader_Emitter.h; sourceTree = "<group>"; };
 		0482F7C220E52F1700DB4D19 /* Shader_Gamma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader_Gamma.h; sourceTree = "<group>"; };
 		0482F7D520E5C6EF00DB4D19 /* AR1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AR1.mp4; sourceTree = "<group>"; };
-		0482F7D720E5C8CD00DB4D19 /* AR2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AR2.mp4; sourceTree = "<group>"; };
 		0482F7DA20E5E7D900DB4D19 /* LocalCameraUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalCameraUtil.h; sourceTree = "<group>"; };
 		0482F7DB20E5E7D900DB4D19 /* DeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceManager.m; sourceTree = "<group>"; };
 		0482F7DC20E5E7D900DB4D19 /* DeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceManager.h; sourceTree = "<group>"; };
 		0482F7DD20E5E7D900DB4D19 /* LocalCameraUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalCameraUtil.m; sourceTree = "<group>"; };
 		0482F7E020E5E8FF00DB4D19 /* NVCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NVCamera.h; sourceTree = "<group>"; };
 		0482F7E120E5E8FF00DB4D19 /* NVCamera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NVCamera.m; sourceTree = "<group>"; };
+		0482F7E420E6381D00DB4D19 /* NVObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NVObject.h; sourceTree = "<group>"; };
+		0482F7E520E6381D00DB4D19 /* NVObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NVObject.m; sourceTree = "<group>"; };
+		0482F7EB20E63B3000DB4D19 /* NVGLCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NVGLCamera.h; sourceTree = "<group>"; };
+		0482F7EC20E63B3000DB4D19 /* NVGLCamera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NVGLCamera.m; sourceTree = "<group>"; };
+		0482F7EE20E63B4900DB4D19 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		0482F7F020E65D5F00DB4D19 /* NVVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVVector.h; sourceTree = "<group>"; };
 		3DDEFC9D159B640C00B4EC41 /* NVRecodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NVRecodeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DDEFCA1159B640C00B4EC41 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3DDEFCA3159B640C00B4EC41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -155,11 +161,11 @@
 		0482F78D20E52F1700DB4D19 /* NVRender */ = {
 			isa = PBXGroup;
 			children = (
-				0482F78E20E52F1700DB4D19 /* UI */,
-				0482F79320E52F1700DB4D19 /* NVRecord.m */,
 				0482F79420E52F1700DB4D19 /* VIMVideoPlayer */,
-				0482F79920E52F1700DB4D19 /* Render */,
+				0482F78E20E52F1700DB4D19 /* UI */,
 				0482F7AC20E52F1700DB4D19 /* NVRecord.h */,
+				0482F79320E52F1700DB4D19 /* NVRecord.m */,
+				0482F79920E52F1700DB4D19 /* Render */,
 				0482F7AD20E52F1700DB4D19 /* Shaders */,
 			);
 			path = NVRender;
@@ -174,6 +180,8 @@
 				0482F7E120E5E8FF00DB4D19 /* NVCamera.m */,
 				0482F79020E52F1700DB4D19 /* NVRenderObject.h */,
 				0482F79220E52F1700DB4D19 /* NVRenderObject.m */,
+				0482F7E420E6381D00DB4D19 /* NVObject.h */,
+				0482F7E520E6381D00DB4D19 /* NVObject.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -192,28 +200,32 @@
 		0482F79920E52F1700DB4D19 /* Render */ = {
 			isa = PBXGroup;
 			children = (
-				0482F79B20E52F1700DB4D19 /* SZTVideoData.h */,
-				0482F79C20E52F1700DB4D19 /* GLUtils.h */,
+				0482F7F020E65D5F00DB4D19 /* NVVector.h */,
+				0482F7A720E52F1700DB4D19 /* NVViewController.h */,
 				0482F79D20E52F1700DB4D19 /* NVViewController.m */,
-				0482F79E20E52F1700DB4D19 /* NVProgram.m */,
-				0482F79F20E52F1700DB4D19 /* NVDrawShape.h */,
+				0482F7EB20E63B3000DB4D19 /* NVGLCamera.h */,
+				0482F7EC20E63B3000DB4D19 /* NVGLCamera.m */,
 				0482F7A020E52F1700DB4D19 /* NVFbo.h */,
-				0482F7A220E52F1700DB4D19 /* NVPlane.h */,
+				0482F7AA20E52F1700DB4D19 /* NVFbo.m */,
+				0482F79F20E52F1700DB4D19 /* NVDrawShape.h */,
+				0482F7AB20E52F1700DB4D19 /* NVDrawShape.m */,
+				0482F79C20E52F1700DB4D19 /* GLUtils.h */,
 				0482F7A320E52F1700DB4D19 /* GLUtils.m */,
 				0482F7A520E52F1700DB4D19 /* SZTTexture.h */,
 				0482F79A20E52F1700DB4D19 /* SZTTexture.m */,
-				0482F7A420E52F1700DB4D19 /* SZTVideoData.m */,
 				0482F7A620E52F1700DB4D19 /* NVProgram.h */,
-				0482F7A720E52F1700DB4D19 /* NVViewController.h */,
+				0482F79E20E52F1700DB4D19 /* NVProgram.m */,
+				0482F7A220E52F1700DB4D19 /* NVPlane.h */,
 				0482F7A820E52F1700DB4D19 /* NVPlane.m */,
 				0482F7A920E52F1700DB4D19 /* SZTVideoTexture.h */,
 				0482F7A120E52F1700DB4D19 /* SZTVideoTexture.m */,
-				0482F7AA20E52F1700DB4D19 /* NVFbo.m */,
-				0482F7AB20E52F1700DB4D19 /* NVDrawShape.m */,
+				0482F79B20E52F1700DB4D19 /* SZTVideoData.h */,
+				0482F7A420E52F1700DB4D19 /* SZTVideoData.m */,
 				0482F7DC20E5E7D900DB4D19 /* DeviceManager.h */,
 				0482F7DB20E5E7D900DB4D19 /* DeviceManager.m */,
 				0482F7DA20E5E7D900DB4D19 /* LocalCameraUtil.h */,
 				0482F7DD20E5E7D900DB4D19 /* LocalCameraUtil.m */,
+				0482F7EE20E63B4900DB4D19 /* Singleton.h */,
 			);
 			path = Render;
 			sourceTree = "<group>";
@@ -298,7 +310,6 @@
 		3DDEFCAC159B640C00B4EC41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0482F7D720E5C8CD00DB4D19 /* AR2.mp4 */,
 				0482F7D520E5C6EF00DB4D19 /* AR1.mp4 */,
 				0482F6F720E4F73F00DB4D19 /* videoinfo0.mp4 */,
 				3DDEFCAD159B640C00B4EC41 /* NVRecodeDemo-Info.plist */,
@@ -367,7 +378,6 @@
 				0482F7D120E52F1800DB4D19 /* Shader.fsh in Resources */,
 				0482F6F820E4F73F00DB4D19 /* videoinfo0.mp4 in Resources */,
 				0482F7D620E5C6EF00DB4D19 /* AR1.mp4 in Resources */,
-				0482F7D820E5C8CD00DB4D19 /* AR2.mp4 in Resources */,
 				3DDEFCB0159B640C00B4EC41 /* InfoPlist.strings in Resources */,
 				0482F7D220E52F1800DB4D19 /* Shader.vsh in Resources */,
 			);
@@ -385,6 +395,7 @@
 				0482F7E220E5E8FF00DB4D19 /* NVCamera.m in Sources */,
 				0482F7CE20E52F1800DB4D19 /* NVPlane.m in Sources */,
 				3DDEFCB2159B640C00B4EC41 /* main.m in Sources */,
+				0482F7E620E6381D00DB4D19 /* NVObject.m in Sources */,
 				0482F7C720E52F1800DB4D19 /* VIMVideoPlayerView.m in Sources */,
 				0482F7C420E52F1800DB4D19 /* NVRenderObject.m in Sources */,
 				0482F78C20E51CE100DB4D19 /* MainViewController.m in Sources */,
@@ -400,6 +411,7 @@
 				0482F7C320E52F1800DB4D19 /* NVVideo.m in Sources */,
 				0482F7CC20E52F1800DB4D19 /* GLUtils.m in Sources */,
 				0482F7DF20E5E7D900DB4D19 /* LocalCameraUtil.m in Sources */,
+				0482F7ED20E63B3000DB4D19 /* NVGLCamera.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

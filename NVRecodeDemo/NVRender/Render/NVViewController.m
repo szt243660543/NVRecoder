@@ -14,6 +14,7 @@
 #import "NVVideo.h"
 #import "GLUtils.h"
 #import "Shader_Normal.h"
+#import "NVGLCamera.h"
 
 @interface NVViewController()
 {
@@ -45,6 +46,8 @@
     [self setupContext];
 
     [self setupGL];
+    
+    [[NVGLCamera sharedNVGLCamera] setupMatrix];
 }
 
 - (void)setupContext

@@ -5,7 +5,7 @@
 //  Created by Mac on 2018/6/28.
 //
 
-#import <Foundation/Foundation.h>
+#import "NVObject.h"
 #import "NVProgram.h"
 #import "NVDrawShape.h"
 
@@ -24,9 +24,13 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
     SZTVR_CROSSHATCH,       // 法线交叉线
 };
 
-@interface NVRenderObject : NSObject
 
-- (void)setShapeObject:(CGRect)rect;
+typedef NS_ENUM(NSInteger, NVContentMode) {
+    NVModeScaleToFill,       // 填充
+    NVModeScaleAspectFill,   // 从中间自适应填充
+};
+
+@interface NVRenderObject : NVObject
 
 - (void)render;
 
@@ -44,6 +48,10 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
 @property(nonatomic, strong)NVDrawShape *shape;
 
 @property(nonatomic, assign)SZTFilterMode filterMode;
+
+@property(nonatomic, assign)NVContentMode contentMode;
+
+@property(nonatomic, assign)CGSize videoSize;
 
 #pragma mark - SZTVideoFilter property
 // SZTVR_PIXELATE 模式

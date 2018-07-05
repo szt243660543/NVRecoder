@@ -26,12 +26,6 @@
  */
 - (instancetype)initAVPlayerVideoWithURL:(NSURL *)url;
 
-/**
- * 全屏 rect {0,0,1,1}
- * 宽高最大为1，取0~1之间
- */
-- (void)setVideoRect:(CGRect)rect;
-
 #pragma mark video player属性
 @property(nonatomic, assign)float duration;
 

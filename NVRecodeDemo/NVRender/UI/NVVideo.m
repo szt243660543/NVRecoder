@@ -11,8 +11,8 @@
 
 @interface NVVideo()<VIMVideoPlayerDelegate>
 {
-    SZTTexture * _texture;
-    BOOL _isPrepareToPlay;
+    SZTTexture  *_texture;
+    BOOL        _isPrepareToPlay;
 }
 
 @property(nonatomic , assign)NSURL *url;
@@ -48,6 +48,18 @@
     [self.avPlayer setPlayerItem:playerItem];
     [self.avPlayer play];
     
+    AVAsset *asset = [AVAsset assetWithURL:url];
+    NSArray *array = asset.tracks;
+    CGSize videoSize = CGSizeZero;
+    
+    for (AVAssetTrack *track in array) {
+        if ([track.mediaType isEqualToString:AVMediaTypeVideo]) {
+            videoSize = track.naturalSize;
+        }
+    }
+    
+    self.videoSize = videoSize;
+    
     [self setupVideoPlayerItem:playerItem];
 }
 
@@ -55,11 +67,6 @@
 {
     SZTVideoTexture *videoTexture = [[SZTVideoTexture alloc] init];
     _texture = [videoTexture createWithAVPlayerItem:playerItem];
-}
-
-- (void)setVideoRect:(CGRect)rect
-{
-    [self setShapeObject:rect];
 }
 
 - (void)updateTexture

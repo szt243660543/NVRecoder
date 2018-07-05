@@ -9,6 +9,6 @@
 
 @interface NVPlane : NVDrawShape
 
-- (instancetype)initWithRect:(CGRect)rect;
+- (instancetype)initWithRect:(CGSize)size contentMode:(int)mode size:(CGSize)videoSize;
 
 @end

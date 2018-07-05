@@ -9,10 +9,11 @@
 #import "NVPlane.h"
 #import "Shader.h"
 #import "GLUtils.h"
+#import "NVGLCamera.h"
 
 @interface NVRenderObject ()
 {
-    GLuint texId;
+    
 }
 
 @end
@@ -24,29 +25,36 @@
     self = [super init];
     
     if (self) {
-        [self setupProgram];
-        
-        // 默认
-        [self setShapeObject:CGRectMake(0, 0, 1.0, 1.0)];
+        [self changeFilter:SZTVR_NORMAL];
     }
     
     return self;
 }
 
-- (void)setupProgram
-{
-    [self changeFilter:SZTVR_NORMAL];
-}
-
-- (void)setShapeObject:(CGRect)rect
+- (void)setShapeObject:(CGSize)size
 {
     if (self.shape) {
         [self.shape destroy];
         self.shape = nil;
     }
     
-    NVPlane *plane = [[NVPlane alloc] initWithRect:rect];
+    int nmode = self.contentMode?self.contentMode:0;
+    NVPlane *plane = [[NVPlane alloc] initWithRect:size contentMode:nmode size:self.videoSize];
     self.shape = plane;
+}
+
+- (void)setFrame:(CGRect)frame
+{
+    [super setFrame:frame];
+    
+    [self setShapeObject:frame.size];
+}
+
+- (void)setContentMode:(NVContentMode)contentMode
+{
+    _contentMode = contentMode;
+    
+    [self setShapeObject:self.frame.size];
 }
 
 - (void)changeFilter:(SZTFilterMode)filterMode
@@ -172,9 +180,15 @@
     
     [self setupFilterMode];
     
-    glUniformMatrix4fv(self.program.mvp, 1, 0, GLKMatrix4Identity.m);
+    [self setMvpMatrix];
     
     [self drawElements];
+}
+
+- (void)setMvpMatrix
+{
+    GLKMatrix4 mvp = GLKMatrix4Multiply([NVGLCamera sharedNVGLCamera].mModelViewProjectionMatrix, self.mModelMatrix);
+    glUniformMatrix4fv(self.program.mvp, 1, 0, mvp.m);
 }
 
 - (void)drawElements

@@ -31,6 +31,8 @@
 {
     self.camera = [[LocalCameraUtil alloc] initWithDevicePosition:camera];
     [self.camera startRunning];
+    
+    self.videoSize = CGSizeMake(1080.0, 1920.0);
 }
 
 - (void)startRunning
@@ -41,11 +43,6 @@
 - (void)stopRunning
 {
     [self.camera stopRunning];
-}
-
-- (void)setVideoRect:(CGRect)rect
-{
-    [self setShapeObject:rect];
 }
 
 - (void)updateTexture
