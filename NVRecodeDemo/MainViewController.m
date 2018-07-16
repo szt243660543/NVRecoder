@@ -44,7 +44,7 @@
     video1.contentMode = NVModeScaleAspectFill;
     [video1 changeFilter:SZTVR_NORMAL];
     [self addRenderTarget:video1];
-    
+
     NVVideo *video2 = [[NVVideo alloc] initAVPlayerVideoWithURL:url];
     video2.frame = CGRectMake(0.0, 667.0 - 190.0, 375.0, 190.0);
     video2.contentMode = NVModeScaleAspectFill;
@@ -54,7 +54,9 @@
     // add camera
     NVCamera *camera = [[NVCamera alloc] initWithDevicePosition:CAMERA_BACK];
     camera.contentMode = NVModeScaleAspectFill;
+    camera.scale = NVPosition(0.5, 0.5, 0.5);
     camera.frame = CGRectMake(0.0, 210.0, 375.0, 265.0);
+    camera.rotation = NVPosition(0, 0, 45);
     [camera changeFilter:SZTVR_NORMAL];
     [self addRenderTarget:camera];
 }

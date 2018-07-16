@@ -14,6 +14,10 @@
 @property(nonatomic, assign)CGRect frame;
 
 @property(nonatomic, assign)float z;
+    
+@property(nonatomic, assign)NVVector3f scale;
+    
+@property(nonatomic, assign)NVVector3f rotation;
 
 @property(nonatomic, assign)GLKMatrix4 mModelMatrix;
 

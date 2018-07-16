@@ -29,17 +29,16 @@ NSString *const NormalVertexShaderString = SHADER_STRING
 
 NSString *const NormalFragmentShaderString = SHADER_STRING
 (
-    precision mediump float;
-    uniform sampler2D uSampler;
-    varying lowp vec2 vTexCoord;
- 
-    void main()
-    {
-        vec4 texCol = texture2D(uSampler, vTexCoord);
-    
-        gl_FragColor = texCol;
-    }
-);
+ precision mediump float;
+ uniform sampler2D uSampler;
+ varying lowp vec2 vTexCoord;
 
+ void main()
+ {
+     vec4 texCol = texture2D(uSampler, vTexCoord);
+
+     gl_FragColor = texCol;
+ }
+ );
 
 #endif /* Shader_Normal_h */

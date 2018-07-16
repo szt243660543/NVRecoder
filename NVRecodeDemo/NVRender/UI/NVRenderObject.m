@@ -13,7 +13,8 @@
 
 @interface NVRenderObject ()
 {
-    
+    NSTimeInterval _startTime;
+    double         _lastTime;
 }
 
 @end
@@ -26,6 +27,9 @@
     
     if (self) {
         [self changeFilter:SZTVR_NORMAL];
+        
+        _startTime = [NSDate timeIntervalSinceReferenceDate];
+        _lastTime = 0.0;
     }
     
     return self;
@@ -67,6 +71,9 @@
     
     switch (filterMode) {
         case SZTVR_NORMAL:{
+//            NSString * v_path = [[NSBundle mainBundle] pathForResource:@"Shader.vsh" ofType:nil];
+//            NSString * f_path = [[NSBundle mainBundle] pathForResource:@"Shader.fsh" ofType:nil];
+//            [_program loadShaders:v_path FragShader:f_path isFilePath:YES];
             [_program loadShaders:NormalVertexShaderString FragShader:NormalFragmentShaderString isFilePath:NO];
         }
             break;
@@ -134,6 +141,15 @@
 
 - (void)setupFilterMode
 {
+//    double cur_time = [NSDate timeIntervalSinceReferenceDate];
+//    double time = cur_time - _startTime ;
+//
+//    glUniform1f([self.program uniformIndex:@"uTime"], time);
+//    if(time > 2.0*3.1415)
+//    {
+//        _startTime = cur_time;
+//    }
+    
     if (self.filterMode == SZTVR_PIXELATE) {
         glUniform1f([_program uniformIndex:@"particles"], _particles);
     }

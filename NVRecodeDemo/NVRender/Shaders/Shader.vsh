@@ -17,6 +17,5 @@ void main()
 {
     gl_Position = modelViewProjectionMatrix * position;
     
-    // pass to fragment shader
     vTexCoord = aTexCoord;
 }
