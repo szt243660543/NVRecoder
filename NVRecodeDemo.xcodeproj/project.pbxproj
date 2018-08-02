@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0446CE81210ECD5C00D421A0 /* Stretch.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 0446CE80210ECD5C00D421A0 /* Stretch.fsh */; };
+		0446CE84210EF19400D421A0 /* Symmetry.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 0446CE83210EF19400D421A0 /* Symmetry.fsh */; };
+		0446CE86210F05E200D421A0 /* Bulge.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 0446CE85210F05E200D421A0 /* Bulge.fsh */; };
+		0446CE88210F16DD00D421A0 /* DY_shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 0446CE87210F16DD00D421A0 /* DY_shader.fsh */; };
 		044726F720DE2DB400972FD5 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044726F620DE2DB400972FD5 /* CoreVideo.framework */; };
 		044726F920DE341700972FD5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044726F820DE341700972FD5 /* AVFoundation.framework */; };
 		044726FB20DE341D00972FD5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044726FA20DE341D00972FD5 /* AssetsLibrary.framework */; };
 		044726FD20DE344A00972FD5 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044726FC20DE344900972FD5 /* CoreFoundation.framework */; };
 		044726FF20DE348000972FD5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044726FE20DE348000972FD5 /* CoreMedia.framework */; };
 		0447270420DE4E1B00972FD5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0447270320DE4E1B00972FD5 /* QuartzCore.framework */; };
+		044D42392109B55000A339EC /* BeautyFilter.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 044D42372109B55000A339EC /* BeautyFilter.fsh */; };
 		0482F6F620E4F2CA00DB4D19 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0482F6F520E4F2CA00DB4D19 /* ImageIO.framework */; };
 		0482F6F820E4F73F00DB4D19 /* videoinfo0.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0482F6F720E4F73F00DB4D19 /* videoinfo0.mp4 */; };
 		0482F78C20E51CE100DB4D19 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F78B20E51CE100DB4D19 /* MainViewController.m */; };
@@ -38,6 +43,11 @@
 		0482F7E220E5E8FF00DB4D19 /* NVCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F7E120E5E8FF00DB4D19 /* NVCamera.m */; };
 		0482F7E620E6381D00DB4D19 /* NVObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F7E520E6381D00DB4D19 /* NVObject.m */; };
 		0482F7ED20E63B3000DB4D19 /* NVGLCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F7EC20E63B3000DB4D19 /* NVGLCamera.m */; };
+		04DB88DA2112F17C00852619 /* Filter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04DB88D92112F17C00852619 /* Filter.bundle */; };
+		04DB88DD2112F1F800852619 /* CIFilter+LUT.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DB88DB2112F1F600852619 /* CIFilter+LUT.m */; };
+		04DB88DF2112F25300852619 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DB88DE2112F25200852619 /* CoreImage.framework */; };
+		04DB88E12112F2E200852619 /* download.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04DB88E02112F2E200852619 /* download.jpg */; };
+		04DB88E4211306A900852619 /* NVFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DB88E3211306A900852619 /* NVFilter.m */; };
 		3DDEFCA2159B640C00B4EC41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDEFCA1159B640C00B4EC41 /* UIKit.framework */; };
 		3DDEFCA4159B640C00B4EC41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDEFCA3159B640C00B4EC41 /* Foundation.framework */; };
 		3DDEFCA6159B640C00B4EC41 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDEFCA5159B640C00B4EC41 /* CoreGraphics.framework */; };
@@ -49,12 +59,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0446CE80210ECD5C00D421A0 /* Stretch.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Stretch.fsh; sourceTree = "<group>"; };
+		0446CE83210EF19400D421A0 /* Symmetry.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Symmetry.fsh; sourceTree = "<group>"; };
+		0446CE85210F05E200D421A0 /* Bulge.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Bulge.fsh; sourceTree = "<group>"; };
+		0446CE87210F16DD00D421A0 /* DY_shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = DY_shader.fsh; sourceTree = "<group>"; };
 		044726F620DE2DB400972FD5 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		044726F820DE341700972FD5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		044726FA20DE341D00972FD5 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		044726FC20DE344900972FD5 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		044726FE20DE348000972FD5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		0447270320DE4E1B00972FD5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		044D42372109B55000A339EC /* BeautyFilter.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = BeautyFilter.fsh; sourceTree = "<group>"; };
 		0482F6F520E4F2CA00DB4D19 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		0482F6F720E4F73F00DB4D19 /* videoinfo0.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoinfo0.mp4; sourceTree = "<group>"; };
 		0482F78A20E51CE100DB4D19 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -121,6 +136,13 @@
 		0482F7EC20E63B3000DB4D19 /* NVGLCamera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NVGLCamera.m; sourceTree = "<group>"; };
 		0482F7EE20E63B4900DB4D19 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		0482F7F020E65D5F00DB4D19 /* NVVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVVector.h; sourceTree = "<group>"; };
+		04DB88D92112F17C00852619 /* Filter.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Filter.bundle; sourceTree = "<group>"; };
+		04DB88DB2112F1F600852619 /* CIFilter+LUT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CIFilter+LUT.m"; sourceTree = "<group>"; };
+		04DB88DC2112F1F800852619 /* CIFilter+LUT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CIFilter+LUT.h"; sourceTree = "<group>"; };
+		04DB88DE2112F25200852619 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		04DB88E02112F2E200852619 /* download.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpg; sourceTree = "<group>"; };
+		04DB88E2211306A900852619 /* NVFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NVFilter.h; sourceTree = "<group>"; };
+		04DB88E3211306A900852619 /* NVFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NVFilter.m; sourceTree = "<group>"; };
 		3DDEFC9D159B640C00B4EC41 /* NVRecodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NVRecodeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DDEFCA1159B640C00B4EC41 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3DDEFCA3159B640C00B4EC41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -140,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DB88DF2112F25300852619 /* CoreImage.framework in Frameworks */,
 				0482F6F620E4F2CA00DB4D19 /* ImageIO.framework in Frameworks */,
 				0447270420DE4E1B00972FD5 /* QuartzCore.framework in Frameworks */,
 				044726FF20DE348000972FD5 /* CoreMedia.framework in Frameworks */,
@@ -226,6 +249,8 @@
 				0482F7DA20E5E7D900DB4D19 /* LocalCameraUtil.h */,
 				0482F7DD20E5E7D900DB4D19 /* LocalCameraUtil.m */,
 				0482F7EE20E63B4900DB4D19 /* Singleton.h */,
+				04DB88E2211306A900852619 /* NVFilter.h */,
+				04DB88E3211306A900852619 /* NVFilter.m */,
 			);
 			path = Render;
 			sourceTree = "<group>";
@@ -236,8 +261,13 @@
 				0482F7AE20E52F1700DB4D19 /* Shader_Crosshatch.h */,
 				0482F7AF20E52F1700DB4D19 /* Shader_Pixelate.h */,
 				0482F7B020E52F1700DB4D19 /* Shader.h */,
-				0482F7B120E52F1700DB4D19 /* Shader.fsh */,
 				0482F7BA20E52F1700DB4D19 /* Shader.vsh */,
+				0482F7B120E52F1700DB4D19 /* Shader.fsh */,
+				044D42372109B55000A339EC /* BeautyFilter.fsh */,
+				0446CE80210ECD5C00D421A0 /* Stretch.fsh */,
+				0446CE83210EF19400D421A0 /* Symmetry.fsh */,
+				0446CE85210F05E200D421A0 /* Bulge.fsh */,
+				0446CE87210F16DD00D421A0 /* DY_shader.fsh */,
 				0482F7B220E52F1700DB4D19 /* Shader_Hue.h */,
 				0482F7B320E52F1700DB4D19 /* Shader_YUV420.h */,
 				0482F7B420E52F1700DB4D19 /* Shader_Blur.h */,
@@ -278,6 +308,7 @@
 		3DDEFCA0159B640C00B4EC41 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04DB88DE2112F25200852619 /* CoreImage.framework */,
 				0482F6F520E4F2CA00DB4D19 /* ImageIO.framework */,
 				0447270320DE4E1B00972FD5 /* QuartzCore.framework */,
 				044726FE20DE348000972FD5 /* CoreMedia.framework */,
@@ -297,11 +328,15 @@
 		3DDEFCAB159B640C00B4EC41 /* NVRecodeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				04DB88D92112F17C00852619 /* Filter.bundle */,
 				0482F78D20E52F1700DB4D19 /* NVRender */,
 				3DDEFCB4159B640C00B4EC41 /* AppDelegate.h */,
 				3DDEFCB5159B640C00B4EC41 /* AppDelegate.m */,
 				0482F78A20E51CE100DB4D19 /* MainViewController.h */,
 				0482F78B20E51CE100DB4D19 /* MainViewController.m */,
+				04DB88DC2112F1F800852619 /* CIFilter+LUT.h */,
+				04DB88DB2112F1F600852619 /* CIFilter+LUT.m */,
+				04DB88E02112F2E200852619 /* download.jpg */,
 				3DDEFCAC159B640C00B4EC41 /* Supporting Files */,
 			);
 			path = NVRecodeDemo;
@@ -375,11 +410,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DB88DA2112F17C00852619 /* Filter.bundle in Resources */,
 				0482F7D120E52F1800DB4D19 /* Shader.fsh in Resources */,
+				0446CE81210ECD5C00D421A0 /* Stretch.fsh in Resources */,
 				0482F6F820E4F73F00DB4D19 /* videoinfo0.mp4 in Resources */,
+				0446CE88210F16DD00D421A0 /* DY_shader.fsh in Resources */,
 				0482F7D620E5C6EF00DB4D19 /* AR1.mp4 in Resources */,
 				3DDEFCB0159B640C00B4EC41 /* InfoPlist.strings in Resources */,
+				04DB88E12112F2E200852619 /* download.jpg in Resources */,
 				0482F7D220E52F1800DB4D19 /* Shader.vsh in Resources */,
+				044D42392109B55000A339EC /* BeautyFilter.fsh in Resources */,
+				0446CE86210F05E200D421A0 /* Bulge.fsh in Resources */,
+				0446CE84210EF19400D421A0 /* Symmetry.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,7 +447,9 @@
 				0482F7C520E52F1800DB4D19 /* NVRecord.m in Sources */,
 				0482F7C820E52F1800DB4D19 /* SZTTexture.m in Sources */,
 				0482F7C920E52F1800DB4D19 /* NVViewController.m in Sources */,
+				04DB88E4211306A900852619 /* NVFilter.m in Sources */,
 				0482F7DE20E5E7D900DB4D19 /* DeviceManager.m in Sources */,
+				04DB88DD2112F1F800852619 /* CIFilter+LUT.m in Sources */,
 				0482F7CA20E52F1800DB4D19 /* NVProgram.m in Sources */,
 				0482F7CF20E52F1800DB4D19 /* NVFbo.m in Sources */,
 				0482F7C320E52F1800DB4D19 /* NVVideo.m in Sources */,

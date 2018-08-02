@@ -9,6 +9,9 @@
 #import "LocalCameraUtil.h"
 
 @interface NVCamera()
+{
+    
+}
 
 @property(nonatomic, strong)LocalCameraUtil *camera;
 
@@ -21,6 +24,7 @@
     self = [super init];
     
     if (self) {
+        _isFilp = camera == CAMERA_FRONT?YES:NO;
         [self initLocalCamera:camera];
     }
     
@@ -32,7 +36,21 @@
     self.camera = [[LocalCameraUtil alloc] initWithDevicePosition:camera];
     [self.camera startRunning];
     
-    self.videoSize = CGSizeMake(1080.0, 1920.0);
+    self.videoSize = CGSizeMake(720.0, 1280.0);
+}
+
+//- (void)setupFilter
+//{
+//    self.filter = [[NVFilter alloc] init];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"Filter.bundle/Filter_25/fresh_5/fresh_5.png" ofType:nil];
+//    self.filter.coreImageFilter = [CIFilter filterWithLUT:path dimension:64];
+//}
+
+- (void)addCIFilter:(NVFilter *)filter
+{
+    if (self.camera.filter) self.camera.filter = nil;
+
+    self.camera.filter = filter;
 }
 
 - (void)startRunning

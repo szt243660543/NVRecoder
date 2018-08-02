@@ -9,10 +9,16 @@
 #import "NVVideo.h"
 #import "NVRecord.h"
 #import "NVCamera.h"
+#import "CIFilter+LUT.h"
+#import "NVFilter.h"
 
 @interface MainViewController ()<NVRecordDelegate>
 {
     int _recodeTag;
+    
+    NVCamera *camera;
+    
+    NVFilter *filter;
 }
 
 @property(nonatomic, strong)NVRecord *recodeUtil;
@@ -33,6 +39,7 @@
     NSString *itemPath1 = [[NSBundle mainBundle] pathForResource:@"AR1" ofType:@".mp4"];
     NSURL *url1 = [NSURL fileURLWithPath:itemPath1];
     
+    /*
     NVVideo *video = [[NVVideo alloc] initAVPlayerVideoWithURL:url1];
     video.frame = CGRectMake(0.0, 0.0, 100, 200);
     video.contentMode = NVModeScaleAspectFill;
@@ -50,15 +57,70 @@
     video2.contentMode = NVModeScaleAspectFill;
     [video2 changeFilter:SZTVR_LUMINANCE];
     [self addRenderTarget:video2];
+    */
     
     // add camera
-    NVCamera *camera = [[NVCamera alloc] initWithDevicePosition:CAMERA_BACK];
-    camera.contentMode = NVModeScaleAspectFill;
-    camera.scale = NVPosition(0.5, 0.5, 0.5);
-    camera.frame = CGRectMake(0.0, 210.0, 375.0, 265.0);
-    camera.rotation = NVPosition(0, 0, 45);
+    camera = [[NVCamera alloc] initWithDevicePosition:CAMERA_FRONT];
+//    camera.contentMode = NVModeScaleAspectFill;
+    camera.contentMode = NVModeScaleToFill;
+//    camera.scale = NVPosition(0.5, 0.5, 0.5);
+//    camera.frame = CGRectMake(0.0, 210.0, 375.0, 265.0);
+    camera.frame = CGRectMake(0, 0, 375, 667);
     [camera changeFilter:SZTVR_NORMAL];
+    
+//    NVFilter *
+    filter = [[NVFilter alloc] initWithFilterMode:CIVibrance];
+    [filter setValue:[NSNumber numberWithFloat:0.0] forKey:@"inputAmount"];
+    [camera addCIFilter:filter];
     [self addRenderTarget:camera];
+    
+    /*
+    UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake(30, 400, 315, 50)];
+    slider.minimumValue = 1.0;
+    slider.maximumValue = 1.2;
+    [slider addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:slider];
+    
+    UISlider *slider1 = [[UISlider alloc] initWithFrame:CGRectMake(30, 500, 315, 50)];
+    slider1.minimumValue = 0.0;
+    slider1.maximumValue = 1.0;
+    [slider1 addTarget:self action:@selector(sliderValueChangedT:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:slider1];
+    */
+    
+    UISlider *slider2 = [[UISlider alloc] initWithFrame:CGRectMake(30, 600, 315, 50)];
+    slider2.minimumValue = 0.0;
+    slider2.maximumValue = 40.0;
+    [slider2 addTarget:self action:@selector(sliderValueChangedB:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:slider2];
+     
+}
+
+/*
+-(void)sliderValueChanged:(UISlider *)slider
+{
+//    camera.dy_scale = slider.value;
+//    _toneLevel = 0.47;
+//    _beautyLevel = 0.42;
+//    _brightLevel = 0.34;
+    NSLog(@"slider value%f",slider.value);
+    camera.brightLevel = slider.value;
+//    camera.brightLevel = slider.value;
+//    camera.toneLevel = slider.value;
+}
+
+-(void)sliderValueChangedT:(UISlider *)slider
+{
+    NSLog(@"slider value%f",slider.value);
+    camera.toneLevel = slider.value;
+}
+*/
+
+-(void)sliderValueChangedB:(UISlider *)slider
+{
+    NSLog(@"slider value%f",slider.value);
+//    camera.beautyLevel = slider.value;
+    [filter setValue:[NSNumber numberWithFloat:slider.value] forKey:@"inputAmount"];
 }
 
 - (void)initUI

@@ -71,7 +71,8 @@ void generatePlane(CGSize size, NVDrawShape* object3D, int mode, CGSize videoSiz
             memcpy(texcoords, ttexcoords, 8*sizeof(float));
         }
     }else{
-        float ttexcoords[8] ={0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f};
+//        float ttexcoords[8] ={0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f};
+        float ttexcoords[8] ={1.0f, 0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f, 1.0f};
         memcpy(texcoords, ttexcoords, 8*sizeof(float));
     }
     

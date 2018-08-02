@@ -9,7 +9,7 @@
 attribute vec4 position;
 attribute vec2 aTexCoord;
 
-varying lowp vec2 vTexCoord;
+varying vec2 vTexCoord;
 
 uniform mat4 modelViewProjectionMatrix;
 

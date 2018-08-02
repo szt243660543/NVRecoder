@@ -11,6 +11,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <OpenGLES/ES2/glext.h>
 #import "SZTTexture.h"
+#import "CIFilter+LUT.h"
 
 @interface LocalCameraUtil() <AVCaptureVideoDataOutputSampleBufferDelegate>
 {
@@ -60,7 +61,7 @@
         self.mCaptureSession = [[AVCaptureSession alloc] init];
         
         // default capture
-        [self setCaptureSessionPreset:SessionPreset1920x1080];
+        [self setCaptureSessionPreset:SessionPreset1280x720];
         
         if (!self.mCaptureSession){
             return NO;
@@ -165,7 +166,13 @@
 }
 
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection {
-    CVImageBufferRef pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
+    // 滤镜 CVPixelBufferRef->CIImage->CIFilter->CIImage->CVPixelBufferRef
+    CVImageBufferRef pixelBuffer = NULL;
+    if (self.filter) {
+        pixelBuffer = [self.filter coreImageHandle:CMSampleBufferGetImageBuffer(sampleBuffer)];
+    }else{
+        pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
+    }
     
     CVPixelBufferLockBaseAddress(pixelBuffer, 0);
     CFRetain(pixelBuffer);

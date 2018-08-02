@@ -22,8 +22,12 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
     SZTVR_GAMMA,            // 伽马线
     SZTVR_GLASSSPHERE,      // 水晶球效果
     SZTVR_CROSSHATCH,       // 法线交叉线
+    //------------特效-------------//
+    BEAUTY_FILTER,          // 美颜 (美白,润色,磨皮)
+    BULGE,                  // 哈哈镜 (凸)
+    STRETCH,                // 拉伸
+    DY_COLOR,               // 抖音效果1
 };
-
 
 typedef NS_ENUM(NSInteger, NVContentMode) {
     NVModeScaleToFill,       // 填充
@@ -31,6 +35,9 @@ typedef NS_ENUM(NSInteger, NVContentMode) {
 };
 
 @interface NVRenderObject : NVObject
+{
+    BOOL _isFilp;
+}
 
 - (void)render;
 
@@ -77,6 +84,29 @@ typedef NS_ENUM(NSInteger, NVContentMode) {
 
 // SZTVR_GAMMA 模式 (0.0 ~ <1.0 变亮 && >1.0 变暗)
 @property(nonatomic ,assign)float gamma;
+
+// BEAUTY_FILTRE
+/** 美颜程度 */
+@property (nonatomic, assign) CGFloat beautyLevel;
+/** 美白程度 */
+@property (nonatomic, assign) CGFloat brightLevel;
+/** 色调强度 */
+@property (nonatomic, assign) CGFloat toneLevel;
+
+// DISTORTING_MIRROR
+/** 影响半径 */
+@property (nonatomic, assign) CGFloat d_radius;
+/** 效果强度 */
+@property (nonatomic, assign) CGFloat d_scale;
+/** 坐标 */
+@property (nonatomic, assign) CGPoint d_center_point;
+@property (nonatomic, assign) CGFloat d_aspectRatio;
+
+// STRETCH
+@property (nonatomic, assign) CGPoint s_center_point;
+
+// DY_COLOR
+@property (nonatomic, assign) CGFloat dy_scale;
 
 // SZTVR_GLASSSPHERE 模式
 @property(nonatomic ,assign)float refractiveIndex;
