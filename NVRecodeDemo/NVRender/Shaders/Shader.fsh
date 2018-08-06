@@ -8,7 +8,7 @@
 
  precision mediump float;
  uniform sampler2D uSampler;
- varying lowp vec2 vTexCoord;
+ varying vec2 vTexCoord;
  uniform float uTime;
 
 // 水波纹1

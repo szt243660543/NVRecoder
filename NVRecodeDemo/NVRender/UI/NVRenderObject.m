@@ -14,7 +14,8 @@
 @interface NVRenderObject ()
 {
     NSTimeInterval _startTime;
-    double         _lastTime;
+    
+    int            _frameIndex;
 }
 
 @end
@@ -29,7 +30,6 @@
         [self changeFilter:SZTVR_NORMAL];
         
         _startTime = [NSDate timeIntervalSinceReferenceDate];
-        _lastTime = 0.0;
     }
     
     return self;
@@ -163,12 +163,50 @@
             _s_center_point = CGPointMake(0.5, 0.5);
         }
             break;
-        case DY_COLOR:{
+        case FAKE3D:{
             NSString * v_path = [[NSBundle mainBundle] pathForResource:@"Shader.vsh" ofType:nil];
-            NSString * f_path = [[NSBundle mainBundle] pathForResource:@"DY_shader.fsh" ofType:nil];
+            NSString * f_path = [[NSBundle mainBundle] pathForResource:@"Fake3D.fsh" ofType:nil];
             [_program loadShaders:v_path FragShader:f_path isFilePath:YES];
             
-            _dy_scale = 1.0;
+            _frameIndex = 0;
+        }
+            break;
+        case SOUL_SCALE:{
+            NSString * v_path = [[NSBundle mainBundle] pathForResource:@"Shader.vsh" ofType:nil];
+            NSString * f_path = [[NSBundle mainBundle] pathForResource:@"Soul_Scale.fsh" ofType:nil];
+            [_program loadShaders:v_path FragShader:f_path isFilePath:YES];
+            
+            _frameIndex = 0;
+        }
+            break;
+        case HALLUCINATION:{
+            NSString * v_path = [[NSBundle mainBundle] pathForResource:@"Shader.vsh" ofType:nil];
+            NSString * f_path = [[NSBundle mainBundle] pathForResource:@"Hallucination.fsh" ofType:nil];
+            [_program loadShaders:v_path FragShader:f_path isFilePath:YES];
+        }
+            break;
+        case MULTICOLOURED:{
+            NSString * v_path = [[NSBundle mainBundle] pathForResource:@"Shader.vsh" ofType:nil];
+            NSString * f_path = [[NSBundle mainBundle] pathForResource:@"Multicoloured.fsh" ofType:nil];
+            [_program loadShaders:v_path FragShader:f_path isFilePath:YES];
+        }
+            break;
+        case OLD_VIDEO:{
+            NSString * v_path = [[NSBundle mainBundle] pathForResource:@"Shader.vsh" ofType:nil];
+            NSString * f_path = [[NSBundle mainBundle] pathForResource:@"OldVideo.fsh" ofType:nil];
+            [_program loadShaders:v_path FragShader:f_path isFilePath:YES];
+        }
+            break;
+        case X_INVERT:{
+            NSString * v_path = [[NSBundle mainBundle] pathForResource:@"Shader.vsh" ofType:nil];
+            NSString * f_path = [[NSBundle mainBundle] pathForResource:@"X_invert.fsh" ofType:nil];
+            [_program loadShaders:v_path FragShader:f_path isFilePath:YES];
+        }
+            break;
+        case EDGE_SHINE:{
+            NSString * v_path = [[NSBundle mainBundle] pathForResource:@"Shader.vsh" ofType:nil];
+            NSString * f_path = [[NSBundle mainBundle] pathForResource:@"EdgeShine.fsh" ofType:nil];
+            [_program loadShaders:v_path FragShader:f_path isFilePath:YES];
         }
             break;
         default:
@@ -178,14 +216,14 @@
 
 - (void)setupFilterMode
 {
-//    double cur_time = [NSDate timeIntervalSinceReferenceDate];
-//    double time = cur_time - _startTime ;
-//
-//    glUniform1f([self.program uniformIndex:@"uTime"], time);
-//    if(time > 2.0*3.1415)
-//    {
-//        _startTime = cur_time;
-//    }
+    double cur_time = [NSDate timeIntervalSinceReferenceDate];
+    double time = cur_time - _startTime ;
+
+    glUniform1f([self.program uniformIndex:@"uTime"], time);
+    if(time > 2.0*3.1415)
+    {
+        _startTime = cur_time;
+    }
     
     if (self.filterMode == SZTVR_PIXELATE) {
         glUniform1f([_program uniformIndex:@"particles"], _particles);
@@ -258,8 +296,83 @@
         glUniform2fv([_program uniformIndex:@"center"] ,1, point);
     }
     
-    if (self.filterMode == DY_COLOR) {
+    if (self.filterMode == FAKE3D) {
+        NSArray * dy_scale = [NSArray arrayWithObjects:
+                                    [NSNumber numberWithFloat:1.0],
+                                    [NSNumber numberWithFloat:1.07],
+                                    [NSNumber numberWithFloat:1.1],
+                                    [NSNumber numberWithFloat:1.13],
+                                    [NSNumber numberWithFloat:1.17],
+                                    [NSNumber numberWithFloat:1.2],
+                                    [NSNumber numberWithFloat:1.2],
+                                    [NSNumber numberWithFloat:1.0],
+                                    [NSNumber numberWithFloat:1.0],
+                                    [NSNumber numberWithFloat:1.0],
+                                    [NSNumber numberWithFloat:1.0],
+                                    [NSNumber numberWithFloat:1.0],
+                                    [NSNumber numberWithFloat:1.0],
+                                    [NSNumber numberWithFloat:1.0],
+                                    [NSNumber numberWithFloat:1.0],
+                                    nil];
+        
+        if (_frameIndex >= dy_scale.count) {
+            _frameIndex = 0;
+        }
+        self.dy_scale = [dy_scale[_frameIndex] floatValue];
+        
         glUniform1f([_program uniformIndex:@"scale"], self.dy_scale);
+        
+        _frameIndex ++;
+    }
+    
+    if (self.filterMode == SOUL_SCALE) {
+        NSArray * mixturePercent = [NSArray arrayWithObjects:
+                                    [NSNumber numberWithFloat:0.411498],
+                                    [NSNumber numberWithFloat:0.340743],
+                                    [NSNumber numberWithFloat:0.283781],
+                                    [NSNumber numberWithFloat:0.237625],
+                                    [NSNumber numberWithFloat:0.199993],
+                                    [NSNumber numberWithFloat:0.169133],
+                                    [NSNumber numberWithFloat:0.143688],
+                                    [NSNumber numberWithFloat:0.122599],
+                                    [NSNumber numberWithFloat:0.037117],
+                                    [NSNumber numberWithFloat:0.028870],
+                                    [NSNumber numberWithFloat:0.022595],
+                                    [NSNumber numberWithFloat:0.017788],
+                                    [NSNumber numberWithFloat:0.010000],
+                                    [NSNumber numberWithFloat:0.010000],
+                                    [NSNumber numberWithFloat:0.010000],
+                                    [NSNumber numberWithFloat:0.010000],
+                                    nil];
+        
+        NSArray * scalePercent = [NSArray arrayWithObjects:
+                                    [NSNumber numberWithFloat:1.084553],
+                                    [NSNumber numberWithFloat:1.173257],
+                                    [NSNumber numberWithFloat:1.266176],
+                                    [NSNumber numberWithFloat:1.363377],
+                                    [NSNumber numberWithFloat:1.464923],
+                                    [NSNumber numberWithFloat:1.570877],
+                                    [NSNumber numberWithFloat:1.681300],
+                                    [NSNumber numberWithFloat:1.796254],
+                                    [NSNumber numberWithFloat:1.915799],
+                                    [NSNumber numberWithFloat:2.039995],
+                                    [NSNumber numberWithFloat:2.168901],
+                                    [NSNumber numberWithFloat:2.302574],
+                                    [NSNumber numberWithFloat:2.302574],
+                                    [NSNumber numberWithFloat:2.302574],
+                                    [NSNumber numberWithFloat:2.302574],
+                                    [NSNumber numberWithFloat:2.302574],
+                                    nil];
+        if (_frameIndex >= mixturePercent.count) {
+            _frameIndex = 0;
+        }
+        
+        self.mixturePercent = [mixturePercent[_frameIndex] floatValue];
+        self.scalePercent = [scalePercent[_frameIndex] floatValue];
+        glUniform1f([_program uniformIndex:@"mixturePercent"], self.mixturePercent);
+        glUniform1f([_program uniformIndex:@"scalePercent"], self.scalePercent);
+        
+        _frameIndex ++;
     }
 }
 

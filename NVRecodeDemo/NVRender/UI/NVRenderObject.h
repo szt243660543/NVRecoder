@@ -26,7 +26,13 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
     BEAUTY_FILTER,          // 美颜 (美白,润色,磨皮)
     BULGE,                  // 哈哈镜 (凸)
     STRETCH,                // 拉伸
-    DY_COLOR,               // 抖音效果1
+    FAKE3D,                 // 抖音抖动
+    SOUL_SCALE,             // 灵魂出窍
+    HALLUCINATION,          // 幻觉
+    MULTICOLOURED,          // 五光十色
+    OLD_VIDEO,              // 老旧视频
+    X_INVERT,               // X光
+    EDGE_SHINE,             // 边缘发光
 };
 
 typedef NS_ENUM(NSInteger, NVContentMode) {
@@ -105,8 +111,13 @@ typedef NS_ENUM(NSInteger, NVContentMode) {
 // STRETCH
 @property (nonatomic, assign) CGPoint s_center_point;
 
-// DY_COLOR
+// FAKE3D
 @property (nonatomic, assign) CGFloat dy_scale;
+
+// SOUL_SCALE
+@property (nonatomic, assign) CGFloat mixturePercent;
+@property (nonatomic, assign) CGFloat scalePercent;
+
 
 // SZTVR_GLASSSPHERE 模式
 @property(nonatomic ,assign)float refractiveIndex;
