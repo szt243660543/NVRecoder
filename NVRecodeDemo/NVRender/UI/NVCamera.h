@@ -6,7 +6,7 @@
 //
 
 #import "NVRenderObject.h"
-#import "NVFilter.h"
+#import "NVCIFilter.h"
 
 typedef NS_ENUM(NSInteger, NVCameraMode) {
     CAMERA_FRONT,           // 前置摄像头
@@ -17,7 +17,7 @@ typedef NS_ENUM(NSInteger, NVCameraMode) {
 
 - (instancetype)initWithDevicePosition:(NVCameraMode)camera;
 
-- (void)addCIFilter:(NVFilter *)filter;
+- (void)addCIFilter:(NVCIFilter *)filter;
 
 - (void)destory;
 

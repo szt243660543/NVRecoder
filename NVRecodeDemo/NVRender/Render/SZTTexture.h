@@ -10,10 +10,8 @@
 
 @interface SZTTexture : NSObject
 {
-    GLuint textures[200];
+    GLuint _textureID;
 }
-
-@property(nonatomic, assign)GLuint textureID;
 
 /**
  * 设置纹理ID
@@ -22,6 +20,8 @@
 - (SZTTexture *)setupTextureWithImage:(UIImage *)image;
 
 - (SZTTexture *)createTextureWithPath:(NSString *)path;
+
+- (void)setTextureID:(GLuint)textureid;
 
 /**
  * 更新纹理
@@ -33,9 +33,6 @@
 - (GLuint)updateTexture:(GLuint)uSamplerLocal ByTextureID:(int)index;
 
 - (CVPixelBufferRef)updateVideoTexture:(EAGLContext *)context;
-
-// 截屏
-- (void)screenShotByIndex:(int)index VideoTag:(int)tag screenDoneblock:(void (^)(NSString *))block;
 
 /**
  * 销毁

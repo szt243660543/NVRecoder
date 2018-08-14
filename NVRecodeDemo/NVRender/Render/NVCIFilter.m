@@ -5,9 +5,9 @@
 //  Created by Mac on 2018/8/2.
 //
 
-#import "NVFilter.h"
+#import "NVCIFilter.h"
 
-@interface NVFilter()
+@interface NVCIFilter()
 {
     CIContext *_coreImageContext;
     CIFilterMode _ciFilter;
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation NVFilter
+@implementation NVCIFilter
 
 - (instancetype)initWithFilterMode:(CIFilterMode)ciFilter
 {

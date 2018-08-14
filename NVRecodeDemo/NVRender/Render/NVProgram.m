@@ -70,6 +70,11 @@
     glUseProgram(self.program);
 }
 
+- (void)defaultProgram
+{
+    glUseProgram(0);
+}
+
 - (void)destory
 {
     if (self.program) {

@@ -42,6 +42,8 @@
  */
 - (void)useProgram;
 
+- (void)defaultProgram;
+
 /**
  * 销毁
  */

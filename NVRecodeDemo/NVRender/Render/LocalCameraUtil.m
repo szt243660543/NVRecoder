@@ -20,6 +20,9 @@
     CVOpenGLESTextureCacheRef _videoTextureCache;
     
     NVCameraMode cameraType;
+    
+    EAGLContext *_glContext;
+    BOOL isLock;
 }
 
 @property (nonatomic , strong) AVCaptureSession *mCaptureSession;
@@ -38,7 +41,9 @@
     self = [super init];
     
     if (self) {
+        isLock = true;
         cameraType = camera;
+        
         [self setupCaptureSession];
         
         [self setupVideoInput];
@@ -118,11 +123,11 @@
         self.mCaptureDeviceOutput = [[AVCaptureVideoDataOutput alloc] init];
         [self.mCaptureDeviceOutput setAlwaysDiscardsLateVideoFrames:YES];
         
-//        [self.mCaptureDeviceOutput setVideoSettings:[NSDictionary dictionaryWithObject:[NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarFullRange] forKey:(id)kCVPixelBufferPixelFormatTypeKey]];
-        
+//      kCVPixelFormatType_420YpCbCr8BiPlanarFullRange
         [self.mCaptureDeviceOutput setVideoSettings:[NSDictionary dictionaryWithObject:[NSNumber numberWithInt:kCVPixelFormatType_32BGRA] forKey:(id)kCVPixelBufferPixelFormatTypeKey]];
         
         mProcessQueue = dispatch_get_main_queue();
+//        mProcessQueue = dispatch_queue_create("mProcessQueue.queue", DISPATCH_QUEUE_SERIAL);
         [self.mCaptureDeviceOutput setSampleBufferDelegate:self queue:mProcessQueue];
         
         if ((success = [self.mCaptureSession canAddOutput:self.mCaptureDeviceOutput])) {
@@ -174,9 +179,17 @@
         pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
     }
     
-    CVPixelBufferLockBaseAddress(pixelBuffer, 0);
-    CFRetain(pixelBuffer);
+    if (_glContext) [EAGLContext setCurrentContext:_glContext];
+    
+    GLuint textureID = [self getTextureid:pixelBuffer];
+    [self.texture setTextureID:textureID];
+    isLock = false;
+}
 
+- (GLuint)getTextureid:(CVPixelBufferRef)pixelBuffer
+{
+    CVPixelBufferLockBaseAddress(pixelBuffer, 0);
+    
     CVReturn err;
     
     size_t width = CVPixelBufferGetWidth(pixelBuffer);
@@ -185,41 +198,41 @@
     if (!_videoTextureCache)
     {
         NSLog(@"No video texture cache");
-        return;
+        return -1;
     }
-
+    
     CVOpenGLESTextureCacheFlush(_videoTextureCache, 0);
     
     CVOpenGLESTextureRef texture = NULL;
     
     err = CVOpenGLESTextureCacheCreateTextureFromImage(kCFAllocatorDefault,
-                                                                 _videoTextureCache,
-                                                                 pixelBuffer,
-                                                                 NULL,
-                                                                 GL_TEXTURE_2D,
-                                                                 GL_RGBA,
-                                                                 (int)width,
-                                                                 (int)height,
-                                                                 GL_BGRA,
-                                                                 GL_UNSIGNED_BYTE,
-                                                                 0,
-                                                                 &texture);
+                                                       _videoTextureCache,
+                                                       pixelBuffer,
+                                                       NULL,
+                                                       GL_TEXTURE_2D,
+                                                       GL_RGBA,
+                                                       (int)width,
+                                                       (int)height,
+                                                       GL_BGRA,
+                                                       GL_UNSIGNED_BYTE,
+                                                       0,
+                                                       &texture);
     
     if (err)
     {
         NSLog(@"Error at CVOpenGLESTextureCacheCreateTextureFromImage %d", err);
     }
     
-    glBindTexture(CVOpenGLESTextureGetTarget(texture), CVOpenGLESTextureGetName(texture));
+    GLuint textureid = CVOpenGLESTextureGetName(texture);
+    glBindTexture(GL_TEXTURE_2D, textureid);
     glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
     glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    glBindTexture(GL_TEXTURE_2D, 0);
     CVPixelBufferUnlockBaseAddress(pixelBuffer, 0);
     
-    CFRelease(pixelBuffer);
-    
-    self.texture.textureID = CVOpenGLESTextureGetName(texture);
-    
     CFRelease(texture);
+    
+    return textureid;
 }
 
 - (CVOpenGLESTextureCacheRef)textureCache
@@ -232,9 +245,16 @@
     return _videoTextureCache;
 }
 
-- (void)uptateTexture:(GLuint)uSamplerLocal
+- (BOOL)uptateTexture:(GLuint)uSamplerLocal
 {
+    if (isLock) return false;
+    
+    if (!_glContext) _glContext = [EAGLContext currentContext];
+    
     [self.texture updateTexture:uSamplerLocal];
+    isLock = true;
+    
+    return true;
 }
 
 - (void)destory

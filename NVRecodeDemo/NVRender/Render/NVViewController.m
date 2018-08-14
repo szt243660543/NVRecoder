@@ -102,7 +102,7 @@
     
     // render FBO tex
     [self renderFBO];
-
+    
     [((GLKView *) self.view) bindDrawable];
 
     [self.fbo render];

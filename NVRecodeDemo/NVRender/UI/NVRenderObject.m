@@ -10,12 +10,16 @@
 #import "Shader.h"
 #import "GLUtils.h"
 #import "NVGLCamera.h"
+#import "NVToneCurveTexture.h"
 
 @interface NVRenderObject ()
 {
     NSTimeInterval _startTime;
     
     int            _frameIndex;
+    
+    // 色调混合纹理
+    NVToneCurveTexture *_toneCurveTexture;
 }
 
 @end
@@ -209,12 +213,30 @@
             [_program loadShaders:v_path FragShader:f_path isFilePath:YES];
         }
             break;
+        case TONE_CURVE:{
+            NSString * v_path = [[NSBundle mainBundle] pathForResource:@"Shader.vsh" ofType:nil];
+            NSString * f_path = [[NSBundle mainBundle] pathForResource:@"ToneCurve.fsh" ofType:nil];
+            [_program loadShaders:v_path FragShader:f_path isFilePath:YES];
+        }
+            break;
         default:
             break;
     }
 }
 
-- (void)setupFilterMode
+- (void)loadACVFileUrl:(NSURL *)curveFileURL
+{
+    if (_toneCurveTexture) {
+        [_toneCurveTexture destory];
+        _toneCurveTexture = nil;
+    }
+    
+    NSData* fileData = [NSData dataWithContentsOfURL:curveFileURL];
+    
+    _toneCurveTexture = [[NVToneCurveTexture alloc] initWithACVData:fileData];
+}
+
+- (void)updateFilterMode
 {
     double cur_time = [NSDate timeIntervalSinceReferenceDate];
     double time = cur_time - _startTime ;
@@ -374,22 +396,27 @@
         
         _frameIndex ++;
     }
+    
+    if (self.filterMode == TONE_CURVE) {
+        [_toneCurveTexture updateTexture:[_program uniformIndex:@"toneCurveTexture"] ByTextureID:1];
+    }
 }
 
 - (void)render
 {
     [self.program useProgram];
-    
+
     [self updateTexture];
+//    if (![self updateTexture]) return;
     
-    [self setupFilterMode];
+    [self updateFilterMode];
     
-    [self setMvpMatrix];
+    [self updateMvpMatrix];
     
     [self drawElements];
 }
 
-- (void)setMvpMatrix
+- (void)updateMvpMatrix
 {
     GLKMatrix4 mvp = GLKMatrix4Multiply([NVGLCamera sharedNVGLCamera].mModelViewProjectionMatrix, self.mModelMatrix);
     glUniformMatrix4fv(self.program.mvp, 1, 0, mvp.m);
@@ -400,9 +427,9 @@
     [self.shape drawElements:self.program];
 }
 
-- (void)updateTexture
+- (BOOL)updateTexture
 {
-
+    return false;
 }
 
 - (void)destory

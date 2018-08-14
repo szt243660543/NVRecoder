@@ -10,7 +10,7 @@
 #import "NVRecord.h"
 #import "NVCamera.h"
 #import "CIFilter+LUT.h"
-#import "NVFilter.h"
+#import "NVCIFilter.h"
 
 @interface MainViewController ()<NVRecordDelegate>
 {
@@ -18,7 +18,7 @@
     
     NVCamera *camera;
     
-    NVFilter *filter;
+    NVCIFilter *filter;
 }
 
 @property(nonatomic, strong)NVRecord *recodeUtil;
@@ -66,10 +66,12 @@
 //    camera.scale = NVPosition(0.5, 0.5, 0.5);
 //    camera.frame = CGRectMake(0.0, 210.0, 375.0, 265.0);
     camera.frame = CGRectMake(0, 0, 375, 667);
-    [camera changeFilter:EDGE_SHINE];
+    [camera changeFilter:TONE_CURVE];
+    NSURL *curver = [[NSBundle mainBundle] URLForResource:@"滤镜_布丁" withExtension:@".acv"];
+    [camera loadACVFileUrl:curver];
     
-//    NVFilter *
-//    filter = [[NVFilter alloc] initWithFilterMode:CIVibrance];
+//    NVCIFilter *
+//    filter = [[NVCIFilter alloc] initWithFilterMode:CIVibrance];
 //    [filter setValue:[NSNumber numberWithFloat:0.0] forKey:@"inputAmount"];
 //    [camera addCIFilter:filter];
     

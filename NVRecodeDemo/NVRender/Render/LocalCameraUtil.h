@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "NVCamera.h"
-#import "NVFilter.h"
+#import "NVCIFilter.h"
 
 typedef NS_ENUM(NSInteger, SZTSessionPreset) {
     SessionPreset640x480,
@@ -27,10 +27,10 @@ typedef NS_ENUM(NSInteger, SZTSessionPreset) {
 
 - (void)stopRunning;
 
-- (void)uptateTexture:(GLuint)uSamplerLocal;
+- (BOOL)uptateTexture:(GLuint)uSamplerLocal;
 
 - (void)destory;
 
-@property(nonatomic , strong) NVFilter *filter;
+@property(nonatomic , strong) NVCIFilter *filter;
 
 @end

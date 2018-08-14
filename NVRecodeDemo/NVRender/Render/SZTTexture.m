@@ -11,6 +11,17 @@
 
 @implementation SZTTexture
 
+- (instancetype)init
+{
+    self = [super init];
+    
+    if (self) {
+        _textureID = -2;
+    }
+    
+    return self;
+}
+
 - (SZTTexture *)setupTextureWithImage:(UIImage *)image
 {
     return self;
@@ -21,26 +32,31 @@
     return self;
 }
 
+- (void)setTextureID:(GLuint)textureid
+{
+    _textureID = textureid;
+}
+
 - (GLuint)updateTexture:(GLuint)uSamplerLocal
 {
     glActiveTexture(GL_TEXTURE0);
     
-    glBindTexture(GL_TEXTURE_2D, self.textureID);
+    glBindTexture(GL_TEXTURE_2D, _textureID);
     
     glUniform1i(uSamplerLocal, 0);
     
-    return self.textureID;
+    return _textureID;
 }
 
 - (GLuint)updateTexture:(GLuint)uSamplerLocal ByTextureID:(int)index
 {
-    glActiveTexture(GL_TEXTURE0);
+    glActiveTexture(GL_TEXTURE0+index);
     
-    glBindTexture(GL_TEXTURE_2D, textures[index]);
+    glBindTexture(GL_TEXTURE_2D, _textureID);
     
-    glUniform1i(uSamplerLocal, 0);
+    glUniform1i(uSamplerLocal, index);
     
-    return textures[index];
+    return _textureID;
 }
 
 - (CVPixelBufferRef)updateVideoTexture:(EAGLContext *)context
@@ -51,17 +67,6 @@
 - (void)destory
 {
     if (_textureID) glDeleteTextures(1, &(_textureID));
-    
-    if (textures) {
-        for (int i = 0; i < 200; i++) {
-            glDeleteTextures(1, &(textures[i]));
-        }
-    }
-}
-
-- (void)screenShotByIndex:(int)index VideoTag:(int)tag screenDoneblock:(void (^)(NSString *))block;
-{
-    
 }
 
 - (void)dealloc

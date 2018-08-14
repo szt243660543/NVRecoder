@@ -69,15 +69,15 @@
     _texture = [videoTexture createWithAVPlayerItem:playerItem];
 }
 
-- (void)updateTexture
-{
+- (BOOL)updateTexture
+{    
     CVPixelBufferRef pixelBufferRef = [_texture updateVideoTexture:[EAGLContext currentContext]];
     
     [_texture updateTexture:self.program.uSamplerLocal];
     
-    if (pixelBufferRef == nil) {
-        
-    }
+    BOOL success = (pixelBufferRef == nil)?false:true;
+    
+    return success;
 }
 
 #pragma mark video player属性

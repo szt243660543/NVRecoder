@@ -68,7 +68,7 @@
     if (pixelBuffer == NULL) return nil;
     
     [self.mDataAdatper lockPixelBuffer];
-    self.textureID = [self renderTextureBuffer:pixelBuffer Context:context];
+    _textureID = [self renderTextureBuffer:pixelBuffer Context:context];
     [self.mDataAdatper unlockPixelBuffer];
     
     return pixelBuffer;
@@ -80,7 +80,7 @@
         
     if (pixelBuffer == NULL) return nil;
     
-    self.textureID = [self renderTextureBuffer:pixelBuffer Context:context];
+    _textureID = [self renderTextureBuffer:pixelBuffer Context:context];
     
     return pixelBuffer;
 }

@@ -46,7 +46,7 @@
 //    self.filter.coreImageFilter = [CIFilter filterWithLUT:path dimension:64];
 //}
 
-- (void)addCIFilter:(NVFilter *)filter
+- (void)addCIFilter:(NVCIFilter *)filter
 {
     if (self.camera.filter) self.camera.filter = nil;
 
@@ -63,11 +63,11 @@
     [self.camera stopRunning];
 }
 
-- (void)updateTexture
+- (BOOL)updateTexture
 {
-    [super updateTexture];
-
-    [self.camera uptateTexture:self.program.uSamplerLocal];
+    BOOL success = [self.camera uptateTexture:self.program.uSamplerLocal];
+    
+    return success;
 }
 
 - (void)destory

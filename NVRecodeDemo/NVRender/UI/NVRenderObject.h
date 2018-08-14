@@ -33,6 +33,7 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
     OLD_VIDEO,              // 老旧视频
     X_INVERT,               // X光
     EDGE_SHINE,             // 边缘发光
+    TONE_CURVE,             // 色调曲线滤镜
 };
 
 typedef NS_ENUM(NSInteger, NVContentMode) {
@@ -49,12 +50,16 @@ typedef NS_ENUM(NSInteger, NVContentMode) {
 
 - (void)destory;
 
-- (void)updateTexture;
+- (BOOL)updateTexture;
 
 /**
  * 修改滤波器
  */
 - (void)changeFilter:(SZTFilterMode)filterMode;
+
+// 仅适用于Filter为TONE_CURVE模式下
+// curveFileURL = [[NSBundle mainBundle] URLForResource:curveFilename withExtension:@"acv"];
+- (void)loadACVFileUrl:(NSURL *)curveFileURL;
 
 @property(nonatomic, strong)NVProgram *program;
 
@@ -118,10 +123,7 @@ typedef NS_ENUM(NSInteger, NVContentMode) {
 @property (nonatomic, assign) CGFloat mixturePercent;
 @property (nonatomic, assign) CGFloat scalePercent;
 
-
 // SZTVR_GLASSSPHERE 模式
 @property(nonatomic ,assign)float refractiveIndex;
-
-- (void)setupFilterMode;
 
 @end

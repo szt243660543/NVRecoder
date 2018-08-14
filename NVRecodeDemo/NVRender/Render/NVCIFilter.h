@@ -22,10 +22,11 @@ typedef NS_ENUM(NSInteger, CIFilterMode) {
     CIVibrance,             // 鲜艳       // inputAmount
 };
 
-@interface NVFilter : NSObject
+@interface NVCIFilter : NSObject
 
 - (instancetype)initWithFilterMode:(CIFilterMode)ciFilter;
 
+//*************************** Private ***************************/
 - (CVPixelBufferRef)coreImageHandle:(CVPixelBufferRef)pixelBuffer;
 
 @end
