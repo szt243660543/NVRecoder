@@ -66,9 +66,10 @@
 //    camera.scale = NVPosition(0.5, 0.5, 0.5);
 //    camera.frame = CGRectMake(0.0, 210.0, 375.0, 265.0);
     camera.frame = CGRectMake(0, 0, 375, 667);
-    [camera changeFilter:TONE_CURVE];
-    NSURL *curver = [[NSBundle mainBundle] URLForResource:@"滤镜_布丁" withExtension:@".acv"];
-    [camera loadACVFileUrl:curver];
+    [camera changeFilter:COLUMNS_SLICED];
+    
+//    NSURL *curver = [[NSBundle mainBundle] URLForResource:@"滤镜_棉花糖" withExtension:@".acv"];
+//    [camera loadACVFileUrl:curver];
     
 //    NVCIFilter *
 //    filter = [[NVCIFilter alloc] initWithFilterMode:CIVibrance];

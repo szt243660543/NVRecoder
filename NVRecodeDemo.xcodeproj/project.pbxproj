@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043C24582122D5D8003616DF /* ColumnsSliced.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 043C24562122D5D7003616DF /* ColumnsSliced.fsh */; };
+		043C24592122D5D8003616DF /* EdgeDiscard.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 043C24572122D5D8003616DF /* EdgeDiscard.fsh */; };
 		043D239321181F4200422204 /* Hallucination.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 043D239221181F4200422204 /* Hallucination.fsh */; };
 		043D23952118293C00422204 /* Multicoloured.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 043D23942118293C00422204 /* Multicoloured.fsh */; };
 		043D23972118452500422204 /* OldVideo.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 043D23962118452400422204 /* OldVideo.fsh */; };
@@ -126,6 +128,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043C24562122D5D7003616DF /* ColumnsSliced.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ColumnsSliced.fsh; sourceTree = "<group>"; };
+		043C24572122D5D8003616DF /* EdgeDiscard.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = EdgeDiscard.fsh; sourceTree = "<group>"; };
 		043D239221181F4200422204 /* Hallucination.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Hallucination.fsh; sourceTree = "<group>"; };
 		043D23942118293C00422204 /* Multicoloured.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Multicoloured.fsh; sourceTree = "<group>"; };
 		043D23962118452400422204 /* OldVideo.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = OldVideo.fsh; sourceTree = "<group>"; };
@@ -482,6 +486,8 @@
 				043D23942118293C00422204 /* Multicoloured.fsh */,
 				043D23962118452400422204 /* OldVideo.fsh */,
 				043D2398211855D100422204 /* X_invert.fsh */,
+				043C24562122D5D7003616DF /* ColumnsSliced.fsh */,
+				043C24572122D5D8003616DF /* EdgeDiscard.fsh */,
 				043D239A2118631D00422204 /* EdgeShine.fsh */,
 				044AD3AF21228E6900B6026E /* ToneCurve.fsh */,
 				0482F7B220E52F1700DB4D19 /* Shader_Hue.h */,
@@ -674,6 +680,7 @@
 				044AD48A2122B69200B6026E /* 滤镜_夜店.acv in Resources */,
 				044AD4692122B69200B6026E /* 滤镜_草木绿.acv in Resources */,
 				044AD4842122B69200B6026E /* 滤镜_加州_@3x.png in Resources */,
+				043C24592122D5D8003616DF /* EdgeDiscard.fsh in Resources */,
 				044AD4802122B69200B6026E /* 滤镜_回忆.acv in Resources */,
 				044AD4782122B69200B6026E /* 滤镜_碧海.acv in Resources */,
 				044AD46D2122B69200B6026E /* 滤镜_奶茶.acv in Resources */,
@@ -684,6 +691,7 @@
 				044AD47C2122B69200B6026E /* 滤镜_暖暖_@3x.png in Resources */,
 				0446CE84210EF19400D421A0 /* Symmetry.fsh in Resources */,
 				044AD46B2122B69200B6026E /* 滤镜_纯净.acv in Resources */,
+				043C24582122D5D8003616DF /* ColumnsSliced.fsh in Resources */,
 				044AD4862122B69200B6026E /* 滤镜_黑白_@3x.png in Resources */,
 				044AD46C2122B69200B6026E /* 滤镜_童话.acv in Resources */,
 				044AD49A2122B69200B6026E /* 滤镜_可爱.acv in Resources */,

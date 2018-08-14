@@ -34,6 +34,7 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
     X_INVERT,               // X光
     EDGE_SHINE,             // 边缘发光
     TONE_CURVE,             // 色调曲线滤镜
+    COLUMNS_SLICED,         // 切片循环
 };
 
 typedef NS_ENUM(NSInteger, NVContentMode) {

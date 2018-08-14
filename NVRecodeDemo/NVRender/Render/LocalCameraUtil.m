@@ -247,7 +247,7 @@
 
 - (BOOL)uptateTexture:(GLuint)uSamplerLocal
 {
-    if (isLock) return false;
+//    if (isLock) return false;
     
     if (!_glContext) _glContext = [EAGLContext currentContext];
     
