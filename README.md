@@ -76,6 +76,30 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
     SZTVR_GAMMA,            // 伽马线
     SZTVR_GLASSSPHERE,      // 水晶球效果
     SZTVR_CROSSHATCH,       // 法线交叉线
+    //------------特效-------------//
+    BEAUTY_FILTER,          // 美颜 (美白,润色,磨皮)
+    BULGE,                  // 哈哈镜 (凸)
+    STRETCH,                // 拉伸
+    FAKE3D,                 // 抖音抖动
+    SOUL_SCALE,             // 灵魂出窍
+    HALLUCINATION,          // 幻觉
+    MULTICOLOURED,          // 五光十色
+    OLD_VIDEO,              // 老旧视频
+    X_INVERT,               // X光
+    EDGE_SHINE,             // 边缘发光
+    TONE_CURVE,             // 色调曲线滤镜
+};
+
+typedef NS_ENUM(NSInteger, CIFilterMode) {
+    CIPhotoEffectInstant,   // 怀旧
+    CIPhotoEffectMono,      // 单色
+    CIPhotoEffectNoir,      // 黑白
+    CIPhotoEffectFade,      // 褪色
+    CIPhotoEffectTonal,     // 色调
+    CIPhotoEffectProcess,   // 冲印
+    CIPhotoEffectTransfer,  // 岁月
+    CIPhotoEffectChrome,    // 铬黄
+    CIVibrance,             // 鲜艳       // inputAmount
 };
 
 typedef NS_ENUM(NSInteger, NVContentMode) {
