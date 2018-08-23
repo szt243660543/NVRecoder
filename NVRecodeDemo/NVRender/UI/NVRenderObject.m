@@ -225,6 +225,12 @@
             [_program loadShaders:v_path FragShader:f_path isFilePath:YES];
         }
             break;
+        case SNOW:{
+            NSString * v_path = [[NSBundle mainBundle] pathForResource:@"Shader.vsh" ofType:nil];
+            NSString * f_path = [[NSBundle mainBundle] pathForResource:@"Snow.fsh" ofType:nil];
+            [_program loadShaders:v_path FragShader:f_path isFilePath:YES];
+        }
+            break;
         default:
             break;
     }

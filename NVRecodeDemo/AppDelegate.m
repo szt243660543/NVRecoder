@@ -7,7 +7,7 @@
 
 #import "AppDelegate.h"
 #import <AVFoundation/AVFoundation.h>
-#import "MainViewController.h"
+#import "TableViewController.h"
 
 @implementation AppDelegate
 
@@ -17,7 +17,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    MainViewController *mainVC = [[MainViewController alloc] init];
+    TableViewController *mainVC = [[TableViewController alloc] init];
     self.window.rootViewController = mainVC;
     
     [self.window makeKeyAndVisible];

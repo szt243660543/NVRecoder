@@ -10,4 +10,6 @@
 
 @interface MainViewController : NVViewController
 
+- (instancetype)initWithIndex:(int)index;
+
 @end

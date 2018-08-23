@@ -24,7 +24,7 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
     SZTVR_CROSSHATCH,       // 法线交叉线
     //------------特效-------------//
     BEAUTY_FILTER,          // 美颜 (美白,润色,磨皮)
-    BULGE,                  // 哈哈镜 (凸)
+    BULGE,                  // 哈哈镜 (凸) (大眼、瘦脸)
     STRETCH,                // 拉伸
     FAKE3D,                 // 抖音抖动
     SOUL_SCALE,             // 灵魂出窍
@@ -33,8 +33,9 @@ typedef NS_ENUM(NSInteger, SZTFilterMode) {
     OLD_VIDEO,              // 老旧视频
     X_INVERT,               // X光
     EDGE_SHINE,             // 边缘发光
-    TONE_CURVE,             // 色调曲线滤镜
+    TONE_CURVE,             // 色调曲线滤镜 (.acv)
     COLUMNS_SLICED,         // 切片循环
+    SNOW,                   // 下雪 https://www.shadertoy.com/view/MscXD7
 };
 
 typedef NS_ENUM(NSInteger, NVContentMode) {

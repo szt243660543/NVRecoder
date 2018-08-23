@@ -24,72 +24,90 @@
 		044726FD20DE344A00972FD5 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044726FC20DE344900972FD5 /* CoreFoundation.framework */; };
 		044726FF20DE348000972FD5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044726FE20DE348000972FD5 /* CoreMedia.framework */; };
 		0447270420DE4E1B00972FD5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0447270320DE4E1B00972FD5 /* QuartzCore.framework */; };
+		044790292125809800FF8A72 /* Snow.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 044790282125809800FF8A72 /* Snow.fsh */; };
+		0447902E212D3FB500FF8A72 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0447902C212D3FB500FF8A72 /* MainViewController.m */; };
+		04479038212E5CF900FF8A72 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04479037212E5CF900FF8A72 /* TableViewController.m */; };
+		0447905F212E676F00FF8A72 /* empty_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0447904F212E676F00FF8A72 /* empty_btn.png */; };
+		04479060212E676F00FF8A72 /* test_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 04479050212E676F00FF8A72 /* test_9.png */; };
+		04479061212E676F00FF8A72 /* test_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 04479051212E676F00FF8A72 /* test_8.png */; };
+		04479062212E676F00FF8A72 /* test_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 04479052212E676F00FF8A72 /* test_11.png */; };
+		04479063212E676F00FF8A72 /* test_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 04479053212E676F00FF8A72 /* test_10.png */; };
+		04479064212E676F00FF8A72 /* empty_btn_highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 04479054212E676F00FF8A72 /* empty_btn_highlight.png */; };
+		04479065212E676F00FF8A72 /* bg_main.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04479055212E676F00FF8A72 /* bg_main.jpg */; };
+		04479066212E676F00FF8A72 /* test_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 04479056212E676F00FF8A72 /* test_3.png */; };
+		04479067212E676F00FF8A72 /* test_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 04479057212E676F00FF8A72 /* test_2.png */; };
+		04479068212E676F00FF8A72 /* test_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 04479058212E676F00FF8A72 /* test_0.png */; };
+		04479069212E676F00FF8A72 /* center_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 04479059212E676F00FF8A72 /* center_btn.png */; };
+		0447906A212E676F00FF8A72 /* test_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0447905A212E676F00FF8A72 /* test_1.png */; };
+		0447906B212E676F00FF8A72 /* test_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 0447905B212E676F00FF8A72 /* test_5.png */; };
+		0447906C212E676F00FF8A72 /* test_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0447905C212E676F00FF8A72 /* test_4.png */; };
+		0447906D212E676F00FF8A72 /* test_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 0447905D212E676F00FF8A72 /* test_6.png */; };
+		0447906E212E676F00FF8A72 /* test_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 0447905E212E676F00FF8A72 /* test_7.png */; };
+		04479071212E6FEE00FF8A72 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04479070212E6FEE00FF8A72 /* CollectionViewCell.m */; };
 		044AD3B021228E6900B6026E /* ToneCurve.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 044AD3AF21228E6900B6026E /* ToneCurve.fsh */; };
 		044AD3B32122935B00B6026E /* NVToneCurveTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AD3B22122935B00B6026E /* NVToneCurveTexture.m */; };
 		044AD3B6212293F900B6026E /* NVACVFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AD3B5212293F900B6026E /* NVACVFile.m */; };
-		044AD4692122B69200B6026E /* 滤镜_草木绿.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD42E2122B68D00B6026E /* 滤镜_草木绿.acv */; };
-		044AD46A2122B69200B6026E /* 滤镜_周末_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD42F2122B68D00B6026E /* 滤镜_周末_@3x.png */; };
-		044AD46B2122B69200B6026E /* 滤镜_纯净.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4302122B68D00B6026E /* 滤镜_纯净.acv */; };
-		044AD46C2122B69200B6026E /* 滤镜_童话.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4312122B68D00B6026E /* 滤镜_童话.acv */; };
-		044AD46D2122B69200B6026E /* 滤镜_奶茶.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4322122B68D00B6026E /* 滤镜_奶茶.acv */; };
-		044AD46E2122B69200B6026E /* 滤镜_冰凉.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4332122B68D00B6026E /* 滤镜_冰凉.acv */; };
-		044AD46F2122B69200B6026E /* 滤镜_奶茶_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4342122B68D00B6026E /* 滤镜_奶茶_@3x.png */; };
-		044AD4702122B69200B6026E /* 滤镜_晚秋.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4352122B68E00B6026E /* 滤镜_晚秋.acv */; };
-		044AD4712122B69200B6026E /* 滤镜_初夏_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4362122B68E00B6026E /* 滤镜_初夏_@3x.png */; };
-		044AD4722122B69200B6026E /* 滤镜_清新.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4372122B68E00B6026E /* 滤镜_清新.acv */; };
-		044AD4732122B69200B6026E /* 滤镜_正常.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4382122B68E00B6026E /* 滤镜_正常.acv */; };
-		044AD4742122B69200B6026E /* 滤镜_晚秋_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4392122B68E00B6026E /* 滤镜_晚秋_@3x.png */; };
-		044AD4752122B69200B6026E /* 滤镜_印象.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD43A2122B68E00B6026E /* 滤镜_印象.acv */; };
-		044AD4762122B69200B6026E /* 滤镜_暖暖.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD43B2122B68E00B6026E /* 滤镜_暖暖.acv */; };
-		044AD4772122B69200B6026E /* 滤镜_印象_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD43C2122B68E00B6026E /* 滤镜_印象_@3x.png */; };
-		044AD4782122B69200B6026E /* 滤镜_碧海.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD43D2122B68E00B6026E /* 滤镜_碧海.acv */; };
-		044AD4792122B69200B6026E /* 滤镜_正常_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD43E2122B68E00B6026E /* 滤镜_正常_@3x.png */; };
-		044AD47A2122B69200B6026E /* 滤镜_回忆_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD43F2122B68E00B6026E /* 滤镜_回忆_@3x.png */; };
-		044AD47B2122B69200B6026E /* 滤镜_天真.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4402122B68E00B6026E /* 滤镜_天真.acv */; };
-		044AD47C2122B69200B6026E /* 滤镜_暖暖_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4412122B68E00B6026E /* 滤镜_暖暖_@3x.png */; };
-		044AD47D2122B69200B6026E /* 滤镜_布丁_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4422122B68E00B6026E /* 滤镜_布丁_@3x.png */; };
-		044AD47E2122B69200B6026E /* 滤镜_柏林_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4432122B68F00B6026E /* 滤镜_柏林_@3x.png */; };
-		044AD47F2122B69200B6026E /* 滤镜_周末.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4442122B68F00B6026E /* 滤镜_周末.acv */; };
-		044AD4802122B69200B6026E /* 滤镜_回忆.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4452122B68F00B6026E /* 滤镜_回忆.acv */; };
-		044AD4812122B69200B6026E /* 滤镜_午后_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4462122B68F00B6026E /* 滤镜_午后_@3x.png */; };
-		044AD4822122B69200B6026E /* 滤镜_冬青.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4472122B68F00B6026E /* 滤镜_冬青.acv */; };
-		044AD4832122B69200B6026E /* 滤镜_黄昏.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4482122B68F00B6026E /* 滤镜_黄昏.acv */; };
-		044AD4842122B69200B6026E /* 滤镜_加州_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4492122B68F00B6026E /* 滤镜_加州_@3x.png */; };
-		044AD4852122B69200B6026E /* 滤镜_片场.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD44A2122B68F00B6026E /* 滤镜_片场.acv */; };
-		044AD4862122B69200B6026E /* 滤镜_黑白_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD44B2122B68F00B6026E /* 滤镜_黑白_@3x.png */; };
-		044AD4872122B69200B6026E /* 滤镜_草木绿_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD44C2122B68F00B6026E /* 滤镜_草木绿_@3x.png */; };
-		044AD4882122B69200B6026E /* 滤镜_棉花糖.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD44D2122B69000B6026E /* 滤镜_棉花糖.acv */; };
-		044AD4892122B69200B6026E /* 滤镜_柏林.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD44E2122B69000B6026E /* 滤镜_柏林.acv */; };
-		044AD48A2122B69200B6026E /* 滤镜_夜店.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD44F2122B69000B6026E /* 滤镜_夜店.acv */; };
-		044AD48B2122B69200B6026E /* 滤镜_曲奇.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4502122B69000B6026E /* 滤镜_曲奇.acv */; };
-		044AD48C2122B69200B6026E /* 滤镜_天真_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4512122B69000B6026E /* 滤镜_天真_@3x.png */; };
-		044AD48D2122B69200B6026E /* 滤镜_薄荷_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4522122B69000B6026E /* 滤镜_薄荷_@3x.png */; };
-		044AD48E2122B69200B6026E /* 滤镜_布丁.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4532122B69000B6026E /* 滤镜_布丁.acv */; };
-		044AD48F2122B69200B6026E /* 滤镜_薄荷.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4542122B69000B6026E /* 滤镜_薄荷.acv */; };
-		044AD4902122B69200B6026E /* 滤镜_黄昏_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4552122B69000B6026E /* 滤镜_黄昏_@3x.png */; };
-		044AD4912122B69200B6026E /* 滤镜_午后.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4562122B69000B6026E /* 滤镜_午后.acv */; };
-		044AD4922122B69200B6026E /* 滤镜_冬青_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4572122B69000B6026E /* 滤镜_冬青_@3x.png */; };
-		044AD4932122B69200B6026E /* 滤镜_片场_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4582122B69000B6026E /* 滤镜_片场_@3x.png */; };
-		044AD4942122B69200B6026E /* 滤镜_夜店_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4592122B69100B6026E /* 滤镜_夜店_@3x.png */; };
-		044AD4952122B69200B6026E /* 滤镜_纯净_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD45A2122B69100B6026E /* 滤镜_纯净_@3x.png */; };
-		044AD4962122B69200B6026E /* 滤镜_棉花糖_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD45B2122B69100B6026E /* 滤镜_棉花糖_@3x.png */; };
-		044AD4972122B69200B6026E /* 滤镜_森林_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD45C2122B69100B6026E /* 滤镜_森林_@3x.png */; };
-		044AD4982122B69200B6026E /* 滤镜_可爱_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD45D2122B69100B6026E /* 滤镜_可爱_@3x.png */; };
-		044AD4992122B69200B6026E /* 滤镜_冰凉_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD45E2122B69100B6026E /* 滤镜_冰凉_@3x.png */; };
-		044AD49A2122B69200B6026E /* 滤镜_可爱.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD45F2122B69100B6026E /* 滤镜_可爱.acv */; };
-		044AD49B2122B69200B6026E /* 滤镜_暖阳.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4602122B69100B6026E /* 滤镜_暖阳.acv */; };
-		044AD49C2122B69200B6026E /* 滤镜_森林.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4612122B69100B6026E /* 滤镜_森林.acv */; };
-		044AD49D2122B69200B6026E /* 滤镜_暖阳_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4622122B69100B6026E /* 滤镜_暖阳_@3x.png */; };
-		044AD49E2122B69200B6026E /* 滤镜_童话_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4632122B69100B6026E /* 滤镜_童话_@3x.png */; };
-		044AD49F2122B69200B6026E /* 滤镜_加州.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4642122B69100B6026E /* 滤镜_加州.acv */; };
-		044AD4A02122B69200B6026E /* 滤镜_初夏.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4652122B69200B6026E /* 滤镜_初夏.acv */; };
-		044AD4A12122B69200B6026E /* 滤镜_碧海_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4662122B69200B6026E /* 滤镜_碧海_@3x.png */; };
-		044AD4A22122B69200B6026E /* 滤镜_清新_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4672122B69200B6026E /* 滤镜_清新_@3x.png */; };
-		044AD4A32122B69200B6026E /* 滤镜_曲奇_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4682122B69200B6026E /* 滤镜_曲奇_@3x.png */; };
+		044AD4692122B69200B6026E /* 草木绿.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD42E2122B68D00B6026E /* 草木绿.acv */; };
+		044AD46A2122B69200B6026E /* 周末.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD42F2122B68D00B6026E /* 周末.png */; };
+		044AD46B2122B69200B6026E /* 纯净.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4302122B68D00B6026E /* 纯净.acv */; };
+		044AD46C2122B69200B6026E /* 童话.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4312122B68D00B6026E /* 童话.acv */; };
+		044AD46D2122B69200B6026E /* 奶茶.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4322122B68D00B6026E /* 奶茶.acv */; };
+		044AD46E2122B69200B6026E /* 冰凉.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4332122B68D00B6026E /* 冰凉.acv */; };
+		044AD46F2122B69200B6026E /* 奶茶.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4342122B68D00B6026E /* 奶茶.png */; };
+		044AD4702122B69200B6026E /* 晚秋.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4352122B68E00B6026E /* 晚秋.acv */; };
+		044AD4712122B69200B6026E /* 初夏.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4362122B68E00B6026E /* 初夏.png */; };
+		044AD4722122B69200B6026E /* 清新.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4372122B68E00B6026E /* 清新.acv */; };
+		044AD4732122B69200B6026E /* 正常.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4382122B68E00B6026E /* 正常.acv */; };
+		044AD4742122B69200B6026E /* 晚秋.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4392122B68E00B6026E /* 晚秋.png */; };
+		044AD4752122B69200B6026E /* 印象.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD43A2122B68E00B6026E /* 印象.acv */; };
+		044AD4762122B69200B6026E /* 暖暖.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD43B2122B68E00B6026E /* 暖暖.acv */; };
+		044AD4772122B69200B6026E /* 印象.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD43C2122B68E00B6026E /* 印象.png */; };
+		044AD4782122B69200B6026E /* 碧海.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD43D2122B68E00B6026E /* 碧海.acv */; };
+		044AD4792122B69200B6026E /* 正常.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD43E2122B68E00B6026E /* 正常.png */; };
+		044AD47A2122B69200B6026E /* 回忆.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD43F2122B68E00B6026E /* 回忆.png */; };
+		044AD47B2122B69200B6026E /* 天真.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4402122B68E00B6026E /* 天真.acv */; };
+		044AD47C2122B69200B6026E /* 暖暖.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4412122B68E00B6026E /* 暖暖.png */; };
+		044AD47D2122B69200B6026E /* 布丁.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4422122B68E00B6026E /* 布丁.png */; };
+		044AD47E2122B69200B6026E /* 柏林.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4432122B68F00B6026E /* 柏林.png */; };
+		044AD47F2122B69200B6026E /* 周末.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4442122B68F00B6026E /* 周末.acv */; };
+		044AD4802122B69200B6026E /* 回忆.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4452122B68F00B6026E /* 回忆.acv */; };
+		044AD4812122B69200B6026E /* 午后.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4462122B68F00B6026E /* 午后.png */; };
+		044AD4822122B69200B6026E /* 冬青.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4472122B68F00B6026E /* 冬青.acv */; };
+		044AD4832122B69200B6026E /* 黄昏.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4482122B68F00B6026E /* 黄昏.acv */; };
+		044AD4842122B69200B6026E /* 加州.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4492122B68F00B6026E /* 加州.png */; };
+		044AD4852122B69200B6026E /* 片场.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD44A2122B68F00B6026E /* 片场.acv */; };
+		044AD4872122B69200B6026E /* 草木绿.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD44C2122B68F00B6026E /* 草木绿.png */; };
+		044AD4882122B69200B6026E /* 棉花糖.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD44D2122B69000B6026E /* 棉花糖.acv */; };
+		044AD4892122B69200B6026E /* 柏林.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD44E2122B69000B6026E /* 柏林.acv */; };
+		044AD48A2122B69200B6026E /* 夜店.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD44F2122B69000B6026E /* 夜店.acv */; };
+		044AD48B2122B69200B6026E /* 曲奇.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4502122B69000B6026E /* 曲奇.acv */; };
+		044AD48C2122B69200B6026E /* 天真.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4512122B69000B6026E /* 天真.png */; };
+		044AD48D2122B69200B6026E /* 薄荷.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4522122B69000B6026E /* 薄荷.png */; };
+		044AD48E2122B69200B6026E /* 布丁.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4532122B69000B6026E /* 布丁.acv */; };
+		044AD48F2122B69200B6026E /* 薄荷.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4542122B69000B6026E /* 薄荷.acv */; };
+		044AD4902122B69200B6026E /* 黄昏.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4552122B69000B6026E /* 黄昏.png */; };
+		044AD4912122B69200B6026E /* 午后.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4562122B69000B6026E /* 午后.acv */; };
+		044AD4922122B69200B6026E /* 冬青.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4572122B69000B6026E /* 冬青.png */; };
+		044AD4932122B69200B6026E /* 片场.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4582122B69000B6026E /* 片场.png */; };
+		044AD4942122B69200B6026E /* 夜店.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4592122B69100B6026E /* 夜店.png */; };
+		044AD4952122B69200B6026E /* 纯净.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD45A2122B69100B6026E /* 纯净.png */; };
+		044AD4962122B69200B6026E /* 棉花糖.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD45B2122B69100B6026E /* 棉花糖.png */; };
+		044AD4972122B69200B6026E /* 森林.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD45C2122B69100B6026E /* 森林.png */; };
+		044AD4982122B69200B6026E /* 可爱.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD45D2122B69100B6026E /* 可爱.png */; };
+		044AD4992122B69200B6026E /* 冰凉.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD45E2122B69100B6026E /* 冰凉.png */; };
+		044AD49A2122B69200B6026E /* 可爱.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD45F2122B69100B6026E /* 可爱.acv */; };
+		044AD49B2122B69200B6026E /* 暖阳.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4602122B69100B6026E /* 暖阳.acv */; };
+		044AD49C2122B69200B6026E /* 森林.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4612122B69100B6026E /* 森林.acv */; };
+		044AD49D2122B69200B6026E /* 暖阳.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4622122B69100B6026E /* 暖阳.png */; };
+		044AD49E2122B69200B6026E /* 童话.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4632122B69100B6026E /* 童话.png */; };
+		044AD49F2122B69200B6026E /* 加州.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4642122B69100B6026E /* 加州.acv */; };
+		044AD4A02122B69200B6026E /* 初夏.acv in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4652122B69200B6026E /* 初夏.acv */; };
+		044AD4A12122B69200B6026E /* 碧海.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4662122B69200B6026E /* 碧海.png */; };
+		044AD4A22122B69200B6026E /* 清新.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4672122B69200B6026E /* 清新.png */; };
+		044AD4A32122B69200B6026E /* 曲奇.png in Resources */ = {isa = PBXBuildFile; fileRef = 044AD4682122B69200B6026E /* 曲奇.png */; };
 		044D42392109B55000A339EC /* BeautyFilter.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 044D42372109B55000A339EC /* BeautyFilter.fsh */; };
 		0482F6F620E4F2CA00DB4D19 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0482F6F520E4F2CA00DB4D19 /* ImageIO.framework */; };
 		0482F6F820E4F73F00DB4D19 /* videoinfo0.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0482F6F720E4F73F00DB4D19 /* videoinfo0.mp4 */; };
-		0482F78C20E51CE100DB4D19 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F78B20E51CE100DB4D19 /* MainViewController.m */; };
 		0482F7C320E52F1800DB4D19 /* NVVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F78F20E52F1700DB4D19 /* NVVideo.m */; };
 		0482F7C420E52F1800DB4D19 /* NVRenderObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F79220E52F1700DB4D19 /* NVRenderObject.m */; };
 		0482F7C520E52F1800DB4D19 /* NVRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F79320E52F1700DB4D19 /* NVRecord.m */; };
@@ -114,7 +132,6 @@
 		0482F7ED20E63B3000DB4D19 /* NVGLCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482F7EC20E63B3000DB4D19 /* NVGLCamera.m */; };
 		04DB88DD2112F1F800852619 /* CIFilter+LUT.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DB88DB2112F1F600852619 /* CIFilter+LUT.m */; };
 		04DB88DF2112F25300852619 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DB88DE2112F25200852619 /* CoreImage.framework */; };
-		04DB88E12112F2E200852619 /* download.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04DB88E02112F2E200852619 /* download.jpg */; };
 		04DB88E4211306A900852619 /* NVCIFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DB88E3211306A900852619 /* NVCIFilter.m */; };
 		04DB88E62113670B00852619 /* Soul_Scale.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 04DB88E52113670B00852619 /* Soul_Scale.fsh */; };
 		3DDEFCA2159B640C00B4EC41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDEFCA1159B640C00B4EC41 /* UIKit.framework */; };
@@ -145,75 +162,95 @@
 		044726FC20DE344900972FD5 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		044726FE20DE348000972FD5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		0447270320DE4E1B00972FD5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		044790282125809800FF8A72 /* Snow.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Snow.fsh; sourceTree = "<group>"; };
+		0447902C212D3FB500FF8A72 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		0447902D212D3FB500FF8A72 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		04479036212E5CF900FF8A72 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		04479037212E5CF900FF8A72 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		0447904F212E676F00FF8A72 /* empty_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty_btn.png; sourceTree = "<group>"; };
+		04479050212E676F00FF8A72 /* test_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_9.png; sourceTree = "<group>"; };
+		04479051212E676F00FF8A72 /* test_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_8.png; sourceTree = "<group>"; };
+		04479052212E676F00FF8A72 /* test_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_11.png; sourceTree = "<group>"; };
+		04479053212E676F00FF8A72 /* test_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_10.png; sourceTree = "<group>"; };
+		04479054212E676F00FF8A72 /* empty_btn_highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty_btn_highlight.png; sourceTree = "<group>"; };
+		04479055212E676F00FF8A72 /* bg_main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_main.jpg; sourceTree = "<group>"; };
+		04479056212E676F00FF8A72 /* test_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_3.png; sourceTree = "<group>"; };
+		04479057212E676F00FF8A72 /* test_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_2.png; sourceTree = "<group>"; };
+		04479058212E676F00FF8A72 /* test_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_0.png; sourceTree = "<group>"; };
+		04479059212E676F00FF8A72 /* center_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = center_btn.png; sourceTree = "<group>"; };
+		0447905A212E676F00FF8A72 /* test_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_1.png; sourceTree = "<group>"; };
+		0447905B212E676F00FF8A72 /* test_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_5.png; sourceTree = "<group>"; };
+		0447905C212E676F00FF8A72 /* test_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_4.png; sourceTree = "<group>"; };
+		0447905D212E676F00FF8A72 /* test_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_6.png; sourceTree = "<group>"; };
+		0447905E212E676F00FF8A72 /* test_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_7.png; sourceTree = "<group>"; };
+		0447906F212E6FEE00FF8A72 /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		04479070212E6FEE00FF8A72 /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		044AD3AF21228E6900B6026E /* ToneCurve.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ToneCurve.fsh; sourceTree = "<group>"; };
 		044AD3B12122935B00B6026E /* NVToneCurveTexture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NVToneCurveTexture.h; sourceTree = "<group>"; };
 		044AD3B22122935B00B6026E /* NVToneCurveTexture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NVToneCurveTexture.m; sourceTree = "<group>"; };
 		044AD3B4212293F900B6026E /* NVACVFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NVACVFile.h; sourceTree = "<group>"; };
 		044AD3B5212293F900B6026E /* NVACVFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NVACVFile.m; sourceTree = "<group>"; };
-		044AD42E2122B68D00B6026E /* 滤镜_草木绿.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_草木绿.acv"; sourceTree = "<group>"; };
-		044AD42F2122B68D00B6026E /* 滤镜_周末_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_周末_@3x.png"; sourceTree = "<group>"; };
-		044AD4302122B68D00B6026E /* 滤镜_纯净.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_纯净.acv"; sourceTree = "<group>"; };
-		044AD4312122B68D00B6026E /* 滤镜_童话.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_童话.acv"; sourceTree = "<group>"; };
-		044AD4322122B68D00B6026E /* 滤镜_奶茶.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_奶茶.acv"; sourceTree = "<group>"; };
-		044AD4332122B68D00B6026E /* 滤镜_冰凉.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_冰凉.acv"; sourceTree = "<group>"; };
-		044AD4342122B68D00B6026E /* 滤镜_奶茶_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_奶茶_@3x.png"; sourceTree = "<group>"; };
-		044AD4352122B68E00B6026E /* 滤镜_晚秋.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_晚秋.acv"; sourceTree = "<group>"; };
-		044AD4362122B68E00B6026E /* 滤镜_初夏_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_初夏_@3x.png"; sourceTree = "<group>"; };
-		044AD4372122B68E00B6026E /* 滤镜_清新.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_清新.acv"; sourceTree = "<group>"; };
-		044AD4382122B68E00B6026E /* 滤镜_正常.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_正常.acv"; sourceTree = "<group>"; };
-		044AD4392122B68E00B6026E /* 滤镜_晚秋_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_晚秋_@3x.png"; sourceTree = "<group>"; };
-		044AD43A2122B68E00B6026E /* 滤镜_印象.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_印象.acv"; sourceTree = "<group>"; };
-		044AD43B2122B68E00B6026E /* 滤镜_暖暖.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_暖暖.acv"; sourceTree = "<group>"; };
-		044AD43C2122B68E00B6026E /* 滤镜_印象_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_印象_@3x.png"; sourceTree = "<group>"; };
-		044AD43D2122B68E00B6026E /* 滤镜_碧海.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_碧海.acv"; sourceTree = "<group>"; };
-		044AD43E2122B68E00B6026E /* 滤镜_正常_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_正常_@3x.png"; sourceTree = "<group>"; };
-		044AD43F2122B68E00B6026E /* 滤镜_回忆_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_回忆_@3x.png"; sourceTree = "<group>"; };
-		044AD4402122B68E00B6026E /* 滤镜_天真.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_天真.acv"; sourceTree = "<group>"; };
-		044AD4412122B68E00B6026E /* 滤镜_暖暖_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_暖暖_@3x.png"; sourceTree = "<group>"; };
-		044AD4422122B68E00B6026E /* 滤镜_布丁_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_布丁_@3x.png"; sourceTree = "<group>"; };
-		044AD4432122B68F00B6026E /* 滤镜_柏林_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_柏林_@3x.png"; sourceTree = "<group>"; };
-		044AD4442122B68F00B6026E /* 滤镜_周末.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_周末.acv"; sourceTree = "<group>"; };
-		044AD4452122B68F00B6026E /* 滤镜_回忆.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_回忆.acv"; sourceTree = "<group>"; };
-		044AD4462122B68F00B6026E /* 滤镜_午后_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_午后_@3x.png"; sourceTree = "<group>"; };
-		044AD4472122B68F00B6026E /* 滤镜_冬青.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_冬青.acv"; sourceTree = "<group>"; };
-		044AD4482122B68F00B6026E /* 滤镜_黄昏.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_黄昏.acv"; sourceTree = "<group>"; };
-		044AD4492122B68F00B6026E /* 滤镜_加州_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_加州_@3x.png"; sourceTree = "<group>"; };
-		044AD44A2122B68F00B6026E /* 滤镜_片场.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_片场.acv"; sourceTree = "<group>"; };
-		044AD44B2122B68F00B6026E /* 滤镜_黑白_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_黑白_@3x.png"; sourceTree = "<group>"; };
-		044AD44C2122B68F00B6026E /* 滤镜_草木绿_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_草木绿_@3x.png"; sourceTree = "<group>"; };
-		044AD44D2122B69000B6026E /* 滤镜_棉花糖.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_棉花糖.acv"; sourceTree = "<group>"; };
-		044AD44E2122B69000B6026E /* 滤镜_柏林.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_柏林.acv"; sourceTree = "<group>"; };
-		044AD44F2122B69000B6026E /* 滤镜_夜店.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_夜店.acv"; sourceTree = "<group>"; };
-		044AD4502122B69000B6026E /* 滤镜_曲奇.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_曲奇.acv"; sourceTree = "<group>"; };
-		044AD4512122B69000B6026E /* 滤镜_天真_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_天真_@3x.png"; sourceTree = "<group>"; };
-		044AD4522122B69000B6026E /* 滤镜_薄荷_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_薄荷_@3x.png"; sourceTree = "<group>"; };
-		044AD4532122B69000B6026E /* 滤镜_布丁.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_布丁.acv"; sourceTree = "<group>"; };
-		044AD4542122B69000B6026E /* 滤镜_薄荷.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_薄荷.acv"; sourceTree = "<group>"; };
-		044AD4552122B69000B6026E /* 滤镜_黄昏_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_黄昏_@3x.png"; sourceTree = "<group>"; };
-		044AD4562122B69000B6026E /* 滤镜_午后.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_午后.acv"; sourceTree = "<group>"; };
-		044AD4572122B69000B6026E /* 滤镜_冬青_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_冬青_@3x.png"; sourceTree = "<group>"; };
-		044AD4582122B69000B6026E /* 滤镜_片场_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_片场_@3x.png"; sourceTree = "<group>"; };
-		044AD4592122B69100B6026E /* 滤镜_夜店_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_夜店_@3x.png"; sourceTree = "<group>"; };
-		044AD45A2122B69100B6026E /* 滤镜_纯净_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_纯净_@3x.png"; sourceTree = "<group>"; };
-		044AD45B2122B69100B6026E /* 滤镜_棉花糖_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_棉花糖_@3x.png"; sourceTree = "<group>"; };
-		044AD45C2122B69100B6026E /* 滤镜_森林_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_森林_@3x.png"; sourceTree = "<group>"; };
-		044AD45D2122B69100B6026E /* 滤镜_可爱_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_可爱_@3x.png"; sourceTree = "<group>"; };
-		044AD45E2122B69100B6026E /* 滤镜_冰凉_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_冰凉_@3x.png"; sourceTree = "<group>"; };
-		044AD45F2122B69100B6026E /* 滤镜_可爱.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_可爱.acv"; sourceTree = "<group>"; };
-		044AD4602122B69100B6026E /* 滤镜_暖阳.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_暖阳.acv"; sourceTree = "<group>"; };
-		044AD4612122B69100B6026E /* 滤镜_森林.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_森林.acv"; sourceTree = "<group>"; };
-		044AD4622122B69100B6026E /* 滤镜_暖阳_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_暖阳_@3x.png"; sourceTree = "<group>"; };
-		044AD4632122B69100B6026E /* 滤镜_童话_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_童话_@3x.png"; sourceTree = "<group>"; };
-		044AD4642122B69100B6026E /* 滤镜_加州.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_加州.acv"; sourceTree = "<group>"; };
-		044AD4652122B69200B6026E /* 滤镜_初夏.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "滤镜_初夏.acv"; sourceTree = "<group>"; };
-		044AD4662122B69200B6026E /* 滤镜_碧海_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_碧海_@3x.png"; sourceTree = "<group>"; };
-		044AD4672122B69200B6026E /* 滤镜_清新_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_清新_@3x.png"; sourceTree = "<group>"; };
-		044AD4682122B69200B6026E /* 滤镜_曲奇_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滤镜_曲奇_@3x.png"; sourceTree = "<group>"; };
+		044AD42E2122B68D00B6026E /* 草木绿.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "草木绿.acv"; sourceTree = "<group>"; };
+		044AD42F2122B68D00B6026E /* 周末.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "周末.png"; sourceTree = "<group>"; };
+		044AD4302122B68D00B6026E /* 纯净.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "纯净.acv"; sourceTree = "<group>"; };
+		044AD4312122B68D00B6026E /* 童话.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "童话.acv"; sourceTree = "<group>"; };
+		044AD4322122B68D00B6026E /* 奶茶.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "奶茶.acv"; sourceTree = "<group>"; };
+		044AD4332122B68D00B6026E /* 冰凉.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "冰凉.acv"; sourceTree = "<group>"; };
+		044AD4342122B68D00B6026E /* 奶茶.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "奶茶.png"; sourceTree = "<group>"; };
+		044AD4352122B68E00B6026E /* 晚秋.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "晚秋.acv"; sourceTree = "<group>"; };
+		044AD4362122B68E00B6026E /* 初夏.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "初夏.png"; sourceTree = "<group>"; };
+		044AD4372122B68E00B6026E /* 清新.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "清新.acv"; sourceTree = "<group>"; };
+		044AD4382122B68E00B6026E /* 正常.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "正常.acv"; sourceTree = "<group>"; };
+		044AD4392122B68E00B6026E /* 晚秋.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "晚秋.png"; sourceTree = "<group>"; };
+		044AD43A2122B68E00B6026E /* 印象.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "印象.acv"; sourceTree = "<group>"; };
+		044AD43B2122B68E00B6026E /* 暖暖.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "暖暖.acv"; sourceTree = "<group>"; };
+		044AD43C2122B68E00B6026E /* 印象.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "印象.png"; sourceTree = "<group>"; };
+		044AD43D2122B68E00B6026E /* 碧海.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "碧海.acv"; sourceTree = "<group>"; };
+		044AD43E2122B68E00B6026E /* 正常.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "正常.png"; sourceTree = "<group>"; };
+		044AD43F2122B68E00B6026E /* 回忆.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "回忆.png"; sourceTree = "<group>"; };
+		044AD4402122B68E00B6026E /* 天真.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "天真.acv"; sourceTree = "<group>"; };
+		044AD4412122B68E00B6026E /* 暖暖.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "暖暖.png"; sourceTree = "<group>"; };
+		044AD4422122B68E00B6026E /* 布丁.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "布丁.png"; sourceTree = "<group>"; };
+		044AD4432122B68F00B6026E /* 柏林.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "柏林.png"; sourceTree = "<group>"; };
+		044AD4442122B68F00B6026E /* 周末.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "周末.acv"; sourceTree = "<group>"; };
+		044AD4452122B68F00B6026E /* 回忆.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "回忆.acv"; sourceTree = "<group>"; };
+		044AD4462122B68F00B6026E /* 午后.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "午后.png"; sourceTree = "<group>"; };
+		044AD4472122B68F00B6026E /* 冬青.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "冬青.acv"; sourceTree = "<group>"; };
+		044AD4482122B68F00B6026E /* 黄昏.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "黄昏.acv"; sourceTree = "<group>"; };
+		044AD4492122B68F00B6026E /* 加州.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "加州.png"; sourceTree = "<group>"; };
+		044AD44A2122B68F00B6026E /* 片场.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "片场.acv"; sourceTree = "<group>"; };
+		044AD44C2122B68F00B6026E /* 草木绿.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "草木绿.png"; sourceTree = "<group>"; };
+		044AD44D2122B69000B6026E /* 棉花糖.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "棉花糖.acv"; sourceTree = "<group>"; };
+		044AD44E2122B69000B6026E /* 柏林.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "柏林.acv"; sourceTree = "<group>"; };
+		044AD44F2122B69000B6026E /* 夜店.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "夜店.acv"; sourceTree = "<group>"; };
+		044AD4502122B69000B6026E /* 曲奇.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "曲奇.acv"; sourceTree = "<group>"; };
+		044AD4512122B69000B6026E /* 天真.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天真.png"; sourceTree = "<group>"; };
+		044AD4522122B69000B6026E /* 薄荷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "薄荷.png"; sourceTree = "<group>"; };
+		044AD4532122B69000B6026E /* 布丁.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "布丁.acv"; sourceTree = "<group>"; };
+		044AD4542122B69000B6026E /* 薄荷.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "薄荷.acv"; sourceTree = "<group>"; };
+		044AD4552122B69000B6026E /* 黄昏.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "黄昏.png"; sourceTree = "<group>"; };
+		044AD4562122B69000B6026E /* 午后.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "午后.acv"; sourceTree = "<group>"; };
+		044AD4572122B69000B6026E /* 冬青.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "冬青.png"; sourceTree = "<group>"; };
+		044AD4582122B69000B6026E /* 片场.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "片场.png"; sourceTree = "<group>"; };
+		044AD4592122B69100B6026E /* 夜店.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "夜店.png"; sourceTree = "<group>"; };
+		044AD45A2122B69100B6026E /* 纯净.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "纯净.png"; sourceTree = "<group>"; };
+		044AD45B2122B69100B6026E /* 棉花糖.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "棉花糖.png"; sourceTree = "<group>"; };
+		044AD45C2122B69100B6026E /* 森林.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "森林.png"; sourceTree = "<group>"; };
+		044AD45D2122B69100B6026E /* 可爱.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "可爱.png"; sourceTree = "<group>"; };
+		044AD45E2122B69100B6026E /* 冰凉.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "冰凉.png"; sourceTree = "<group>"; };
+		044AD45F2122B69100B6026E /* 可爱.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "可爱.acv"; sourceTree = "<group>"; };
+		044AD4602122B69100B6026E /* 暖阳.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "暖阳.acv"; sourceTree = "<group>"; };
+		044AD4612122B69100B6026E /* 森林.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "森林.acv"; sourceTree = "<group>"; };
+		044AD4622122B69100B6026E /* 暖阳.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "暖阳.png"; sourceTree = "<group>"; };
+		044AD4632122B69100B6026E /* 童话.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "童话.png"; sourceTree = "<group>"; };
+		044AD4642122B69100B6026E /* 加州.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "加州.acv"; sourceTree = "<group>"; };
+		044AD4652122B69200B6026E /* 初夏.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "初夏.acv"; sourceTree = "<group>"; };
+		044AD4662122B69200B6026E /* 碧海.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "碧海.png"; sourceTree = "<group>"; };
+		044AD4672122B69200B6026E /* 清新.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "清新.png"; sourceTree = "<group>"; };
+		044AD4682122B69200B6026E /* 曲奇.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "曲奇.png"; sourceTree = "<group>"; };
 		044D42372109B55000A339EC /* BeautyFilter.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = BeautyFilter.fsh; sourceTree = "<group>"; };
 		0482F6F520E4F2CA00DB4D19 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		0482F6F720E4F73F00DB4D19 /* videoinfo0.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoinfo0.mp4; sourceTree = "<group>"; };
-		0482F78A20E51CE100DB4D19 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		0482F78B20E51CE100DB4D19 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		0482F78F20E52F1700DB4D19 /* NVVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVVideo.m; sourceTree = "<group>"; };
 		0482F79020E52F1700DB4D19 /* NVRenderObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVRenderObject.h; sourceTree = "<group>"; };
 		0482F79120E52F1700DB4D19 /* NVVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVVideo.h; sourceTree = "<group>"; };
@@ -279,7 +316,6 @@
 		04DB88DB2112F1F600852619 /* CIFilter+LUT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CIFilter+LUT.m"; sourceTree = "<group>"; };
 		04DB88DC2112F1F800852619 /* CIFilter+LUT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CIFilter+LUT.h"; sourceTree = "<group>"; };
 		04DB88DE2112F25200852619 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
-		04DB88E02112F2E200852619 /* download.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpg; sourceTree = "<group>"; };
 		04DB88E2211306A900852619 /* NVCIFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NVCIFilter.h; sourceTree = "<group>"; };
 		04DB88E3211306A900852619 /* NVCIFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NVCIFilter.m; sourceTree = "<group>"; };
 		04DB88E52113670B00852619 /* Soul_Scale.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Soul_Scale.fsh; sourceTree = "<group>"; };
@@ -321,68 +357,103 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0447902B212D3FB500FF8A72 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				04479036212E5CF900FF8A72 /* TableViewController.h */,
+				04479037212E5CF900FF8A72 /* TableViewController.m */,
+				0447902D212D3FB500FF8A72 /* MainViewController.h */,
+				0447902C212D3FB500FF8A72 /* MainViewController.m */,
+				0447906F212E6FEE00FF8A72 /* CollectionViewCell.h */,
+				04479070212E6FEE00FF8A72 /* CollectionViewCell.m */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		0447904E212E676F00FF8A72 /* SourceImage */ = {
+			isa = PBXGroup;
+			children = (
+				0447904F212E676F00FF8A72 /* empty_btn.png */,
+				04479050212E676F00FF8A72 /* test_9.png */,
+				04479051212E676F00FF8A72 /* test_8.png */,
+				04479052212E676F00FF8A72 /* test_11.png */,
+				04479053212E676F00FF8A72 /* test_10.png */,
+				04479054212E676F00FF8A72 /* empty_btn_highlight.png */,
+				04479055212E676F00FF8A72 /* bg_main.jpg */,
+				04479056212E676F00FF8A72 /* test_3.png */,
+				04479057212E676F00FF8A72 /* test_2.png */,
+				04479058212E676F00FF8A72 /* test_0.png */,
+				04479059212E676F00FF8A72 /* center_btn.png */,
+				0447905A212E676F00FF8A72 /* test_1.png */,
+				0447905B212E676F00FF8A72 /* test_5.png */,
+				0447905C212E676F00FF8A72 /* test_4.png */,
+				0447905D212E676F00FF8A72 /* test_6.png */,
+				0447905E212E676F00FF8A72 /* test_7.png */,
+			);
+			path = SourceImage;
+			sourceTree = "<group>";
+		};
 		044AD3B72122B66C00B6026E /* filter */ = {
 			isa = PBXGroup;
 			children = (
-				044AD4432122B68F00B6026E /* 滤镜_柏林_@3x.png */,
-				044AD44E2122B69000B6026E /* 滤镜_柏林.acv */,
-				044AD4522122B69000B6026E /* 滤镜_薄荷_@3x.png */,
-				044AD4542122B69000B6026E /* 滤镜_薄荷.acv */,
-				044AD4662122B69200B6026E /* 滤镜_碧海_@3x.png */,
-				044AD43D2122B68E00B6026E /* 滤镜_碧海.acv */,
-				044AD45E2122B69100B6026E /* 滤镜_冰凉_@3x.png */,
-				044AD4332122B68D00B6026E /* 滤镜_冰凉.acv */,
-				044AD4422122B68E00B6026E /* 滤镜_布丁_@3x.png */,
-				044AD4532122B69000B6026E /* 滤镜_布丁.acv */,
-				044AD44C2122B68F00B6026E /* 滤镜_草木绿_@3x.png */,
-				044AD42E2122B68D00B6026E /* 滤镜_草木绿.acv */,
-				044AD4362122B68E00B6026E /* 滤镜_初夏_@3x.png */,
-				044AD4652122B69200B6026E /* 滤镜_初夏.acv */,
-				044AD45A2122B69100B6026E /* 滤镜_纯净_@3x.png */,
-				044AD4302122B68D00B6026E /* 滤镜_纯净.acv */,
-				044AD4572122B69000B6026E /* 滤镜_冬青_@3x.png */,
-				044AD4472122B68F00B6026E /* 滤镜_冬青.acv */,
-				044AD44B2122B68F00B6026E /* 滤镜_黑白_@3x.png */,
-				044AD4552122B69000B6026E /* 滤镜_黄昏_@3x.png */,
-				044AD4482122B68F00B6026E /* 滤镜_黄昏.acv */,
-				044AD43F2122B68E00B6026E /* 滤镜_回忆_@3x.png */,
-				044AD4452122B68F00B6026E /* 滤镜_回忆.acv */,
-				044AD4492122B68F00B6026E /* 滤镜_加州_@3x.png */,
-				044AD4642122B69100B6026E /* 滤镜_加州.acv */,
-				044AD45D2122B69100B6026E /* 滤镜_可爱_@3x.png */,
-				044AD45F2122B69100B6026E /* 滤镜_可爱.acv */,
-				044AD45B2122B69100B6026E /* 滤镜_棉花糖_@3x.png */,
-				044AD44D2122B69000B6026E /* 滤镜_棉花糖.acv */,
-				044AD4342122B68D00B6026E /* 滤镜_奶茶_@3x.png */,
-				044AD4322122B68D00B6026E /* 滤镜_奶茶.acv */,
-				044AD4412122B68E00B6026E /* 滤镜_暖暖_@3x.png */,
-				044AD43B2122B68E00B6026E /* 滤镜_暖暖.acv */,
-				044AD4622122B69100B6026E /* 滤镜_暖阳_@3x.png */,
-				044AD4602122B69100B6026E /* 滤镜_暖阳.acv */,
-				044AD4582122B69000B6026E /* 滤镜_片场_@3x.png */,
-				044AD44A2122B68F00B6026E /* 滤镜_片场.acv */,
-				044AD4672122B69200B6026E /* 滤镜_清新_@3x.png */,
-				044AD4372122B68E00B6026E /* 滤镜_清新.acv */,
-				044AD4682122B69200B6026E /* 滤镜_曲奇_@3x.png */,
-				044AD4502122B69000B6026E /* 滤镜_曲奇.acv */,
-				044AD45C2122B69100B6026E /* 滤镜_森林_@3x.png */,
-				044AD4612122B69100B6026E /* 滤镜_森林.acv */,
-				044AD4512122B69000B6026E /* 滤镜_天真_@3x.png */,
-				044AD4402122B68E00B6026E /* 滤镜_天真.acv */,
-				044AD4632122B69100B6026E /* 滤镜_童话_@3x.png */,
-				044AD4312122B68D00B6026E /* 滤镜_童话.acv */,
-				044AD4392122B68E00B6026E /* 滤镜_晚秋_@3x.png */,
-				044AD4352122B68E00B6026E /* 滤镜_晚秋.acv */,
-				044AD4462122B68F00B6026E /* 滤镜_午后_@3x.png */,
-				044AD4562122B69000B6026E /* 滤镜_午后.acv */,
-				044AD4592122B69100B6026E /* 滤镜_夜店_@3x.png */,
-				044AD44F2122B69000B6026E /* 滤镜_夜店.acv */,
-				044AD43C2122B68E00B6026E /* 滤镜_印象_@3x.png */,
-				044AD43A2122B68E00B6026E /* 滤镜_印象.acv */,
-				044AD43E2122B68E00B6026E /* 滤镜_正常_@3x.png */,
-				044AD4382122B68E00B6026E /* 滤镜_正常.acv */,
-				044AD42F2122B68D00B6026E /* 滤镜_周末_@3x.png */,
-				044AD4442122B68F00B6026E /* 滤镜_周末.acv */,
+				044AD4432122B68F00B6026E /* 柏林.png */,
+				044AD44E2122B69000B6026E /* 柏林.acv */,
+				044AD4522122B69000B6026E /* 薄荷.png */,
+				044AD4542122B69000B6026E /* 薄荷.acv */,
+				044AD4662122B69200B6026E /* 碧海.png */,
+				044AD43D2122B68E00B6026E /* 碧海.acv */,
+				044AD45E2122B69100B6026E /* 冰凉.png */,
+				044AD4332122B68D00B6026E /* 冰凉.acv */,
+				044AD4422122B68E00B6026E /* 布丁.png */,
+				044AD4532122B69000B6026E /* 布丁.acv */,
+				044AD44C2122B68F00B6026E /* 草木绿.png */,
+				044AD42E2122B68D00B6026E /* 草木绿.acv */,
+				044AD4362122B68E00B6026E /* 初夏.png */,
+				044AD4652122B69200B6026E /* 初夏.acv */,
+				044AD45A2122B69100B6026E /* 纯净.png */,
+				044AD4302122B68D00B6026E /* 纯净.acv */,
+				044AD4572122B69000B6026E /* 冬青.png */,
+				044AD4472122B68F00B6026E /* 冬青.acv */,
+				044AD4552122B69000B6026E /* 黄昏.png */,
+				044AD4482122B68F00B6026E /* 黄昏.acv */,
+				044AD43F2122B68E00B6026E /* 回忆.png */,
+				044AD4452122B68F00B6026E /* 回忆.acv */,
+				044AD4492122B68F00B6026E /* 加州.png */,
+				044AD4642122B69100B6026E /* 加州.acv */,
+				044AD45D2122B69100B6026E /* 可爱.png */,
+				044AD45F2122B69100B6026E /* 可爱.acv */,
+				044AD45B2122B69100B6026E /* 棉花糖.png */,
+				044AD44D2122B69000B6026E /* 棉花糖.acv */,
+				044AD4342122B68D00B6026E /* 奶茶.png */,
+				044AD4322122B68D00B6026E /* 奶茶.acv */,
+				044AD4412122B68E00B6026E /* 暖暖.png */,
+				044AD43B2122B68E00B6026E /* 暖暖.acv */,
+				044AD4622122B69100B6026E /* 暖阳.png */,
+				044AD4602122B69100B6026E /* 暖阳.acv */,
+				044AD4582122B69000B6026E /* 片场.png */,
+				044AD44A2122B68F00B6026E /* 片场.acv */,
+				044AD4672122B69200B6026E /* 清新.png */,
+				044AD4372122B68E00B6026E /* 清新.acv */,
+				044AD4682122B69200B6026E /* 曲奇.png */,
+				044AD4502122B69000B6026E /* 曲奇.acv */,
+				044AD45C2122B69100B6026E /* 森林.png */,
+				044AD4612122B69100B6026E /* 森林.acv */,
+				044AD4512122B69000B6026E /* 天真.png */,
+				044AD4402122B68E00B6026E /* 天真.acv */,
+				044AD4632122B69100B6026E /* 童话.png */,
+				044AD4312122B68D00B6026E /* 童话.acv */,
+				044AD4392122B68E00B6026E /* 晚秋.png */,
+				044AD4352122B68E00B6026E /* 晚秋.acv */,
+				044AD4462122B68F00B6026E /* 午后.png */,
+				044AD4562122B69000B6026E /* 午后.acv */,
+				044AD4592122B69100B6026E /* 夜店.png */,
+				044AD44F2122B69000B6026E /* 夜店.acv */,
+				044AD43C2122B68E00B6026E /* 印象.png */,
+				044AD43A2122B68E00B6026E /* 印象.acv */,
+				044AD43E2122B68E00B6026E /* 正常.png */,
+				044AD4382122B68E00B6026E /* 正常.acv */,
+				044AD42F2122B68D00B6026E /* 周末.png */,
+				044AD4442122B68F00B6026E /* 周末.acv */,
 			);
 			path = filter;
 			sourceTree = "<group>";
@@ -418,10 +489,10 @@
 		0482F79420E52F1700DB4D19 /* VIMVideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				0482F79520E52F1700DB4D19 /* VIMVideoPlayer.h */,
 				0482F79620E52F1700DB4D19 /* VIMVideoPlayerView.h */,
-				0482F79720E52F1700DB4D19 /* VIMVideoPlayer.m */,
 				0482F79820E52F1700DB4D19 /* VIMVideoPlayerView.m */,
+				0482F79520E52F1700DB4D19 /* VIMVideoPlayer.h */,
+				0482F79720E52F1700DB4D19 /* VIMVideoPlayer.m */,
 			);
 			path = VIMVideoPlayer;
 			sourceTree = "<group>";
@@ -490,6 +561,7 @@
 				043C24572122D5D8003616DF /* EdgeDiscard.fsh */,
 				043D239A2118631D00422204 /* EdgeShine.fsh */,
 				044AD3AF21228E6900B6026E /* ToneCurve.fsh */,
+				044790282125809800FF8A72 /* Snow.fsh */,
 				0482F7B220E52F1700DB4D19 /* Shader_Hue.h */,
 				0482F7B320E52F1700DB4D19 /* Shader_YUV420.h */,
 				0482F7B420E52F1700DB4D19 /* Shader_Blur.h */,
@@ -551,11 +623,7 @@
 			isa = PBXGroup;
 			children = (
 				0482F78D20E52F1700DB4D19 /* NVRender */,
-				3DDEFCB4159B640C00B4EC41 /* AppDelegate.h */,
-				3DDEFCB5159B640C00B4EC41 /* AppDelegate.m */,
-				0482F78A20E51CE100DB4D19 /* MainViewController.h */,
-				0482F78B20E51CE100DB4D19 /* MainViewController.m */,
-				04DB88E02112F2E200852619 /* download.jpg */,
+				0447902B212D3FB500FF8A72 /* Example */,
 				3DDEFCAC159B640C00B4EC41 /* Supporting Files */,
 			);
 			path = NVRecodeDemo;
@@ -564,6 +632,9 @@
 		3DDEFCAC159B640C00B4EC41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0447904E212E676F00FF8A72 /* SourceImage */,
+				3DDEFCB4159B640C00B4EC41 /* AppDelegate.h */,
+				3DDEFCB5159B640C00B4EC41 /* AppDelegate.m */,
 				0482F7D520E5C6EF00DB4D19 /* AR1.mp4 */,
 				0482F6F720E4F73F00DB4D19 /* videoinfo0.mp4 */,
 				3DDEFCAD159B640C00B4EC41 /* NVRecodeDemo-Info.plist */,
@@ -629,85 +700,100 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044AD46A2122B69200B6026E /* 滤镜_周末_@3x.png in Resources */,
-				044AD46E2122B69200B6026E /* 滤镜_冰凉.acv in Resources */,
-				044AD4822122B69200B6026E /* 滤镜_冬青.acv in Resources */,
+				044AD46A2122B69200B6026E /* 周末.png in Resources */,
+				044AD46E2122B69200B6026E /* 冰凉.acv in Resources */,
+				04479061212E676F00FF8A72 /* test_8.png in Resources */,
+				044AD4822122B69200B6026E /* 冬青.acv in Resources */,
 				0482F7D120E52F1800DB4D19 /* Shader.fsh in Resources */,
-				044AD4A02122B69200B6026E /* 滤镜_初夏.acv in Resources */,
-				044AD4872122B69200B6026E /* 滤镜_草木绿_@3x.png in Resources */,
+				04479069212E676F00FF8A72 /* center_btn.png in Resources */,
+				044AD4A02122B69200B6026E /* 初夏.acv in Resources */,
+				044AD4872122B69200B6026E /* 草木绿.png in Resources */,
 				0446CE81210ECD5C00D421A0 /* Stretch.fsh in Resources */,
-				044AD4A12122B69200B6026E /* 滤镜_碧海_@3x.png in Resources */,
-				044AD46F2122B69200B6026E /* 滤镜_奶茶_@3x.png in Resources */,
+				044AD4A12122B69200B6026E /* 碧海.png in Resources */,
+				044AD46F2122B69200B6026E /* 奶茶.png in Resources */,
 				0482F6F820E4F73F00DB4D19 /* videoinfo0.mp4 in Resources */,
 				043D2399211855D200422204 /* X_invert.fsh in Resources */,
-				044AD47E2122B69200B6026E /* 滤镜_柏林_@3x.png in Resources */,
-				044AD4992122B69200B6026E /* 滤镜_冰凉_@3x.png in Resources */,
-				044AD4892122B69200B6026E /* 滤镜_柏林.acv in Resources */,
+				044AD47E2122B69200B6026E /* 柏林.png in Resources */,
+				044AD4992122B69200B6026E /* 冰凉.png in Resources */,
+				044AD4892122B69200B6026E /* 柏林.acv in Resources */,
+				044790292125809800FF8A72 /* Snow.fsh in Resources */,
 				0446CE88210F16DD00D421A0 /* Fake3D.fsh in Resources */,
-				044AD48E2122B69200B6026E /* 滤镜_布丁.acv in Resources */,
-				044AD48F2122B69200B6026E /* 滤镜_薄荷.acv in Resources */,
-				044AD4942122B69200B6026E /* 滤镜_夜店_@3x.png in Resources */,
+				044AD48E2122B69200B6026E /* 布丁.acv in Resources */,
+				044AD48F2122B69200B6026E /* 薄荷.acv in Resources */,
+				0447905F212E676F00FF8A72 /* empty_btn.png in Resources */,
+				044AD4942122B69200B6026E /* 夜店.png in Resources */,
 				0482F7D620E5C6EF00DB4D19 /* AR1.mp4 in Resources */,
+				04479066212E676F00FF8A72 /* test_3.png in Resources */,
 				3DDEFCB0159B640C00B4EC41 /* InfoPlist.strings in Resources */,
-				044AD47F2122B69200B6026E /* 滤镜_周末.acv in Resources */,
-				044AD48C2122B69200B6026E /* 滤镜_天真_@3x.png in Resources */,
-				044AD4772122B69200B6026E /* 滤镜_印象_@3x.png in Resources */,
+				044AD47F2122B69200B6026E /* 周末.acv in Resources */,
+				044AD48C2122B69200B6026E /* 天真.png in Resources */,
+				0447906C212E676F00FF8A72 /* test_4.png in Resources */,
+				044AD4772122B69200B6026E /* 印象.png in Resources */,
 				043D23972118452500422204 /* OldVideo.fsh in Resources */,
-				044AD4702122B69200B6026E /* 滤镜_晚秋.acv in Resources */,
-				044AD49C2122B69200B6026E /* 滤镜_森林.acv in Resources */,
-				04DB88E12112F2E200852619 /* download.jpg in Resources */,
-				044AD49D2122B69200B6026E /* 滤镜_暖阳_@3x.png in Resources */,
+				044AD4702122B69200B6026E /* 晚秋.acv in Resources */,
+				044AD49C2122B69200B6026E /* 森林.acv in Resources */,
+				04479067212E676F00FF8A72 /* test_2.png in Resources */,
+				044AD49D2122B69200B6026E /* 暖阳.png in Resources */,
 				0482F7D220E52F1800DB4D19 /* Shader.vsh in Resources */,
-				044AD49E2122B69200B6026E /* 滤镜_童话_@3x.png in Resources */,
-				044AD4752122B69200B6026E /* 滤镜_印象.acv in Resources */,
+				044AD49E2122B69200B6026E /* 童话.png in Resources */,
+				044AD4752122B69200B6026E /* 印象.acv in Resources */,
 				044D42392109B55000A339EC /* BeautyFilter.fsh in Resources */,
-				044AD47D2122B69200B6026E /* 滤镜_布丁_@3x.png in Resources */,
-				044AD47B2122B69200B6026E /* 滤镜_天真.acv in Resources */,
-				044AD4A22122B69200B6026E /* 滤镜_清新_@3x.png in Resources */,
-				044AD4732122B69200B6026E /* 滤镜_正常.acv in Resources */,
-				044AD4982122B69200B6026E /* 滤镜_可爱_@3x.png in Resources */,
+				04479062212E676F00FF8A72 /* test_11.png in Resources */,
+				044AD47D2122B69200B6026E /* 布丁.png in Resources */,
+				044AD47B2122B69200B6026E /* 天真.acv in Resources */,
+				04479065212E676F00FF8A72 /* bg_main.jpg in Resources */,
+				044AD4A22122B69200B6026E /* 清新.png in Resources */,
+				044AD4732122B69200B6026E /* 正常.acv in Resources */,
+				0447906A212E676F00FF8A72 /* test_1.png in Resources */,
+				044AD4982122B69200B6026E /* 可爱.png in Resources */,
 				04DB88E62113670B00852619 /* Soul_Scale.fsh in Resources */,
-				044AD49F2122B69200B6026E /* 滤镜_加州.acv in Resources */,
-				044AD4932122B69200B6026E /* 滤镜_片场_@3x.png in Resources */,
+				044AD49F2122B69200B6026E /* 加州.acv in Resources */,
+				044AD4932122B69200B6026E /* 片场.png in Resources */,
 				043D239321181F4200422204 /* Hallucination.fsh in Resources */,
 				0446CE86210F05E200D421A0 /* Bulge.fsh in Resources */,
-				044AD48B2122B69200B6026E /* 滤镜_曲奇.acv in Resources */,
-				044AD4902122B69200B6026E /* 滤镜_黄昏_@3x.png in Resources */,
-				044AD47A2122B69200B6026E /* 滤镜_回忆_@3x.png in Resources */,
-				044AD4952122B69200B6026E /* 滤镜_纯净_@3x.png in Resources */,
-				044AD4792122B69200B6026E /* 滤镜_正常_@3x.png in Resources */,
-				044AD4852122B69200B6026E /* 滤镜_片场.acv in Resources */,
-				044AD48A2122B69200B6026E /* 滤镜_夜店.acv in Resources */,
-				044AD4692122B69200B6026E /* 滤镜_草木绿.acv in Resources */,
-				044AD4842122B69200B6026E /* 滤镜_加州_@3x.png in Resources */,
+				04479060212E676F00FF8A72 /* test_9.png in Resources */,
+				044AD48B2122B69200B6026E /* 曲奇.acv in Resources */,
+				044AD4902122B69200B6026E /* 黄昏.png in Resources */,
+				044AD47A2122B69200B6026E /* 回忆.png in Resources */,
+				044AD4952122B69200B6026E /* 纯净.png in Resources */,
+				044AD4792122B69200B6026E /* 正常.png in Resources */,
+				044AD4852122B69200B6026E /* 片场.acv in Resources */,
+				044AD48A2122B69200B6026E /* 夜店.acv in Resources */,
+				044AD4692122B69200B6026E /* 草木绿.acv in Resources */,
+				044AD4842122B69200B6026E /* 加州.png in Resources */,
 				043C24592122D5D8003616DF /* EdgeDiscard.fsh in Resources */,
-				044AD4802122B69200B6026E /* 滤镜_回忆.acv in Resources */,
-				044AD4782122B69200B6026E /* 滤镜_碧海.acv in Resources */,
-				044AD46D2122B69200B6026E /* 滤镜_奶茶.acv in Resources */,
-				044AD48D2122B69200B6026E /* 滤镜_薄荷_@3x.png in Resources */,
+				044AD4802122B69200B6026E /* 回忆.acv in Resources */,
+				0447906E212E676F00FF8A72 /* test_7.png in Resources */,
+				044AD4782122B69200B6026E /* 碧海.acv in Resources */,
+				044AD46D2122B69200B6026E /* 奶茶.acv in Resources */,
+				044AD48D2122B69200B6026E /* 薄荷.png in Resources */,
 				043D239B2118631D00422204 /* EdgeShine.fsh in Resources */,
-				044AD4912122B69200B6026E /* 滤镜_午后.acv in Resources */,
+				044AD4912122B69200B6026E /* 午后.acv in Resources */,
 				043D23952118293C00422204 /* Multicoloured.fsh in Resources */,
-				044AD47C2122B69200B6026E /* 滤镜_暖暖_@3x.png in Resources */,
+				044AD47C2122B69200B6026E /* 暖暖.png in Resources */,
 				0446CE84210EF19400D421A0 /* Symmetry.fsh in Resources */,
-				044AD46B2122B69200B6026E /* 滤镜_纯净.acv in Resources */,
+				04479064212E676F00FF8A72 /* empty_btn_highlight.png in Resources */,
+				044AD46B2122B69200B6026E /* 纯净.acv in Resources */,
 				043C24582122D5D8003616DF /* ColumnsSliced.fsh in Resources */,
-				044AD4862122B69200B6026E /* 滤镜_黑白_@3x.png in Resources */,
-				044AD46C2122B69200B6026E /* 滤镜_童话.acv in Resources */,
-				044AD49A2122B69200B6026E /* 滤镜_可爱.acv in Resources */,
-				044AD4742122B69200B6026E /* 滤镜_晚秋_@3x.png in Resources */,
-				044AD49B2122B69200B6026E /* 滤镜_暖阳.acv in Resources */,
-				044AD4A32122B69200B6026E /* 滤镜_曲奇_@3x.png in Resources */,
-				044AD4882122B69200B6026E /* 滤镜_棉花糖.acv in Resources */,
-				044AD4762122B69200B6026E /* 滤镜_暖暖.acv in Resources */,
-				044AD4972122B69200B6026E /* 滤镜_森林_@3x.png in Resources */,
-				044AD4812122B69200B6026E /* 滤镜_午后_@3x.png in Resources */,
-				044AD4962122B69200B6026E /* 滤镜_棉花糖_@3x.png in Resources */,
-				044AD4722122B69200B6026E /* 滤镜_清新.acv in Resources */,
-				044AD4712122B69200B6026E /* 滤镜_初夏_@3x.png in Resources */,
-				044AD4832122B69200B6026E /* 滤镜_黄昏.acv in Resources */,
+				04479068212E676F00FF8A72 /* test_0.png in Resources */,
+				044AD46C2122B69200B6026E /* 童话.acv in Resources */,
+				044AD49A2122B69200B6026E /* 可爱.acv in Resources */,
+				044AD4742122B69200B6026E /* 晚秋.png in Resources */,
+				044AD49B2122B69200B6026E /* 暖阳.acv in Resources */,
+				044AD4A32122B69200B6026E /* 曲奇.png in Resources */,
+				044AD4882122B69200B6026E /* 棉花糖.acv in Resources */,
+				04479063212E676F00FF8A72 /* test_10.png in Resources */,
+				044AD4762122B69200B6026E /* 暖暖.acv in Resources */,
+				044AD4972122B69200B6026E /* 森林.png in Resources */,
+				044AD4812122B69200B6026E /* 午后.png in Resources */,
+				0447906D212E676F00FF8A72 /* test_6.png in Resources */,
+				044AD4962122B69200B6026E /* 棉花糖.png in Resources */,
+				044AD4722122B69200B6026E /* 清新.acv in Resources */,
+				044AD4712122B69200B6026E /* 初夏.png in Resources */,
+				044AD4832122B69200B6026E /* 黄昏.acv in Resources */,
+				0447906B212E676F00FF8A72 /* test_5.png in Resources */,
 				044AD3B021228E6900B6026E /* ToneCurve.fsh in Resources */,
-				044AD4922122B69200B6026E /* 滤镜_冬青_@3x.png in Resources */,
+				044AD4922122B69200B6026E /* 冬青.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,7 +813,6 @@
 				0482F7E620E6381D00DB4D19 /* NVObject.m in Sources */,
 				0482F7C720E52F1800DB4D19 /* VIMVideoPlayerView.m in Sources */,
 				0482F7C420E52F1800DB4D19 /* NVRenderObject.m in Sources */,
-				0482F78C20E51CE100DB4D19 /* MainViewController.m in Sources */,
 				0482F7D020E52F1800DB4D19 /* NVDrawShape.m in Sources */,
 				3DDEFCB6159B640C00B4EC41 /* AppDelegate.m in Sources */,
 				0482F7CD20E52F1800DB4D19 /* SZTVideoData.m in Sources */,
@@ -736,6 +821,8 @@
 				0482F7C920E52F1800DB4D19 /* NVViewController.m in Sources */,
 				04DB88E4211306A900852619 /* NVCIFilter.m in Sources */,
 				0482F7DE20E5E7D900DB4D19 /* DeviceManager.m in Sources */,
+				0447902E212D3FB500FF8A72 /* MainViewController.m in Sources */,
+				04479038212E5CF900FF8A72 /* TableViewController.m in Sources */,
 				04DB88DD2112F1F800852619 /* CIFilter+LUT.m in Sources */,
 				0482F7CA20E52F1800DB4D19 /* NVProgram.m in Sources */,
 				044AD3B32122935B00B6026E /* NVToneCurveTexture.m in Sources */,
@@ -743,6 +830,7 @@
 				0482F7C320E52F1800DB4D19 /* NVVideo.m in Sources */,
 				0482F7CC20E52F1800DB4D19 /* GLUtils.m in Sources */,
 				0482F7DF20E5E7D900DB4D19 /* LocalCameraUtil.m in Sources */,
+				04479071212E6FEE00FF8A72 /* CollectionViewCell.m in Sources */,
 				0482F7ED20E63B3000DB4D19 /* NVGLCamera.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
