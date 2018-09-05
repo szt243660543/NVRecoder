@@ -44,6 +44,7 @@
 		0447906D212E676F00FF8A72 /* test_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 0447905D212E676F00FF8A72 /* test_6.png */; };
 		0447906E212E676F00FF8A72 /* test_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 0447905E212E676F00FF8A72 /* test_7.png */; };
 		04479071212E6FEE00FF8A72 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04479070212E6FEE00FF8A72 /* CollectionViewCell.m */; };
+		04479211213E83B400FF8A72 /* new_vision.png in Resources */ = {isa = PBXBuildFile; fileRef = 04479210213E83B400FF8A72 /* new_vision.png */; };
 		044AD3B021228E6900B6026E /* ToneCurve.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 044AD3AF21228E6900B6026E /* ToneCurve.fsh */; };
 		044AD3B32122935B00B6026E /* NVToneCurveTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AD3B22122935B00B6026E /* NVToneCurveTexture.m */; };
 		044AD3B6212293F900B6026E /* NVACVFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AD3B5212293F900B6026E /* NVACVFile.m */; };
@@ -185,6 +186,7 @@
 		0447905E212E676F00FF8A72 /* test_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_7.png; sourceTree = "<group>"; };
 		0447906F212E6FEE00FF8A72 /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		04479070212E6FEE00FF8A72 /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		04479210213E83B400FF8A72 /* new_vision.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new_vision.png; sourceTree = "<group>"; };
 		044AD3AF21228E6900B6026E /* ToneCurve.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ToneCurve.fsh; sourceTree = "<group>"; };
 		044AD3B12122935B00B6026E /* NVToneCurveTexture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NVToneCurveTexture.h; sourceTree = "<group>"; };
 		044AD3B22122935B00B6026E /* NVToneCurveTexture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NVToneCurveTexture.m; sourceTree = "<group>"; };
@@ -641,6 +643,7 @@
 				3DDEFCAE159B640C00B4EC41 /* InfoPlist.strings */,
 				3DDEFCB1159B640C00B4EC41 /* main.m */,
 				3DDEFCB3159B640C00B4EC41 /* NVRecodeDemo-Prefix.pch */,
+				04479210213E83B400FF8A72 /* new_vision.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -743,6 +746,7 @@
 				044AD47B2122B69200B6026E /* 天真.acv in Resources */,
 				04479065212E676F00FF8A72 /* bg_main.jpg in Resources */,
 				044AD4A22122B69200B6026E /* 清新.png in Resources */,
+				04479211213E83B400FF8A72 /* new_vision.png in Resources */,
 				044AD4732122B69200B6026E /* 正常.acv in Resources */,
 				0447906A212E676F00FF8A72 /* test_1.png in Resources */,
 				044AD4982122B69200B6026E /* 可爱.png in Resources */,

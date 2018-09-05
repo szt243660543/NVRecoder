@@ -95,7 +95,7 @@ GLubyte Indices[] = {
     [self destroyVertexBuffer];
     
     int size_t = sizeof(float)*size;
-    _mVertexBuffer = malloc(size_t);
+    _mVertexBuffer = (float*)malloc(size_t);
     memcpy(_mVertexBuffer, buffer, size_t);
     
     self.mNumVertes = size;
@@ -106,7 +106,7 @@ GLubyte Indices[] = {
     [self destroyIndicesBuffer];
     
     int size_t = sizeof(short)*size;
-    _mIndicesBuffer = malloc(size_t);
+    _mIndicesBuffer = (short*)malloc(size_t);
     memcpy(_mIndicesBuffer, buffer, size_t);
 }
 
@@ -115,7 +115,7 @@ GLubyte Indices[] = {
     [self destroyTextureBuffer];
     
     int size_t = sizeof(float)*size;
-    _mTextureBuffer = malloc(size_t);
+    _mTextureBuffer = (float*)malloc(size_t);
     memcpy(_mTextureBuffer, buffer, size_t);
     
     self.mNumTextures = size;

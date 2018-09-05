@@ -92,13 +92,17 @@ static NSString *cellID = @"cell";
         [camera changeFilter:COLUMNS_SLICED];
     }
     
-//    NSString *itemPath = [[NSBundle mainBundle] pathForResource:@"videoinfo0" ofType:@".mp4"];
-//    NSURL *url = [NSURL fileURLWithPath:itemPath];
-//
-//    NSString *itemPath1 = [[NSBundle mainBundle] pathForResource:@"AR1" ofType:@".mp4"];
-//    NSURL *url1 = [NSURL fileURLWithPath:itemPath1];
+    if (_index == 10) {
+        [camera changeFilter:SNOW];
+    }
     
     /*
+    NSString *itemPath = [[NSBundle mainBundle] pathForResource:@"videoinfo0" ofType:@".mp4"];
+    NSURL *url = [NSURL fileURLWithPath:itemPath];
+
+    NSString *itemPath1 = [[NSBundle mainBundle] pathForResource:@"AR1" ofType:@".mp4"];
+    NSURL *url1 = [NSURL fileURLWithPath:itemPath1];
+    
     NVVideo *video = [[NVVideo alloc] initAVPlayerVideoWithURL:url1];
     video.frame = CGRectMake(0.0, 0.0, 100, 200);
     video.contentMode = NVModeScaleAspectFill;

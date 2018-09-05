@@ -54,11 +54,13 @@
     }else if(indexPath.row == 9){
         cell.textLabel.text = @"切片循环";
     }else if(indexPath.row == 10){
-        cell.textLabel.text = @"美颜";
+        cell.textLabel.text = @"下雪";
     }else if(indexPath.row == 11){
-        cell.textLabel.text = @"哈哈镜";
+        cell.textLabel.text = @"美颜";
     }else if(indexPath.row == 12){
-        cell.textLabel.text = @"大眼\瘦脸";
+        cell.textLabel.text = @"哈哈镜";
+    }else if(indexPath.row == 13){
+        cell.textLabel.text = @"大眼/瘦脸";
     }
     
     return cell;

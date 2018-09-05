@@ -11,58 +11,6 @@
 
 @implementation GLUtils
 
-+ (GLuint)loadShader:(GLenum)type withFilepath:(NSString *)sharderFilepath
-{
-    NSError * error;
-    
-    NSString * sharderString = [NSString stringWithContentsOfFile:sharderFilepath encoding:NSUTF8StringEncoding error:&error];
-    
-    if (!sharderString) {
-        NSLog(@"Error: loading shader file: %@ %@", sharderFilepath, error.localizedDescription);
-        
-        return 0;
-    }
-    
-    // 创建shader
-    GLuint shader = glCreateShader(type);
-    
-    if (shader == 0) {
-        NSLog(@"Error:fail to create shader");
-        return 0;
-    }
-    
-    // 加载shader资源
-    const char * shaderStringUTF8 = [sharderString UTF8String];
-    GLint shaderStringLength = (GLint)[sharderString length];
-    glShaderSource(shader, 1, &shaderStringUTF8, &shaderStringLength);
-    
-    // 编译shader
-    glCompileShader(shader);
-    
-    // 检测编译状态
-    GLint compiled = 0;
-    glGetShaderiv(shader, GL_COMPILE_STATUS, &compiled);
-    
-    if (!compiled) {
-        GLint infoLen = 0;
-        glGetShaderiv(shader, GL_INFO_LOG_LENGTH, &infoLen);
-        
-        if (infoLen > 1) {
-            char * infoLog = malloc(sizeof(char) *infoLen);
-            glGetShaderInfoLog(shader, infoLen, NULL, infoLog);
-            NSLog(@"Error compiling shader:\n%s\n", infoLog);
-            
-            free(infoLog);
-        }
-        
-        glDeleteShader(shader);
-        
-        return 0;
-    }
-    
-    return shader;
-}
-
 + (GLuint)compileShaders:(NSString *)shaderVertex shaderFragment:(NSString *)shaderFragment isFilePath:(BOOL)isfile
 {
     GLuint vertShader, fragShader;

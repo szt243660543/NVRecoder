@@ -22,7 +22,7 @@ void main(){
         vTexCoordToUse += center;
     }
     
-    gl_FragColor = texture2D(uSampler, vTexCoordToUse );
+    gl_FragColor = texture2D(uSampler, vTexCoordToUse);
 }
 
 //void main(){

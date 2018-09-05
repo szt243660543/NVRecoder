@@ -12,13 +12,6 @@
 @interface GLUtils : NSObject
 
 /**
- * 加载着色器
- * @type shader类型
- * @shaderFilepath sharder资源路径
- */
-+ (GLuint)loadShader:(GLenum)type withFilepath:(NSString *)shaderFilepath;
-
-/**
  * 加载program
  * @shaderVertex 顶点着色器
  * @shaderFragment 片段着色器
